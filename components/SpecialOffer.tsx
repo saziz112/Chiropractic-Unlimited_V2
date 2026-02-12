@@ -39,7 +39,7 @@ export const SpecialOffer: React.FC = () => {
                     </div>
                     <a 
                         href={`tel:${BUSINESS_INFO.phone.replace(/\D/g,'')}`}
-                        className="bg-white hover:bg-gray-50 text-brand-primary font-bold py-4 px-8 rounded-full transition-all duration-300 w-full flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-1 group"
+                        className="bg-white hover:bg-gray-50 text-brand-primary font-bold py-4 px-8 rounded-full transition-all duration-300 w-full flex items-center justify-center gap-2 shadow-lg hover:shadow-xl cursor-pointer group"
                     >
                         Schedule Now <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                     </a>

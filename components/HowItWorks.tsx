@@ -21,7 +21,7 @@ export const HowItWorks: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {HOW_IT_WORKS.map((step, index) => (
                 <RevealOnScroll key={index} delay={index * 150}>
-                    <div className="relative p-10 rounded-2xl h-full bg-brand-bg/50 border border-brand-primary/5 transition-all duration-500 hover:bg-brand-primary hover:shadow-2xl group overflow-hidden">
+                    <div className="relative p-10 rounded-2xl h-full bg-brand-bg/50 border border-brand-primary/5 transition-all duration-300 hover:bg-brand-primary hover:shadow-2xl group overflow-hidden cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-secondary focus-visible:ring-offset-2 outline-none" tabIndex={0}>
                         {/* Background Number */}
                         <div className="text-[10rem] font-display font-bold text-brand-primary/5 absolute -top-10 -right-4 group-hover:text-white/5 transition-colors duration-500 leading-none select-none">
                             {step.step}

@@ -24,11 +24,11 @@ export const Conditions: React.FC = () => {
             <RevealOnScroll key={index} delay={index * 50}>
               <div className="group cursor-pointer relative">
                 {/* Image Container */}
-                <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-sm bg-white mb-4 transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-1">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-sm bg-white mb-4 transition-all duration-300 group-hover:shadow-xl">
                     <img 
                         src={condition.image} 
                         alt={condition.title}
-                        className="w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-110"
+                        className="w-full h-full object-cover transition-all duration-500 ease-out group-hover:brightness-110"
                         loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 transition-opacity duration-300"></div>

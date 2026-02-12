@@ -7,10 +7,13 @@ interface Props {
 }
 
 export const RevealOnScroll: React.FC<Props> = ({ children, delay = 0, className = "" }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const prefersReducedMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const [isVisible, setIsVisible] = useState(prefersReducedMotion);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (prefersReducedMotion) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -33,7 +36,7 @@ export const RevealOnScroll: React.FC<Props> = ({ children, delay = 0, className
         observer.unobserve(ref.current);
       }
     };
-  }, []);
+  }, [prefersReducedMotion]);
 
   const style = {
     transitionDelay: `${delay}ms`,

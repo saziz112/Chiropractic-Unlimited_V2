@@ -30,7 +30,7 @@ export const InstagramFeature: React.FC = () => {
                     href="https://www.instagram.com/chiropracticunlimited/"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white transition-all duration-300 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full shadow-lg hover:shadow-pink-500/30 hover:-translate-y-1 hover:scale-105"
+                    className="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white transition-all duration-300 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full shadow-lg hover:shadow-xl hover:shadow-pink-500/30 hover:brightness-110 cursor-pointer"
                 >
                     Follow on Instagram
                 </a>
@@ -45,10 +45,10 @@ export const InstagramFeature: React.FC = () => {
                  {/* Custom Brand Wrapper */}
                 <div className="relative group w-full max-w-[340px]">
                      {/* Outer Glow */}
-                    <div className="absolute inset-0 bg-brand-primary/20 rounded-[3rem] blur-2xl transform group-hover:scale-105 transition-transform duration-500 -z-10"></div>
+                    <div className="absolute inset-0 bg-brand-primary/20 rounded-[3rem] blur-2xl transform group-hover:opacity-80 transition-opacity duration-500 -z-10"></div>
                     
                     {/* Bezel Frame - Brand Primary Color */}
-                    <div className="relative bg-brand-primary rounded-[2.5rem] p-3 shadow-2xl border-4 border-brand-accent/30 transition-transform duration-500 hover:-translate-y-2">
+                    <div className="relative bg-brand-primary rounded-[2.5rem] p-3 shadow-2xl border-4 border-brand-accent/30 transition-shadow duration-300 hover:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)]">
                         {/* Inner Screen Container */}
                         <div className="relative rounded-[2rem] overflow-hidden bg-white aspect-[9/16] isolate border border-black/10">
                              <iframe 
@@ -66,9 +66,9 @@ export const InstagramFeature: React.FC = () => {
             {/* Video 2 */}
             <RevealOnScroll delay={200} className="w-full flex justify-center md:mt-24">
                  <div className="relative group w-full max-w-[340px]">
-                    <div className="absolute inset-0 bg-brand-secondary/20 rounded-[3rem] blur-2xl transform group-hover:scale-105 transition-transform duration-500 -z-10"></div>
+                    <div className="absolute inset-0 bg-brand-secondary/20 rounded-[3rem] blur-2xl transform group-hover:opacity-80 transition-opacity duration-500 -z-10"></div>
                     
-                    <div className="relative bg-brand-primary rounded-[2.5rem] p-3 shadow-2xl border-4 border-brand-accent/30 transition-transform duration-500 hover:-translate-y-2">
+                    <div className="relative bg-brand-primary rounded-[2.5rem] p-3 shadow-2xl border-4 border-brand-accent/30 transition-shadow duration-300 hover:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)]">
                         <div className="relative rounded-[2rem] overflow-hidden bg-white aspect-[9/16] isolate border border-black/10">
                             <iframe 
                                 src="https://www.instagram.com/reel/CRpq1wBDUfb/embed/"

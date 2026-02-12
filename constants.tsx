@@ -8,7 +8,7 @@ export const BUSINESS_INFO = {
   phone: "(334) 219-0150",
   address: "3731 20th Ave, Valley, AL 36854",
   locationNote: "Located INSIDE the Workout Anytime gym, in the same plaza as Ace Hardware.",
-  email: "contact@chiropracticunlimited.com", // Placeholder
+  email: "hello@chiropracticunlimited.com", // Placeholder
   mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.867566120892!2d-85.17935492358896!3d32.816698673646985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888cb3764835687b%3A0x63351368560064f7!2s3731%2020th%20Ave%2C%20Valley%2C%20AL%2036854!5e0!3m2!1sen!2sus!4v1714589000000!5m2!1sen!2sus"
 };
 
@@ -70,59 +70,65 @@ export const SERVICES: ServiceItem[] = [
   {
     title: "Holistic Wellness",
     description: "Focusing on the whole person to improve quality of life beyond just symptom relief.",
-    icon: <Heart className="w-8 h-8" />
+    icon: <Heart className="w-8 h-8" />,
+    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Spinal Correction",
     description: "Gentle and effective spinal adjustments to restore proper alignment and function.",
-    icon: <Activity className="w-8 h-8" />
+    icon: <Activity className="w-8 h-8" />,
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Integrated Care",
     description: "Combining chiropractic expertise with nursing knowledge for a comprehensive health approach.",
-    icon: <Stethoscope className="w-8 h-8" />
+    icon: <Stethoscope className="w-8 h-8" />,
+    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Performance",
     description: "Helping you move better, recover faster, and perform at your peak.",
-    icon: <Zap className="w-8 h-8" />
+    icon: <Zap className="w-8 h-8" />,
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Neurology",
     description: "Optimizing your nervous system to ensure your body communicates effectively.",
-    icon: <Brain className="w-8 h-8" />
+    icon: <Brain className="w-8 h-8" />,
+    image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Personalized Plans",
     description: "Care plans tailored specifically to your unique physiology and health goals.",
-    icon: <UserCheck className="w-8 h-8" />
+    icon: <UserCheck className="w-8 h-8" />,
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
   }
 ];
 
 export const CONDITIONS = [
-  { 
-    title: "Low Back Pain", 
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+  {
+    title: "Low Back Pain",
+    image: "https://plus.unsplash.com/premium_photo-1723924974091-859223dad2fd?q=80&w=800&auto=format&fit=crop"
   },
-  { 
-    title: "Neck Pain", 
-    image: "https://images.unsplash.com/photo-1590611936760-eeb9bc598548?q=80&w=800&auto=format&fit=crop" 
+  {
+    title: "Neck Pain",
+    image: "https://plus.unsplash.com/premium_photo-1661517603309-e9d451e395b0?q=80&w=800&auto=format&fit=crop"
   },
-  { 
-    title: "Headaches", 
-    image: "https://images.unsplash.com/photo-1610145228588-466d6a2d2429?q=80&w=800&auto=format&fit=crop" 
+  {
+    title: "Headaches",
+    image: "https://plus.unsplash.com/premium_photo-1661775923999-698b5481e8b5?q=80&w=800&auto=format&fit=crop"
   },
-  { 
-    title: "Sciatica", 
-    image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop" 
+  {
+    title: "Sciatica",
+    image: "https://plus.unsplash.com/premium_photo-1664303718610-b6bcb2c6758e?q=80&w=800&auto=format&fit=crop"
   },
-  { 
-    title: "Auto Injuries", 
-    image: "https://images.unsplash.com/photo-1599571217743-a602166e5f8f?q=80&w=800&auto=format&fit=crop" 
+  {
+    title: "Auto Injuries",
+    image: "https://plus.unsplash.com/premium_photo-1661370337354-558d7120eb54?q=80&w=800&auto=format&fit=crop"
   },
-  { 
-    title: "Poor Posture", 
-    image: "https://nuccawellnesschicago.com/wp-content/uploads/2019/09/Man-with-Poor-Posture-Using-Laptop-at-Table-Indoors.png" 
+  {
+    title: "Poor Posture",
+    image: "https://plus.unsplash.com/premium_photo-1682126239728-43b4e30792d6?q=80&w=800&auto=format&fit=crop"
   },
 ];
 

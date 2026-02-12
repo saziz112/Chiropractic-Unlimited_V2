@@ -16,8 +16,7 @@ export const About: React.FC = () => {
                 <img 
                     src="https://i.ibb.co/cXh09B2q/Jason-B.jpg" 
                     alt={BUSINESS_INFO.doctor}
-                    className="w-full h-auto object-cover transform transition-transform hover:scale-105 duration-700"
-                    style={{ maxHeight: '700px' }} 
+                    className="w-full h-auto object-cover max-h-[700px]" 
                 />
                 
                 {/* Gradient overlay for text readability at bottom */}
