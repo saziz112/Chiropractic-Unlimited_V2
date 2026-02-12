@@ -71,8 +71,8 @@ export const Hero: React.FC = () => {
 
                                 <div className="relative aspect-[4/5] lg:aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
                                     <img
-                                        src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=2070&auto=format&fit=crop"
-                                        alt="Chiropractic Adjustment"
+                                        src="https://i.ibb.co/cXh09B2q/Jason-B.jpg"
+                                        alt="Dr. Jason Bang - Advanced Chiropractic Diagnostics"
                                         className="w-full h-full object-cover object-center"
                                     />
                                     {/* Floating Badge */}
