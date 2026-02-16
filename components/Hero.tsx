@@ -27,17 +27,18 @@ export const Hero: React.FC = () => {
                             </div>
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.1] mb-6 tracking-tight">
-                                Become The Best <br />
-                                <span className="font-classic italic font-light opacity-95">Version Of Yourself</span>
+                                Chiropractor in <br />
+                                <span className="text-brand-secondary">Valley, AL</span> <br />
+                                <span className="font-classic italic font-light opacity-80 text-3xl md:text-4xl block mt-2">Become The Best Version Of Yourself</span>
                             </h1>
 
                             <p className="text-lg md:text-xl text-white/80 mb-10 font-light leading-relaxed max-w-lg mx-auto lg:mx-0">
-                                Getting to the root cause and healing from the inside out through corrective chiropractic care and integrated wellness.
+                                Getting to the root cause and healing from the inside out through chiropractic wellness and integrated care.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                                 <a
-                                    href="#location"
+                                    href="#booking"
                                     className="inline-flex items-center justify-center px-10 py-4 text-base font-bold text-brand-primary transition-all duration-300 bg-white rounded-full shadow-xl hover:shadow-2xl hover:bg-gray-50 cursor-pointer"
                                     aria-label="Book an Appointment"
                                 >

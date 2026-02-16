@@ -1,8 +1,11 @@
 import React from 'react';
 import { SERVICES } from '../constants';
 import { RevealOnScroll } from './RevealOnScroll';
+import { useNavigate } from 'react-router-dom';
 
 export const Services: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="services" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,6 +28,7 @@ export const Services: React.FC = () => {
                 className="bg-white rounded-2xl overflow-hidden transition-all duration-250 hover:shadow-2xl border border-gray-100 group h-full flex flex-col cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-secondary focus-visible:ring-offset-2 outline-none"
                 tabIndex={0}
                 role="article"
+                onClick={() => navigate(`/services/${service.slug}`)}
               >
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">

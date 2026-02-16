@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chiropractic Unlimited | Dr. Jason Bang</title>
   <meta name="description"
-    content="Chiropractic Unlimited in Valley, AL. Holistic wellness care by Dr. Jason Bang DC BSN RN." />
+    content="Chiropractic Unlimited in Valley, AL offers advanced spinal correction, shockwave therapy, and holistic wellness care. Dr. Jason Bang DC FNP treats the root cause of pain." />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,16 +114,136 @@
       border-radius: 4px;
     }
 
+    /* Base reveal animation */
     .fade-in-section {
       opacity: 0;
       transform: translateY(30px);
-      transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
       will-change: opacity, transform;
     }
 
     .fade-in-section.is-visible {
       opacity: 1;
+      transform: translateY(0) translateX(0) scale(1);
+    }
+
+    /* Slide from left */
+    .fade-in-section.slide-left {
+      transform: translateX(-60px);
+    }
+
+    /* Slide from right */
+    .fade-in-section.slide-right {
+      transform: translateX(60px);
+    }
+
+    /* Scale up from smaller */
+    .fade-in-section.scale-up {
+      transform: scale(0.92);
+    }
+
+    /* Fade in only (no movement) */
+    .fade-in-section.fade-only {
+      transform: none;
+    }
+
+    .fade-in-section.fade-only.is-visible {
+      transform: none;
+    }
+
+    /* Stagger children animation */
+    .stagger-children>* {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .stagger-children.is-visible>*:nth-child(1) {
+      transition-delay: 0ms;
+      opacity: 1;
       transform: translateY(0);
+    }
+
+    .stagger-children.is-visible>*:nth-child(2) {
+      transition-delay: 80ms;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .stagger-children.is-visible>*:nth-child(3) {
+      transition-delay: 160ms;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .stagger-children.is-visible>*:nth-child(4) {
+      transition-delay: 240ms;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .stagger-children.is-visible>*:nth-child(5) {
+      transition-delay: 320ms;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .stagger-children.is-visible>*:nth-child(6) {
+      transition-delay: 400ms;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Floating animation for decorative elements */
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    /* Subtle pulse glow for CTAs */
+    @keyframes pulse-glow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 20px 4px rgba(5, 150, 105, 0.15);
+      }
+    }
+
+    .animate-pulse-glow {
+      animation: pulse-glow 3s ease-in-out infinite;
+    }
+
+    /* Counter / number animation */
+    @keyframes count-up {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hero parallax subtle shift */
+    .parallax-bg {
+      transition: transform 0.1s linear;
     }
 
     /* Custom Scrollbar */
@@ -144,17 +266,26 @@
 
     /* Respect reduced motion preferences */
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+
+      *,
+      *::before,
+      *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
 
-      .fade-in-section {
+      .fade-in-section,
+      .stagger-children>* {
         opacity: 1 !important;
         transform: none !important;
         transition: none !important;
+      }
+
+      .animate-float,
+      .animate-pulse-glow {
+        animation: none !important;
       }
     }
   </style>

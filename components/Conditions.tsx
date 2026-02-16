@@ -2,8 +2,11 @@ import React from 'react';
 import { CONDITIONS } from '../constants';
 import { RevealOnScroll } from './RevealOnScroll';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const Conditions: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="conditions" className="py-16 md:py-24 bg-brand-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,34 +25,37 @@ export const Conditions: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {CONDITIONS.map((condition, index) => (
             <RevealOnScroll key={index} delay={index * 50}>
-              <div className="group cursor-pointer relative">
+              <div
+                className="group cursor-pointer relative"
+                onClick={() => navigate(`/conditions/${condition.slug}`)}
+              >
                 {/* Image Container */}
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-sm bg-white mb-4 transition-all duration-300 group-hover:shadow-xl">
-                    <img 
-                        src={condition.image} 
-                        alt={condition.title}
-                        className="w-full h-full object-cover transition-all duration-500 ease-out group-hover:brightness-110"
-                        loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 transition-opacity duration-300"></div>
-                    
-                    {/* Overlay Text */}
-                    <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                         <h4 className="text-white font-bold font-sans text-base leading-tight mb-1">
-                            {condition.title}
-                        </h4>
-                        <div className="w-full h-0.5 bg-brand-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                    </div>
+                  <img
+                    src={condition.image}
+                    alt={condition.title}
+                    className="w-full h-full object-cover transition-all duration-500 ease-out group-hover:brightness-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 transition-opacity duration-300"></div>
+
+                  {/* Overlay Text */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <h4 className="text-white font-bold font-sans text-base leading-tight mb-1">
+                      {condition.title}
+                    </h4>
+                    <div className="w-full h-0.5 bg-brand-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                  </div>
                 </div>
               </div>
             </RevealOnScroll>
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
-             <a href="#services" className="inline-flex items-center gap-2 text-brand-primary font-bold hover:text-brand-secondary transition-colors group">
-                View All Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-             </a>
+          <a href="#services" className="inline-flex items-center gap-2 text-brand-primary font-bold hover:text-brand-secondary transition-colors group">
+            View All Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
         </div>
       </div>
     </section>
