@@ -74,10 +74,18 @@ async function prerender() {
     console.log('Starting Prerender...');
     const server = await serve(DIST_DIR, PORT);
 
-    const browser = await puppeteer.launch({
-        headless: "new",
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
-    });
+    let browser;
+    try {
+        browser = await puppeteer.launch({
+            headless: "new",
+            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu']
+        });
+    } catch (e) {
+        console.warn('⚠️  Puppeteer failed to launch. Skipping prerendering step.', e.message);
+        server.close();
+        process.exit(0);
+        return;
+    }
     const page = await browser.newPage();
 
     for (const route of ROUTES) {
