@@ -50,32 +50,20 @@ export const ExitIntentPopup: React.FC = () => {
         };
     }, [showPopup]);
 
-    // Mobile: show after 30s of inactivity
+    // Mobile: show after 15s timed delay
     useEffect(() => {
         const isMobile = window.matchMedia('(pointer: coarse)').matches;
         if (!isMobile) return;
 
-        const resetIdleTimer = () => {
-            if (mobileIdleTimer.current) clearTimeout(mobileIdleTimer.current);
-            mobileIdleTimer.current = setTimeout(() => {
-                if (armed.current) showPopup();
-            }, 30000);
-        };
-
-        // Arm after 3s, then start idle tracking
+        // Arm after 3s, then show after 15s
         mobileTimer.current = setTimeout(() => {
             armed.current = true;
-            resetIdleTimer();
+            mobileIdleTimer.current = setTimeout(showPopup, 15000);
         }, 3000);
-
-        window.addEventListener('scroll', resetIdleTimer, { passive: true });
-        window.addEventListener('touchstart', resetIdleTimer, { passive: true });
 
         return () => {
             if (mobileTimer.current) clearTimeout(mobileTimer.current);
             if (mobileIdleTimer.current) clearTimeout(mobileIdleTimer.current);
-            window.removeEventListener('scroll', resetIdleTimer);
-            window.removeEventListener('touchstart', resetIdleTimer);
         };
     }, [showPopup]);
 
