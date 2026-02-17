@@ -6,6 +6,7 @@ import { HomePage } from './HomePage';
 import { ConditionDetailPage } from './components/ConditionDetailPage';
 import { ServiceDetailPage } from './components/ServiceDetailPage';
 import { PatientDetailPage } from './components/PatientDetailPage';
+import { ExitIntentPopup } from './components/ExitIntentPopup';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -43,6 +44,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <ExitIntentPopup />
       </div>
     </BrowserRouter>
   );
