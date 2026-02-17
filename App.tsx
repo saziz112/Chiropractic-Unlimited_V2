@@ -8,6 +8,7 @@ import { ServiceDetailPage } from './components/ServiceDetailPage';
 import { PatientDetailPage } from './components/PatientDetailPage';
 import { ExitIntentPopup } from './components/ExitIntentPopup';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -48,6 +49,7 @@ function App() {
         <ExitIntentPopup />
       </div>
       <Analytics />
+      <SpeedInsights />
     </BrowserRouter>
   );
 }
