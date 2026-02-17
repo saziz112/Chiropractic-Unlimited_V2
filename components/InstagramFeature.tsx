@@ -50,12 +50,12 @@ export const InstagramFeature: React.FC = () => {
                     {/* Bezel Frame - Brand Primary Color */}
                     <div className="relative bg-brand-primary rounded-[2.5rem] p-3 shadow-2xl border-4 border-brand-accent/30 transition-shadow duration-300 hover:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)]">
                         {/* Inner Screen Container */}
-                        <div className="relative rounded-[2rem] overflow-hidden bg-white aspect-[9/16] isolate border border-black/10">
-                             <iframe 
+                        <div className="relative rounded-[2rem] overflow-hidden bg-white aspect-[9/16] border border-black/10">
+                             <iframe
                                 src="https://www.instagram.com/reel/CVOiq84D0YV/embed/"
                                 className="w-full h-full absolute inset-0 border-0"
+                                allow="autoplay; encrypted-media"
                                 allowFullScreen
-                                scrolling="no"
                                 title="Chiropractic Adjustment Video 1"
                             ></iframe>
                         </div>
@@ -69,12 +69,12 @@ export const InstagramFeature: React.FC = () => {
                     <div className="absolute inset-0 bg-brand-secondary/20 rounded-[3rem] blur-2xl transform group-hover:opacity-80 transition-opacity duration-500 -z-10"></div>
                     
                     <div className="relative bg-brand-primary rounded-[2.5rem] p-3 shadow-2xl border-4 border-brand-accent/30 transition-shadow duration-300 hover:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)]">
-                        <div className="relative rounded-[2rem] overflow-hidden bg-white aspect-[9/16] isolate border border-black/10">
-                            <iframe 
+                        <div className="relative rounded-[2rem] overflow-hidden bg-white aspect-[9/16] border border-black/10">
+                            <iframe
                                 src="https://www.instagram.com/reel/CRpq1wBDUfb/embed/"
                                 className="w-full h-full absolute inset-0 border-0"
+                                allow="autoplay; encrypted-media"
                                 allowFullScreen
-                                scrolling="no"
                                 title="Chiropractic Adjustment Video 2"
                             ></iframe>
                         </div>
