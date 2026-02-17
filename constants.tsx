@@ -33,7 +33,6 @@ export const NAV_ITEMS: NavItem[] = [
   {
     label: 'Services',
     children: [
-      { label: 'Shockwave Therapy', href: '/services/shockwave-therapy' },
       { label: 'Holistic Wellness', href: '/services/holistic-wellness' },
       { label: 'Spinal Correction', href: '/services/spinal-correction' },
       { label: 'Integrated Care', href: '/services/integrated-care' },
@@ -86,7 +85,26 @@ export const PATIENTS: import('./types').PatientItem[] = [
     ],
     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop",
     metaTitle: "Sports Chiropractor for Athletes in Valley, AL | Dr. Jason Bang",
-    metaDescription: "Boost athletic performance and recover faster with sports chiropractic care in Valley, AL. Dr. Bang treats sports injuries, improves biomechanics, and prevents future pain."
+    metaDescription: "Boost athletic performance and recover faster with sports chiropractic care in Valley, AL. Dr. Bang treats sports injuries, improves biomechanics, and prevents future pain.",
+    approach: "We start with a full biomechanical assessment to identify movement restrictions, spinal misalignments, and muscle imbalances that limit your performance. From there, we build a corrective care plan using **targeted spinal adjustments** to restore proper alignment and optimize nervous system function. Whether you're recovering from a sports injury or looking to gain a competitive edge, our approach addresses the structural foundation your body relies on to move, recover, and perform at its best.",
+    faqs: [
+      {
+        question: "Do I need to be a professional athlete to benefit?",
+        answer: "Not at all. Whether you're a competitive athlete, weekend warrior, or just someone who wants to stay active without pain, our sports chiropractic care helps you move better and recover faster at any level."
+      },
+      {
+        question: "Can chiropractic care actually improve performance?",
+        answer: "Yes. Proper spinal alignment optimizes nervous system function, which controls every muscle contraction, reflex, and movement pattern. Athletes under regular chiropractic care often report improved reaction time, power output, and reduced injury rates."
+      },
+      {
+        question: "What sports injuries do you treat?",
+        answer: "We treat a wide range of sports injuries including sprains, strains, tendinitis, overuse injuries, and joint dysfunction. Our goal is to get you back to your sport as quickly and safely as possible."
+      },
+      {
+        question: "How often should athletes get adjusted?",
+        answer: "Many of our athletes come in weekly or bi-weekly during training and competition seasons. The frequency depends on your activity level, goals, and how your body responds to care."
+      }
+    ]
   },
   {
     slug: "pregnancy",
@@ -99,9 +117,28 @@ export const PATIENTS: import('./types').PatientItem[] = [
       "Better pelvic alignment",
       "Reduced labor times"
     ],
-    image: "https://images.unsplash.com/photo-1555252333-9f8e9cdcd78e?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1544126592-807ade215a0b?q=80&w=800&auto=format&fit=crop",
     metaTitle: "Prenatal Chiropractor in Valley, AL | Pregnancy Pain Relief",
-    metaDescription: "Experiencing back or pelvic pain during pregnancy? Dr. Jason Bang offers safe, gentle prenatal chiropractic care to help you feel your best and prepare for labor."
+    metaDescription: "Experiencing back or pelvic pain during pregnancy? Dr. Jason Bang offers safe, gentle prenatal chiropractic care to help you feel your best and prepare for labor.",
+    approach: "Our prenatal care begins with a thorough evaluation of your spinal and pelvic alignment. Using the **Webster Technique**, we gently correct sacral misalignments that can contribute to pelvic imbalance, back pain, and even breech positioning. Each adjustment is tailored to your stage of pregnancy, using specialized positioning and low-force techniques that are completely safe for both mom and baby. Our goal is to keep you comfortable, mobile, and prepared for a smoother labor and delivery.",
+    faqs: [
+      {
+        question: "Is chiropractic care safe during pregnancy?",
+        answer: "Absolutely. Our techniques are specifically adapted for pregnant patients. We use gentle, low-force adjustments and specialized positioning to ensure complete comfort and safety at every stage of pregnancy."
+      },
+      {
+        question: "What is the Webster Technique?",
+        answer: "The Webster Technique is a specific chiropractic analysis and adjustment for pregnant women. It focuses on reducing sacral misalignment and improving pelvic balance, which can help the baby achieve optimal positioning for birth."
+      },
+      {
+        question: "When should I start prenatal chiropractic care?",
+        answer: "You can benefit from chiropractic care at any stage of pregnancy. Many women start in the first trimester to stay ahead of the changes, while others come in later when discomfort increases. The sooner you start, the more proactive we can be."
+      },
+      {
+        question: "Can chiropractic care help with labor?",
+        answer: "Yes. Studies show that regular chiropractic care during pregnancy can contribute to shorter labor times and reduce the need for interventions. Proper pelvic alignment gives the baby more room to move into the ideal birth position."
+      }
+    ]
   },
   {
     slug: "pediatrics",
@@ -116,48 +153,30 @@ export const PATIENTS: import('./types').PatientItem[] = [
     ],
     image: "https://images.unsplash.com/photo-1602052793312-b99c2a9ee797?q=80&w=800&auto=format&fit=crop",
     metaTitle: "Pediatric Chiropractor in Valley, AL | Gentle Care for Kids",
-    metaDescription: "Safe, gentle chiropractic care for children in Valley, AL. From colic and ear infections to growing pains, Dr. Bang helps kids grow up healthy and strong."
+    metaDescription: "Safe, gentle chiropractic care for children in Valley, AL. From colic and ear infections to growing pains, Dr. Bang helps kids grow up healthy and strong.",
+    approach: "Children are not small adults — their spines and nervous systems are developing rapidly, and even minor misalignments can affect their health in ways that aren't always obvious. We use **extremely gentle, low-force techniques** specifically designed for pediatric patients. Our evaluations look at spinal alignment, posture, and neurological development to catch issues early. Whether your child is dealing with colic, ear infections, growing pains, or the effects of screen time and heavy backpacks, we provide safe, effective care that supports their growth and development.",
+    faqs: [
+      {
+        question: "At what age can a child see a chiropractor?",
+        answer: "Children can benefit from chiropractic care at any age, even as newborns. Birth itself can place significant stress on a baby's spine and nervous system. Our pediatric adjustments are incredibly gentle — using no more pressure than you'd use to test the ripeness of a tomato."
+      },
+      {
+        question: "Is chiropractic safe for children?",
+        answer: "Absolutely. Pediatric chiropractic care uses very gentle, low-force techniques that are completely different from adult adjustments. Dr. Bang has specialized training in pediatric care and tailors every adjustment to the child's age and size."
+      },
+      {
+        question: "What signs might indicate my child needs chiropractic care?",
+        answer: "Common signs include frequent ear infections, colic, difficulty sleeping, poor posture, complaints of back or neck pain, headaches, and uneven gait or movement patterns. Even children without obvious symptoms can benefit from wellness check-ups."
+      },
+      {
+        question: "How often does a child need to be adjusted?",
+        answer: "It depends on the child's specific needs. Some children respond quickly and only need occasional wellness visits, while others with specific conditions may need a short series of visits. We'll create a plan based on your child's individual evaluation."
+      }
+    ]
   }
 ];
 
 export const SERVICES: ServiceItem[] = [
-  {
-    slug: "shockwave-therapy",
-    title: "Shockwave Therapy",
-    description: "Advanced non-invasive treatment for chronic pain and musculoskeletal conditions.",
-    fullDescription: "Shockwave therapy is a non-invasive treatment that uses high-energy acoustic waves to stimulate healing in injured tissues. It is particularly effective for chronic conditions that haven't responded to traditional therapies — including plantar fasciitis, tennis elbow, shoulder tendinitis, and chronic low back pain. At Chiropractic Unlimited, we use this technology to accelerate your recovery and get you back to the activities you love.",
-    benefits: [
-      "Accelerated tissue repair and cell growth",
-      "Analgesic effect for pain reduction",
-      "Restoration of mobility",
-      "Non-surgical and drug-free",
-      "Effective for chronic conditions that resist other treatments",
-      "Quick treatment sessions (15-20 minutes)"
-    ],
-    icon: <Zap className="w-8 h-8" />,
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop",
-    metaTitle: "Shockwave Therapy in Valley, AL | Dr. Jason Bang",
-    metaDescription: "Advanced shockwave therapy for chronic pain in Valley, AL. Dr. Jason Bang uses acoustic wave technology to heal injuries without surgery or drugs. Book today.",
-    approach: "We combine shockwave therapy with precise spinal correction for a comprehensive approach. During each session, targeted acoustic waves are delivered to the injured area, stimulating blood flow and triggering the body's natural healing response. Most patients experience noticeable improvement within 3-5 sessions, and we pair every treatment with corrective care to address the structural issues that caused the injury in the first place.",
-    faqs: [
-      {
-        question: "What does shockwave therapy feel like?",
-        answer: "Most patients describe it as a rapid tapping sensation. There may be some mild discomfort in the treatment area, but sessions are quick (15-20 minutes) and well-tolerated. Many patients feel relief immediately after."
-      },
-      {
-        question: "What conditions does shockwave therapy treat?",
-        answer: "It's highly effective for plantar fasciitis, tennis/golfer's elbow, shoulder tendinitis, chronic low back pain, knee pain, and soft tissue injuries that haven't responded to other treatments."
-      },
-      {
-        question: "How many sessions will I need?",
-        answer: "Most conditions respond well within 3-6 sessions, typically scheduled once per week. We'll evaluate your progress and adjust the treatment plan as needed."
-      },
-      {
-        question: "Is shockwave therapy covered by insurance?",
-        answer: "We are a cash-based practice, which means we can offer this advanced therapy without insurance restrictions. We provide affordable care plans to make treatment accessible."
-      }
-    ]
-  },
   {
     slug: "holistic-wellness",
     title: "Holistic Wellness",
@@ -278,7 +297,7 @@ export const SERVICES: ServiceItem[] = [
     image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop",
     metaTitle: "Sports Performance & Recovery in Valley, AL | Dr. Jason Bang",
     metaDescription: "Optimize athletic performance and recovery in Valley, AL. Dr. Jason Bang provides chiropractic care for athletes — biomechanics, injury prevention, and faster recovery.",
-    approach: "We assess your movement patterns, joint mobility, and spinal alignment to identify limitations that hold back performance. Through targeted spinal adjustments, we optimize neural communication between your brain and muscles for faster reaction times and better coordination. Combined with shockwave therapy for recovery and specific mobility work, our performance care helps you train harder, recover faster, and compete at your best.",
+    approach: "We assess your movement patterns, joint mobility, and spinal alignment to identify limitations that hold back performance. Through targeted spinal adjustments, we optimize neural communication between your brain and muscles for faster reaction times and better coordination. Combined with specific mobility work and corrective care, our performance program helps you train harder, recover faster, and compete at your best.",
     faqs: [
       {
         question: "Do I need to be a professional athlete to benefit from performance care?",
@@ -290,7 +309,7 @@ export const SERVICES: ServiceItem[] = [
       },
       {
         question: "Can you help with sports injury recovery?",
-        answer: "Yes. We combine spinal correction with shockwave therapy to treat sports injuries like sprains, strains, tendinitis, and overuse injuries. Our goal is to get you back to your sport as quickly and safely as possible."
+        answer: "Yes. We use targeted spinal correction and integrated rehabilitation to treat sports injuries like sprains, strains, tendinitis, and overuse injuries. Our goal is to get you back to your sport as quickly and safely as possible."
       },
       {
         question: "How often should athletes get adjusted?",
@@ -310,8 +329,8 @@ export const CONDITIONS: ConditionItem[] = [
     image: "https://plus.unsplash.com/premium_photo-1723924974091-859223dad2fd?q=80&w=800&auto=format&fit=crop",
     // SEO Content
     metaTitle: "Low Back Pain Relief in Valley, AL | Dr. Jason Bang",
-    metaDescription: "Suffering from low back pain or sciatica in Valley, AL? Dr. Jason Bang offers non-invasive spinal correction and shockwave therapy for lasting relief. Book today.",
-    approach: "At Chiropractic Unlimited, we go beyond temporary relief. Our approach combines precise **spinal correction** to realign vertebrae with advanced **shockwave therapy** to heal damaged tissue. Whether it's a herniated disc, sciatica, or chronic stiffness, we identify the root cause to restore your mobility without drugs or surgery.",
+    metaDescription: "Suffering from low back pain or sciatica in Valley, AL? Dr. Jason Bang offers non-invasive spinal correction and holistic care for lasting relief. Book today.",
+    approach: "At Chiropractic Unlimited, we go beyond temporary relief. Our approach combines precise **spinal correction** to realign vertebrae with **integrated rehabilitation** to heal damaged tissue. Whether it's a herniated disc, sciatica, or chronic stiffness, we identify the root cause to restore your mobility without drugs or surgery.",
     faqs: [
       {
         question: "When should I see a chiropractor for back pain?",
@@ -340,7 +359,7 @@ export const CONDITIONS: ConditionItem[] = [
     image: "https://plus.unsplash.com/premium_photo-1661517603309-e9d451e395b0?q=80&w=800&auto=format&fit=crop",
     metaTitle: "Neck Pain Relief in Valley, AL | Dr. Jason Bang",
     metaDescription: "Struggling with chronic neck pain or stiffness in Valley, AL? Dr. Jason Bang provides gentle spinal correction and integrated care for lasting neck pain relief.",
-    approach: "We start with a thorough evaluation of your cervical spine to identify misalignments and muscle imbalances. Using gentle **spinal correction** techniques, we restore proper alignment to take pressure off compressed nerves. For stubborn cases, **shockwave therapy** accelerates healing in the surrounding soft tissue, giving you relief without medication.",
+    approach: "We start with a thorough evaluation of your cervical spine to identify misalignments and muscle imbalances. Using gentle **spinal correction** techniques, we restore proper alignment to take pressure off compressed nerves. For stubborn cases, targeted **integrated care** accelerates healing in the surrounding soft tissue, giving you relief without medication.",
     faqs: [
       {
         question: "What causes neck pain that won't go away?",
@@ -394,7 +413,7 @@ export const CONDITIONS: ConditionItem[] = [
     image: "https://plus.unsplash.com/premium_photo-1664303718610-b6bcb2c6758e?q=80&w=800&auto=format&fit=crop",
     metaTitle: "Sciatica Treatment in Valley, AL | Dr. Jason Bang",
     metaDescription: "Suffering from sciatica or leg pain in Valley, AL? Dr. Jason Bang provides non-surgical spinal decompression and correction for lasting sciatic nerve relief.",
-    approach: "We use a combination of **spinal correction** and decompression techniques to relieve pressure on the sciatic nerve at its source. For patients with chronic or stubborn sciatica, **shockwave therapy** helps break down scar tissue and inflammation around the nerve root. Our integrated approach addresses the disc, joint, and muscle components simultaneously for faster, more complete recovery.",
+    approach: "We use a combination of **spinal correction** and decompression techniques to relieve pressure on the sciatic nerve at its source. For patients with chronic or stubborn sciatica, targeted rehabilitation helps break down scar tissue and reduce inflammation around the nerve root. Our integrated approach addresses the disc, joint, and muscle components simultaneously for faster, more complete recovery.",
     faqs: [
       {
         question: "How do I know if it's sciatica or just back pain?",
@@ -423,7 +442,7 @@ export const CONDITIONS: ConditionItem[] = [
     image: "https://plus.unsplash.com/premium_photo-1661370337354-558d7120eb54?q=80&w=800&auto=format&fit=crop",
     metaTitle: "Auto Injury & Whiplash Treatment in Valley, AL | Dr. Jason Bang",
     metaDescription: "Been in a car accident in Valley, AL? Dr. Jason Bang provides specialized chiropractic care for whiplash, auto injuries, and post-accident recovery. Book today.",
-    approach: "After an accident, time matters. We perform a comprehensive spinal evaluation to identify injuries that may not yet be causing symptoms. Our treatment combines **spinal correction** to restore alignment disrupted by the impact with **shockwave therapy** to accelerate soft tissue healing. As both a Doctor of Chiropractic and a Family Nurse Practitioner, Dr. Bang provides an integrated clinical perspective that ensures nothing is missed.",
+    approach: "After an accident, time matters. We perform a comprehensive spinal evaluation to identify injuries that may not yet be causing symptoms. Our treatment combines **spinal correction** to restore alignment disrupted by the impact with **integrated rehabilitation** to accelerate soft tissue healing. As both a Doctor of Chiropractic and a Family Nurse Practitioner, Dr. Bang provides an integrated clinical perspective that ensures nothing is missed.",
     faqs: [
       {
         question: "How soon after an accident should I see a chiropractor?",

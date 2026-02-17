@@ -18,7 +18,6 @@ const ROUTES = [
     '/conditions/sciatica',
     '/conditions/auto-injuries',
     '/conditions/poor-posture',
-    '/services/shockwave-therapy',
     '/services/holistic-wellness',
     '/services/spinal-correction',
     '/services/integrated-care',

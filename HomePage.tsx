@@ -49,9 +49,9 @@ export const HomePage: React.FC = () => {
         <>
             <Helmet>
                 <title>Chiropractor in Valley, AL | Chiropractic Unlimited</title>
-                <meta name="description" content="Chiropractic Unlimited in Valley, AL offers advanced spinal correction, shockwave therapy, and holistic wellness care. Dr. Jason Bang DC FNP treats the root cause of pain." />
+                <meta name="description" content="Chiropractic Unlimited in Valley, AL offers advanced spinal correction, integrated care, and holistic wellness. Dr. Jason Bang DC FNP treats the root cause of pain." />
                 <meta property="og:title" content="Chiropractor in Valley, AL | Chiropractic Unlimited" />
-                <meta property="og:description" content="Advanced spinal correction, shockwave therapy, and holistic wellness in Valley, AL. Dr. Jason Bang DC FNP." />
+                <meta property="og:description" content="Advanced spinal correction, integrated care, and holistic wellness in Valley, AL. Dr. Jason Bang DC FNP." />
                 <meta property="og:image" content="https://i.ibb.co/cXh09B2q/Jason-B.jpg" />
                 <meta property="og:url" content="https://chiropracticunlimited.com/" />
                 <meta property="og:type" content="website" />

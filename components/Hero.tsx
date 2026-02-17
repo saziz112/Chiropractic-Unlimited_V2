@@ -22,10 +22,6 @@ export const Hero: React.FC = () => {
                     {/* Left Content */}
                     <div className="order-2 lg:order-1 flex flex-col justify-center text-center lg:text-left">
                         <RevealOnScroll>
-                            <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-white/90 text-sm font-medium tracking-wider uppercase mb-6 mx-auto lg:mx-0">
-                                Holistic Chiropractic Care
-                            </div>
-
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.1] mb-6 tracking-tight">
                                 Chiropractor in <br />
                                 <span className="text-brand-secondary">Valley, AL</span> <br />

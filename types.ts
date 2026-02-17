@@ -42,6 +42,8 @@ export interface PatientItem {
   image: string;
   metaTitle?: string;
   metaDescription?: string;
+  approach?: string;
+  faqs?: FAQ[];
 }
 
 export interface NavItem {
