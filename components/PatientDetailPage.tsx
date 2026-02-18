@@ -6,6 +6,13 @@ import { ArrowLeft, CheckCircle2, Phone, CalendarCheck, ArrowRight } from 'lucid
 import { RevealOnScroll } from './RevealOnScroll';
 import { StructuredData } from './StructuredData';
 
+function renderBoldText(text: string) {
+    const parts = text.split(/\*\*(.*?)\*\*/g);
+    return parts.map((part, i) =>
+        i % 2 === 1 ? <strong key={i}>{part}</strong> : part
+    );
+}
+
 export const PatientDetailPage: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
     const navigate = useNavigate();
@@ -173,7 +180,7 @@ export const PatientDetailPage: React.FC = () => {
                                 <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">How It Works</span>
                                 <h2 className="text-3xl md:text-4xl font-display mb-6">Our Approach</h2>
                                 <p className="text-white/80 text-lg leading-relaxed">
-                                    {patientGroup.approach}
+                                    {renderBoldText(patientGroup.approach)}
                                 </p>
                             </RevealOnScroll>
 

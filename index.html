@@ -151,6 +151,14 @@
       transform: none;
     }
 
+    /* Ensure is-visible overrides all animation variants */
+    .fade-in-section.slide-left.is-visible,
+    .fade-in-section.slide-right.is-visible,
+    .fade-in-section.scale-up.is-visible {
+      opacity: 1;
+      transform: translateY(0) translateX(0) scale(1);
+    }
+
     /* Stagger children animation */
     .stagger-children>* {
       opacity: 0;
