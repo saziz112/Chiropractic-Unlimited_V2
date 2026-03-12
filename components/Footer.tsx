@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
                   href={SOCIAL_LINKS.facebook} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent hover:text-brand-primary transition-all duration-300"
+                  className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent hover:text-brand-primary transition-all duration-300"
                   aria-label="Facebook"
                 >
                     <Facebook size={18} />
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
                   href={SOCIAL_LINKS.instagram} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent hover:text-brand-primary transition-all duration-300"
+                  className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent hover:text-brand-primary transition-all duration-300"
                   aria-label="Instagram"
                 >
                     <Instagram size={18} />
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
                   href={SOCIAL_LINKS.google} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent hover:text-brand-primary transition-all duration-300"
+                  className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent hover:text-brand-primary transition-all duration-300"
                   aria-label="Google Business Profile"
                 >
                     <MapPin size={18} />
@@ -93,8 +93,8 @@ export const Footer: React.FC = () => {
             &copy; {currentYear} {BUSINESS_INFO.name}. All rights reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
-             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+             <a href="#" className="hover:text-white transition-colors cursor-pointer">Privacy Policy</a>
+             <a href="#" className="hover:text-white transition-colors cursor-pointer">Terms of Service</a>
           </div>
         </div>
       </div>

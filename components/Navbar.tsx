@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import FocusTrap from 'focus-trap-react';
 import { NAV_ITEMS } from '../constants';
 import { NavItem } from '../types';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -180,10 +181,12 @@ export const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      <div className={`lg:hidden fixed inset-0 z-40 bg-brand-primary transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex flex-col h-full pt-28 px-6 overflow-y-auto pb-10">
-          {NAV_ITEMS.map((item) => (
+      {/* Mobile Menu Overlay with Focus Trap */}
+      {isOpen && (
+        <FocusTrap>
+          <div className="lg:hidden fixed inset-0 z-40 bg-brand-primary transform transition-transform duration-300 ease-in-out translate-x-0">
+            <div className="flex flex-col h-full pt-28 px-6 overflow-y-auto pb-10">
+              {NAV_ITEMS.map((item) => (
             <div key={item.label} className="border-b border-white/10 last:border-0">
               <div
                 className="flex justify-between items-center py-4 text-xl font-display text-white"
@@ -259,8 +262,10 @@ export const Navbar: React.FC = () => {
           >
             Schedule Appointment
           </a>
-        </div>
-      </div>
+            </div>
+          </div>
+        </FocusTrap>
+      )}
     </nav>
   );
 };

@@ -75,7 +75,7 @@ export const Hero: React.FC = () => {
                                     {/* Floating Badge */}
                                     <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-2xl max-w-[220px] border border-white/20">
                                         <div className="flex items-center gap-2 mb-2">
-                                            <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" aria-hidden="true"></div>
+                                            <div className="w-3 h-3 rounded-full bg-emerald-500" aria-hidden="true"></div>
                                             <span className="text-[10px] font-bold text-brand-primary uppercase tracking-widest">Accepting Patients</span>
                                         </div>
                                         <p className="text-brand-text text-sm font-semibold leading-relaxed">Start your journey to recovery today.</p>

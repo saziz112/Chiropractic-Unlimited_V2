@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { X, CalendarCheck, Phone } from 'lucide-react';
+import FocusTrap from 'focus-trap-react';
 import { BUSINESS_INFO } from '../constants';
 
 const SESSION_KEY = 'exit_popup_shown';
@@ -82,8 +83,9 @@ export const ExitIntentPopup: React.FC = () => {
                 onClick={closePopup}
             ></div>
 
-            {/* Modal */}
-            <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden animate-scale-up">
+            {/* Modal with Focus Trap */}
+            <FocusTrap>
+                <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden animate-scale-up">
                 {/* Close button */}
                 <button
                     onClick={closePopup}
@@ -139,7 +141,8 @@ export const ExitIntentPopup: React.FC = () => {
                         No thanks, I'll pass
                     </button>
                 </div>
-            </div>
+                </div>
+            </FocusTrap>
         </div>
     );
 };
