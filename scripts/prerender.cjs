@@ -1,8 +1,16 @@
 const puppeteer = require('puppeteer');
+const puppeteerCore = require('puppeteer-core');
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
-// serve-handler removed
+
+// Try to load chromium for serverless environments
+let chromium;
+try {
+    chromium = require('@sparticuz/chromium');
+} catch (e) {
+    chromium = null;
+}
 
 
 // Simple static server using pure Node to avoid deps if possible, but serve-handler is better.
@@ -75,10 +83,27 @@ async function prerender() {
 
     let browser;
     try {
-        browser = await puppeteer.launch({
-            headless: "new",
-            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu']
-        });
+        // Use @sparticuz/chromium in serverless environments (Vercel), regular puppeteer locally
+        if (chromium && process.env.VERCEL) {
+            console.log('Using serverless Chrome for prerendering...');
+            browser = await puppeteerCore.launch({
+                args: chromium.args,
+                defaultViewport: chromium.defaultViewport,
+                executablePath: await chromium.executablePath(),
+                headless: chromium.headless,
+            });
+        } else {
+            console.log('Using local Puppeteer for prerendering...');
+            browser = await puppeteer.launch({
+                headless: "new",
+                args: [
+                    '--no-sandbox',
+                    '--disable-setuid-sandbox',
+                    '--disable-dev-shm-usage',
+                    '--disable-gpu'
+                ]
+            });
+        }
     } catch (e) {
         console.warn('⚠️  Puppeteer failed to launch. Skipping prerendering step.', e.message);
         server.close();
