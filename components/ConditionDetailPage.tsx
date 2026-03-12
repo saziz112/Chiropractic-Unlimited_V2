@@ -142,13 +142,34 @@ export const ConditionDetailPage: React.FC = () => {
                     <RevealOnScroll animation="fade-up">
                         <div className="max-w-3xl">
                             <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">Understanding {condition.title}</h2>
-                            <p className="text-brand-muted text-lg leading-relaxed">
-                                {condition.details}
-                            </p>
+                            {condition.details.split('\n\n').map((para, i) => (
+                                <p key={i} className="text-brand-muted text-lg leading-relaxed mb-4 last:mb-0">
+                                    {renderBoldText(para)}
+                                </p>
+                            ))}
                         </div>
                     </RevealOnScroll>
                 </div>
             </section>
+
+            {/* What Causes It */}
+            {condition.causes && (
+                <section className="py-16 md:py-24 bg-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <RevealOnScroll animation="fade-up">
+                            <div className="max-w-3xl">
+                                <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Root Causes</span>
+                                <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">What Causes {condition.title}?</h2>
+                                {condition.causes.split('\n\n').map((para, i) => (
+                                    <p key={i} className="text-brand-muted text-lg leading-relaxed mb-4 last:mb-0">
+                                        {renderBoldText(para)}
+                                    </p>
+                                ))}
+                            </div>
+                        </RevealOnScroll>
+                    </div>
+                </section>
+            )}
 
             {/* Symptoms Grid */}
             <section className="py-16 md:py-24 bg-white">
@@ -172,6 +193,25 @@ export const ConditionDetailPage: React.FC = () => {
                     </RevealOnScroll>
                 </div>
             </section>
+
+            {/* When to See a Chiropractor */}
+            {condition.whenToSee && (
+                <section className="py-16 md:py-24 bg-brand-bg">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <RevealOnScroll animation="fade-up">
+                            <div className="max-w-3xl">
+                                <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Take Action</span>
+                                <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">When to See a Chiropractor</h2>
+                                {condition.whenToSee.split('\n\n').map((para, i) => (
+                                    <p key={i} className="text-brand-muted text-lg leading-relaxed mb-4 last:mb-0">
+                                        {renderBoldText(para)}
+                                    </p>
+                                ))}
+                            </div>
+                        </RevealOnScroll>
+                    </div>
+                </section>
+            )}
 
             {/* Treatment Approach */}
             {condition.approach && (

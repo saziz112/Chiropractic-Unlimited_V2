@@ -23,12 +23,14 @@ export interface ConditionItem {
   slug: string;
   title: string;
   description: string; // Short description for cards
-  details: string; // Main intro text
+  details: string; // Main intro text (supports \n\n for multiple paragraphs)
   symptoms: string[];
   image: string;
   // SEO & Rich Content
   metaTitle?: string;
   metaDescription?: string;
+  causes?: string; // "What Causes It" section (supports \n\n for multiple paragraphs)
+  whenToSee?: string; // "When to See a Chiropractor" section (supports \n\n)
   approach?: string; // "How we treat it" section
   faqs?: FAQ[];
 }
