@@ -11,7 +11,7 @@ import { HowItWorks } from './components/HowItWorks';
 import { InstagramFeature } from './components/InstagramFeature';
 import { BookingSection } from './components/BookingSection';
 import { StructuredData } from './components/StructuredData';
-import { BUSINESS_INFO, HOURS } from './constants';
+import { BUSINESS_INFO, HOURS, SOCIAL_LINKS, SERVICES } from './constants';
 import { Helmet } from 'react-helmet-async';
 
 export const HomePage: React.FC = () => {
@@ -19,6 +19,7 @@ export const HomePage: React.FC = () => {
         "@context": "https://schema.org",
         "@type": "Chiropractor",
         "name": BUSINESS_INFO.name,
+        "description": "Chiropractic Unlimited provides advanced spinal correction, integrated wellness care, and holistic health services in Valley, AL. Dr. Jason Bang DC FNP combines chiropractic expertise with nursing knowledge for comprehensive patient care.",
         "image": "https://i.ibb.co/cXh09B2q/Jason-B.jpg",
         "telephone": BUSINESS_INFO.phone,
         "email": BUSINESS_INFO.email,
@@ -37,11 +38,70 @@ export const HomePage: React.FC = () => {
         },
         "url": "https://chirounlimitedwellness.com",
         "priceRange": "$$",
-        "openingHoursSpecification": HOURS.map(h => ({
+        "paymentAccepted": "Cash, Credit Card, Debit Card",
+        "currenciesAccepted": "USD",
+        "sameAs": [
+            SOCIAL_LINKS.instagram,
+        ],
+        "hasMap": "https://www.google.com/maps?q=3731+20th+Ave,+Valley,+AL+36854",
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Valley",
+                "containedInPlace": { "@type": "State", "name": "Alabama" }
+            },
+            {
+                "@type": "City",
+                "name": "Lanett",
+                "containedInPlace": { "@type": "State", "name": "Alabama" }
+            },
+            {
+                "@type": "City",
+                "name": "West Point",
+                "containedInPlace": { "@type": "State", "name": "Georgia" }
+            },
+            {
+                "@type": "City",
+                "name": "LaGrange",
+                "containedInPlace": { "@type": "State", "name": "Georgia" }
+            },
+            {
+                "@type": "City",
+                "name": "Opelika",
+                "containedInPlace": { "@type": "State", "name": "Alabama" }
+            },
+            {
+                "@type": "City",
+                "name": "Auburn",
+                "containedInPlace": { "@type": "State", "name": "Alabama" }
+            }
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Dr. Jason Bang",
+            "jobTitle": "Doctor of Chiropractic & Family Nurse Practitioner",
+            "description": "Dr. Jason Bang DC FNP is a graduate of Life University with dual credentials in chiropractic and nursing. He brings a uniquely integrated approach to patient care.",
+            "image": "https://i.ibb.co/cXh09B2q/Jason-B.jpg",
+            "sameAs": "https://chirounlimitedwellness.com/about"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Chiropractic Services",
+            "itemListElement": SERVICES.map(service => ({
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "MedicalTherapy",
+                    "name": service.title,
+                    "description": service.description,
+                    "url": `https://chirounlimitedwellness.com/services/${service.slug}`
+                }
+            }))
+        },
+        "openingHoursSpecification": HOURS.filter(h => h.hours !== "Closed").map(h => ({
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": h.day,
-            "opens": h.hours === "Closed" ? "00:00" : h.hours.split(' – ')[0],
-            "closes": h.hours === "Closed" ? "00:00" : h.hours.split(' – ')[1]
+            "opens": h.hours.split(' – ')[0],
+            "closes": h.hours.split(' – ')[1]
         }))
     };
 
