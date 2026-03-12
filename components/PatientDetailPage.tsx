@@ -40,7 +40,7 @@ export const PatientDetailPage: React.FC = () => {
                 <meta property="og:title" content={patientGroup.metaTitle || patientGroup.title} />
                 <meta property="og:description" content={patientGroup.metaDescription || patientGroup.fullDescription.slice(0, 160)} />
                 <meta property="og:image" content={patientGroup.image} />
-                <meta property="og:url" content={`https://chiropracticunlimited.com/patients/${slug}`} />
+                <meta property="og:url" content={`https://chirounlimitedwellness.com/patients/${slug}`} />
                 <meta property="og:type" content="article" />
             </Helmet>
 

@@ -40,7 +40,7 @@ export const ServiceDetailPage: React.FC = () => {
                 <meta property="og:title" content={service.metaTitle || service.title} />
                 <meta property="og:description" content={service.metaDescription || service.description} />
                 <meta property="og:image" content={service.image} />
-                <meta property="og:url" content={`https://chiropracticunlimited.com/services/${slug}`} />
+                <meta property="og:url" content={`https://chirounlimitedwellness.com/services/${slug}`} />
                 <meta property="og:type" content="article" />
             </Helmet>
 

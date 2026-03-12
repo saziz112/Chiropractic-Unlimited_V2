@@ -68,7 +68,7 @@ export const ConditionDetailPage: React.FC = () => {
                 <meta property="og:title" content={condition.metaTitle || condition.title} />
                 <meta property="og:description" content={condition.metaDescription || condition.description} />
                 <meta property="og:image" content={condition.image} />
-                <meta property="og:url" content={`https://chiropracticunlimited.com/conditions/${slug}`} />
+                <meta property="og:url" content={`https://chirounlimitedwellness.com/conditions/${slug}`} />
                 <meta property="og:type" content="article" />
             </Helmet>
             <StructuredData data={schemas} />
