@@ -1,17 +1,20 @@
-import React, { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './HomePage';
-import { AboutPage } from './AboutPage';
-import { PrivacyPage } from './PrivacyPage';
-import { TermsPage } from './TermsPage';
-import { ConditionDetailPage } from './components/ConditionDetailPage';
-import { ServiceDetailPage } from './components/ServiceDetailPage';
-import { PatientDetailPage } from './components/PatientDetailPage';
 import { ExitIntentPopup } from './components/ExitIntentPopup';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+
+// Lazy-loaded routes for code splitting
+const AboutPage = lazy(() => import('./AboutPage').then(m => ({ default: m.AboutPage })));
+const PrivacyPage = lazy(() => import('./PrivacyPage').then(m => ({ default: m.PrivacyPage })));
+const TermsPage = lazy(() => import('./TermsPage').then(m => ({ default: m.TermsPage })));
+const ConditionDetailPage = lazy(() => import('./components/ConditionDetailPage').then(m => ({ default: m.ConditionDetailPage })));
+const ServiceDetailPage = lazy(() => import('./components/ServiceDetailPage').then(m => ({ default: m.ServiceDetailPage })));
+const PatientDetailPage = lazy(() => import('./components/PatientDetailPage').then(m => ({ default: m.PatientDetailPage })));
+const ServiceAreaPage = lazy(() => import('./components/ServiceAreaPage').then(m => ({ default: m.ServiceAreaPage })));
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -41,15 +44,18 @@ function App() {
       <div className="min-h-screen bg-brand-bg text-brand-text font-sans selection:bg-brand-primary selection:text-white">
         <Navbar />
         <main id="main-content">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/terms" element={<TermsPage />} />
-            <Route path="/conditions/:slug" element={<ConditionDetailPage />} />
-            <Route path="/services/:slug" element={<ServiceDetailPage />} />
-            <Route path="/patients/:slug" element={<PatientDetailPage />} />
-          </Routes>
+          <Suspense fallback={null}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/terms" element={<TermsPage />} />
+              <Route path="/conditions/:slug" element={<ConditionDetailPage />} />
+              <Route path="/services/:slug" element={<ServiceDetailPage />} />
+              <Route path="/patients/:slug" element={<PatientDetailPage />} />
+              <Route path="/locations/:slug" element={<ServiceAreaPage />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
         <ExitIntentPopup />

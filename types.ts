@@ -48,6 +48,23 @@ export interface PatientItem {
   faqs?: FAQ[];
 }
 
+export interface ServiceAreaItem {
+  slug: string;
+  city: string;
+  state: string;
+  title: string; // e.g. "Chiropractor Near Lanett, AL"
+  description: string; // Short description for cards/meta
+  intro: string; // Multi-paragraph intro (supports \n\n)
+  whyChoose: string; // Why choose us from this area (supports \n\n)
+  directions: string; // Driving directions from this city
+  driveTime: string; // e.g. "5 minutes"
+  distance: string; // e.g. "3 miles"
+  conditionsServed: string; // Paragraph about conditions treated for this area
+  metaTitle: string;
+  metaDescription: string;
+  faqs: FAQ[];
+}
+
 export interface NavItem {
   label: string;
   href?: string;

@@ -36,6 +36,10 @@ const ROUTES = [
     '/patients/pediatrics',
     '/privacy',
     '/terms',
+    '/locations/lanett-al',
+    '/locations/lafayette-al',
+    '/locations/west-point-ga',
+    '/locations/opelika-al',
 ];
 
 const PORT = 4173;

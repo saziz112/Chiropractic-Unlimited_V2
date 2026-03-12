@@ -1,6 +1,6 @@
 import React from 'react';
 import { Activity, Heart, Brain, Zap, UserCheck, Stethoscope, ShieldCheck, Smile, Users } from 'lucide-react';
-import { BusinessHours, NavItem, ServiceItem, ConditionItem } from './types';
+import { BusinessHours, NavItem, ServiceItem, ConditionItem, ServiceAreaItem } from './types';
 
 export const BUSINESS_INFO = {
   name: "Chiropractic Unlimited",
@@ -53,10 +53,13 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'About', href: '/about' },
   { label: 'Offers', href: '/#offers' },
   {
-    label: 'Other',
+    label: 'Areas We Serve',
     children: [
-      { label: 'Location', href: '/#location' },
-      { label: 'Book Online', href: '/#booking' },
+      { label: 'Lanett, AL', href: '/locations/lanett-al' },
+      { label: 'West Point, GA', href: '/locations/west-point-ga' },
+      { label: 'LaFayette, AL', href: '/locations/lafayette-al' },
+      { label: 'Opelika, AL', href: '/locations/opelika-al' },
+      { label: 'Our Location', href: '/#location' },
     ]
   }
 ];
@@ -613,4 +616,155 @@ export const DIFFERENCE_POINTS = [
 export const BIO_TEXT = [
   `Dr. Jason Bang DC FNP is a proud graduate of Life University in Marietta, GA, with a deep passion for improving the quality of life in others through wellness-based care. My journey in chiropractic has taken me across the globe, mentoring and learning alongside professionals in countries like Canada, Germany, and China.`,
   `Driven by a desire to expand his ability to serve, Dr. Bang pursued a degree in nursing and recently graduated as a Family Nurse Practitioner (FNP). Having worked as a registered nurse during the COVID-19 pandemic and at the VA Hospital in Birmingham, Alabama, these experiences have deepened his compassion and reinforced his commitment to integrated care.`
+];
+
+export const SERVICE_AREAS: ServiceAreaItem[] = [
+  {
+    slug: "lanett-al",
+    city: "Lanett",
+    state: "AL",
+    title: "Chiropractor Near Lanett, AL",
+    description: "Quality chiropractic care for Lanett, AL residents — just minutes from downtown Lanett.",
+    metaTitle: "Chiropractor Near Lanett, AL | Dr. Jason Bang DC FNP",
+    metaDescription: "Looking for a chiropractor near Lanett, AL? Dr. Jason Bang offers spinal correction, pain relief, and integrated wellness care just 5 minutes from downtown Lanett.",
+    driveTime: "5 minutes",
+    distance: "3 miles",
+    intro: "If you live in Lanett, Alabama, quality chiropractic care is closer than you think. Chiropractic Unlimited is located just 3 miles away on 20th Avenue in Valley — a quick 5-minute drive from downtown Lanett. Dr. Jason Bang provides the same caliber of spinal correction and integrated wellness care that you'd expect from a major metro practice, right here in your backyard.\n\nLanett residents have historically had to travel to Opelika, Auburn, or LaGrange for specialized healthcare — adding 30 to 45 minutes of drive time each way. At Chiropractic Unlimited, we've made it our mission to bring advanced, evidence-based chiropractic care to the Chattahoochee Valley so that communities like Lanett have access to the treatment they deserve without the commute.\n\nWhat makes our clinic unique is Dr. Bang's dual credentials. As both a Doctor of Chiropractic (DC) and a Family Nurse Practitioner (FNP), he brings an integrated clinical perspective to every patient — combining the structural expertise of chiropractic with the diagnostic depth of advanced medical training. For Lanett families, this means comprehensive care under one roof.",
+    whyChoose: "Lanett is a close-knit community where people value personal relationships with their healthcare providers. At Chiropractic Unlimited, that's exactly what you'll find. Dr. Bang takes the time to understand each patient's unique situation — their work demands, activity level, and health history — and builds a care plan around their specific needs, not a one-size-fits-all protocol.\n\nFor Lanett residents dealing with back pain from physical labor, neck stiffness from desk work at one of the area employers, or recovery from an auto accident on I-85, we provide the same thorough evaluation and targeted treatment whether it's your first visit or your fiftieth. Our approach is corrective, not just palliative — we identify and fix the structural cause of your pain so it doesn't keep coming back.\n\nWe also understand that convenience matters. Our location inside the Workout Anytime gym on 20th Avenue in Valley is easy to reach from Lanett — just a straight shot down the road. With flexible scheduling Monday through Saturday, fitting appointments into your routine is simple.",
+    directions: "From downtown Lanett, head south on N 1st Street toward the Valley city line. Turn right onto 20th Avenue and continue for approximately 2 miles. Chiropractic Unlimited is located inside the Workout Anytime gym, in the same plaza as Ace Hardware. The entire drive takes about 5 minutes.",
+    conditionsServed: "Lanett residents visit us for the full range of conditions we treat, including **low back pain**, **neck pain**, **headaches and migraines**, **sciatica**, **auto injury recovery**, and **posture correction**. Whether you're a warehouse worker dealing with repetitive strain, a retiree with chronic stiffness, or a student athlete looking to stay competitive, Dr. Bang's integrated approach addresses your specific needs with precision and care.",
+    faqs: [
+      {
+        question: "How far is Chiropractic Unlimited from Lanett?",
+        answer: "We're located just 3 miles from downtown Lanett — about a 5-minute drive down 20th Avenue in Valley, AL. We're inside the Workout Anytime gym, in the same plaza as Ace Hardware."
+      },
+      {
+        question: "Do you see many patients from Lanett?",
+        answer: "Yes. A significant portion of our patient base comes from Lanett and the surrounding Chambers County area. Our convenient location on 20th Avenue makes us easily accessible to anyone in the Lanett community."
+      },
+      {
+        question: "What makes Dr. Bang different from other chiropractors in the area?",
+        answer: "Dr. Bang holds dual credentials as both a Doctor of Chiropractic (DC) and a Family Nurse Practitioner (FNP) — a combination that is extremely rare. This means he can evaluate your pain from both a structural and a medical perspective, providing more comprehensive care than a standard chiropractic visit."
+      },
+      {
+        question: "Do I need a referral to be seen?",
+        answer: "No referral is necessary. You can call us directly at (334) 219-0150 or book online through our website. We welcome walk-ins when scheduling allows, but appointments are recommended to minimize your wait time."
+      },
+      {
+        question: "What are your hours?",
+        answer: "We're open Monday, Tuesday, Friday, and Saturday from 10:00 AM to 5:00 PM. We are closed Wednesday, Thursday, and Sunday. This schedule allows us to offer weekend availability for patients who can't make weekday appointments."
+      }
+    ]
+  },
+  {
+    slug: "lafayette-al",
+    city: "LaFayette",
+    state: "AL",
+    title: "Chiropractor Near LaFayette, AL",
+    description: "Serving LaFayette, AL with expert chiropractic and integrated wellness care — just a short drive away.",
+    metaTitle: "Chiropractor Near LaFayette, AL | Dr. Jason Bang DC FNP",
+    metaDescription: "Need a chiropractor near LaFayette, AL? Dr. Jason Bang provides spinal correction, pain relief, and holistic care in Valley, AL — just 25 minutes from LaFayette.",
+    driveTime: "25 minutes",
+    distance: "18 miles",
+    intro: "LaFayette, Alabama residents looking for experienced, comprehensive chiropractic care don't have to drive to Auburn or Columbus. Chiropractic Unlimited in Valley, AL is just 18 miles from LaFayette — roughly a 25-minute drive on US-431 — and offers a level of integrated care that's rare to find anywhere in the region.\n\nAs the county seat of Chambers County, LaFayette is home to hardworking families, local business owners, and an active agricultural community. The physical demands of life in LaFayette — whether from manual labor, long commutes, or the simple wear and tear of daily activity — can take a real toll on the spine. Unfortunately, chiropractic options in LaFayette itself are limited, leaving many residents to either manage their pain on their own or make the longer trip to larger cities.\n\nDr. Jason Bang opened Chiropractic Unlimited with communities like LaFayette in mind. His dual credentials as a Doctor of Chiropractic and a Family Nurse Practitioner mean that LaFayette patients receive not just a spinal adjustment, but a comprehensive clinical evaluation that addresses the full picture of their musculoskeletal and overall health.",
+    whyChoose: "For LaFayette residents, the drive to Chiropractic Unlimited is an investment in care quality that pays for itself many times over. Dr. Bang's integrated approach means fewer visits overall — because we correct the underlying structural problem rather than providing temporary relief that requires endless follow-ups.\n\nMany LaFayette patients tell us they've tried other providers closer to home — or have been managing pain with medication for years — before finding us. What they consistently report is that Dr. Bang's thorough evaluation identifies issues that were previously missed, and that the corrective care plan produces results they hadn't been able to achieve elsewhere.\n\nWe respect your time, especially when you're driving from LaFayette. Our scheduling is designed to minimize wait times, and Dr. Bang is thorough but efficient — you'll spend your time in the treatment room, not the waiting room.",
+    directions: "From LaFayette, take US-431 North toward Valley. Continue on US-431 for approximately 16 miles until you reach the Valley area. Turn right onto 20th Avenue. Chiropractic Unlimited is located inside the Workout Anytime gym, in the same plaza as Ace Hardware. The drive takes approximately 25 minutes.",
+    conditionsServed: "LaFayette patients visit us for conditions including **low back pain** from agricultural and manual work, **neck pain** and **headaches** from desk work and driving, **sciatica** causing leg pain, **auto injuries** from accidents on US-431 and I-85, and **posture correction** for chronic structural issues. Dr. Bang's FNP training is particularly valuable for LaFayette patients who want a provider capable of evaluating both the structural and medical dimensions of their condition.",
+    faqs: [
+      {
+        question: "How far is Chiropractic Unlimited from LaFayette?",
+        answer: "We're approximately 18 miles from downtown LaFayette — about a 25-minute drive north on US-431. We're located inside the Workout Anytime gym on 20th Avenue in Valley, AL, in the same plaza as Ace Hardware."
+      },
+      {
+        question: "Is it worth the drive from LaFayette?",
+        answer: "Our LaFayette patients consistently say yes. Dr. Bang's dual DC and FNP credentials allow him to provide a level of diagnostic and treatment depth that's difficult to find in the area. Because our approach is corrective — fixing the root cause — most patients need fewer total visits than they would with symptom-focused care, which actually saves time in the long run."
+      },
+      {
+        question: "Can you help with pain from farming or physical labor?",
+        answer: "Absolutely. Repetitive lifting, bending, and prolonged physical work are among the most common causes of spinal misalignment and disc injury. We see many patients whose back and neck pain is directly related to the physical demands of their work. Dr. Bang develops treatment plans that address the structural damage and help prevent re-injury."
+      },
+      {
+        question: "Do you offer flexible scheduling for patients driving from a distance?",
+        answer: "Yes. We're open Monday, Tuesday, Friday, and Saturday, including weekend hours that work well for patients who can't take time off during the week. We do our best to accommodate scheduling needs for patients traveling from LaFayette and other surrounding communities."
+      },
+      {
+        question: "What should I expect at my first visit?",
+        answer: "Your first visit includes a comprehensive health history, orthopedic and neurological evaluation, postural assessment, and — when appropriate — diagnostic imaging review. Dr. Bang will explain his findings, discuss the root cause of your symptoms, and outline a recommended care plan with a specific timeline. Most first visits take 45-60 minutes."
+      }
+    ]
+  },
+  {
+    slug: "west-point-ga",
+    city: "West Point",
+    state: "GA",
+    title: "Chiropractor Near West Point, GA",
+    description: "Chiropractic care for West Point, GA residents — just across the state line in Valley, AL.",
+    metaTitle: "Chiropractor Near West Point, GA | Dr. Jason Bang DC FNP",
+    metaDescription: "West Point, GA residents: quality chiropractic care is just minutes away. Dr. Jason Bang offers spinal correction and integrated wellness in Valley, AL.",
+    driveTime: "8 minutes",
+    distance: "4 miles",
+    intro: "West Point, Georgia and Valley, Alabama are separated by the Chattahoochee River — and not much else. Chiropractic Unlimited is located just 4 miles from downtown West Point, making it one of the closest and most accessible chiropractic clinics for West Point residents. The drive takes about 8 minutes, and the quality of care you'll receive is worth every one of them.\n\nWest Point has a rich history and a strong sense of community, but like many smaller cities, specialized healthcare options can be limited. For chiropractic care, West Point residents have traditionally looked toward LaGrange or Columbus — both of which add significant drive time. Chiropractic Unlimited provides a closer alternative with a level of clinical expertise that stands up to any practice in the region.\n\nDr. Jason Bang's unique combination of Doctor of Chiropractic and Family Nurse Practitioner credentials means West Point patients receive an integrated clinical evaluation that goes beyond what a standard chiropractic visit offers. Whether you're dealing with chronic back pain, recovering from a car accident, or looking to improve your posture and overall spinal health, Dr. Bang provides thorough, evidence-based care tailored to your individual needs.",
+    whyChoose: "West Point residents choose Chiropractic Unlimited for three simple reasons: proximity, expertise, and results.\n\nAt just 4 miles away, we're closer to West Point than most chiropractic clinics in either Georgia or Alabama. There's no need to drive 20+ miles to LaGrange or Columbus when advanced chiropractic care is available right across the river.\n\nDr. Bang's dual credentials are a genuine differentiator. His FNP training gives him diagnostic capabilities that most chiropractors don't have — including the ability to evaluate whether your pain has medical contributing factors beyond the spine. For West Point patients managing complex or multi-system health issues, this integrated perspective eliminates the need to coordinate between multiple providers.\n\nAnd the results speak for themselves. Our approach is corrective — we identify the structural root cause of your problem and fix it. West Point patients consistently report that the quality of their evaluation and treatment exceeds what they've experienced elsewhere.",
+    directions: "From downtown West Point, GA, cross the Chattahoochee River into Valley, AL via US-29. Continue on US-29 and turn onto 20th Avenue. Chiropractic Unlimited is located inside the Workout Anytime gym, in the same plaza as Ace Hardware. The entire drive is approximately 4 miles and takes about 8 minutes.",
+    conditionsServed: "West Point residents visit us for the full spectrum of conditions we treat: **low back pain**, **neck pain**, **headaches and migraines**, **sciatica**, **auto injuries** and whiplash recovery, and **posture correction**. We also provide care for **athletes** at all levels, **prenatal chiropractic** for expecting mothers, and **pediatric chiropractic** for children. Living just across the state line means you have access to Dr. Bang's comprehensive, integrated approach without a long drive.",
+    faqs: [
+      {
+        question: "Can I see a chiropractor in Alabama if I live in Georgia?",
+        answer: "Absolutely. There are no restrictions on receiving chiropractic care across state lines. Many of our patients live in West Point and other Georgia communities. You don't need a referral, and your visit is handled exactly the same as any other patient."
+      },
+      {
+        question: "How far is Chiropractic Unlimited from West Point?",
+        answer: "We're just 4 miles from downtown West Point — about an 8-minute drive across the Chattahoochee River into Valley, AL. We're inside the Workout Anytime gym on 20th Avenue, in the same plaza as Ace Hardware."
+      },
+      {
+        question: "Do you accept Georgia insurance?",
+        answer: "We are a cash-based practice, so insurance state of origin is not a factor. Our transparent pricing applies equally to all patients regardless of where they live. We offer affordable care plans and can provide documentation for FSA/HSA reimbursement if applicable."
+      },
+      {
+        question: "Why should I come to Valley instead of going to LaGrange or Columbus?",
+        answer: "Proximity and quality. We're 4 miles from West Point — significantly closer than LaGrange (25+ miles) or Columbus (35+ miles). Dr. Bang's dual DC and FNP credentials provide a level of integrated diagnostic and treatment capability that is rare anywhere in the region, regardless of distance."
+      },
+      {
+        question: "What conditions do West Point patients most commonly come in for?",
+        answer: "The most common presentations from West Point patients are low back pain, neck pain with associated headaches, sciatica, and auto injury recovery. We also see athletes from West Point seeking performance optimization and families bringing children for pediatric spinal checkups."
+      }
+    ]
+  },
+  {
+    slug: "opelika-al",
+    city: "Opelika",
+    state: "AL",
+    title: "Chiropractor Near Opelika, AL",
+    description: "Advanced chiropractic and integrated wellness care for Opelika, AL residents in nearby Valley.",
+    metaTitle: "Chiropractor Near Opelika, AL | Dr. Jason Bang DC FNP",
+    metaDescription: "Opelika, AL residents: Dr. Jason Bang offers dual-credentialed chiropractic and integrated wellness care in Valley, AL — about 30 minutes from Opelika.",
+    driveTime: "30 minutes",
+    distance: "25 miles",
+    intro: "Opelika, Alabama has no shortage of healthcare options — but finding a chiropractor who combines structural expertise with advanced medical training is another matter. Dr. Jason Bang at Chiropractic Unlimited in Valley, AL is one of the only practitioners in the region who holds both Doctor of Chiropractic (DC) and Family Nurse Practitioner (FNP) credentials, offering Opelika residents a level of integrated care that most chiropractic clinics simply cannot match.\n\nLocated about 25 miles from Opelika — roughly a 30-minute drive on US-431 or I-85 — Chiropractic Unlimited serves patients throughout the greater Lee and Chambers County area. While Opelika residents have chiropractic options closer to home, many choose to make the drive specifically because Dr. Bang's dual-credentialed approach delivers diagnostic depth and treatment outcomes they haven't found elsewhere.\n\nWhether you're an Opelika professional dealing with desk-related neck pain, a retiree managing chronic back issues, or a parent looking for gentle pediatric chiropractic care, Dr. Bang provides thorough, evidence-based treatment designed to correct the underlying structural cause of your symptoms — not just temporarily relieve them.",
+    whyChoose: "Opelika patients who choose Chiropractic Unlimited do so because they've recognized the value of Dr. Bang's integrated clinical approach. His FNP training means he evaluates every patient from both a structural and a medical perspective — identifying contributing factors that a standard chiropractic evaluation might miss and developing care plans that address the full scope of the problem.\n\nThis is particularly valuable for Opelika patients with complex presentations — conditions where the spine, nervous system, and overall health intersect. Rather than bouncing between a chiropractor and a primary care provider, Dr. Bang can assess both dimensions in a single visit and develop a unified treatment strategy.\n\nOur corrective approach also means fewer visits over time. Because we target the root structural cause rather than just managing symptoms, many patients find that their total time and cost of care is actually less than what they were spending on frequent, symptom-focused treatments closer to home.",
+    directions: "From Opelika, take US-431 North through Smiths Station, continuing toward Valley. Alternatively, take I-85 North to Exit 66, then follow signs toward Valley on US-431. Continue to 20th Avenue in Valley. Chiropractic Unlimited is located inside the Workout Anytime gym, in the same plaza as Ace Hardware. The drive takes approximately 30 minutes via either route.",
+    conditionsServed: "Opelika patients visit us for conditions including **low back pain**, **neck pain**, **chronic headaches and migraines**, **sciatica**, **auto injury recovery** from I-85 and US-431 accidents, and **posture correction**. We also serve Opelika **athletes** seeking performance care, provide **prenatal chiropractic** for expecting mothers, and offer **pediatric spinal evaluations** for children. Dr. Bang's integrated approach is especially beneficial for patients with chronic conditions that haven't responded fully to conventional chiropractic or medical management alone.",
+    faqs: [
+      {
+        question: "Why would I drive to Valley when there are chiropractors in Opelika?",
+        answer: "Dr. Bang's dual DC and FNP credentials are extremely rare — most chiropractors do not hold advanced medical training. This means he can diagnose and treat from both a structural and a medical perspective, providing a depth of care that standard chiropractic visits cannot. Our Opelika patients consistently tell us that the quality of evaluation and treatment results justify the drive."
+      },
+      {
+        question: "How far is the drive from Opelika?",
+        answer: "Approximately 25 miles — about 30 minutes via US-431 or I-85. We're located inside the Workout Anytime gym on 20th Avenue in Valley, in the same plaza as Ace Hardware."
+      },
+      {
+        question: "Do you see many patients from Opelika and Auburn?",
+        answer: "Yes. We serve patients from across the greater Lee and Chambers County area, including Opelika, Auburn, Smiths Station, and Phenix City. Many of these patients specifically seek out Dr. Bang's integrated approach after finding that conventional chiropractic alone hasn't fully resolved their condition."
+      },
+      {
+        question: "What should I expect at my first appointment?",
+        answer: "A thorough initial evaluation that includes your complete health history, orthopedic and neurological testing, postural assessment, and a detailed discussion of your symptoms and goals. Dr. Bang will explain exactly what he finds, what's causing your symptoms, and what corrective care plan he recommends — with a clear timeline and milestones. Most first visits take 45-60 minutes."
+      },
+      {
+        question: "Is chiropractic covered by insurance?",
+        answer: "We are a cash-based practice, which means we don't bill insurance directly. This model allows Dr. Bang to spend the time each case requires without insurance-imposed visit limits. We offer transparent, affordable care plans and can provide documentation for FSA/HSA reimbursement."
+      }
+    ]
+  }
 ];
