@@ -37,11 +37,24 @@ export const ServiceDetailPage: React.FC = () => {
             <Helmet>
                 <title>{service.metaTitle || `${service.title} | Chiropractic Unlimited`}</title>
                 <meta name="description" content={service.metaDescription || service.description} />
+
+                {/* Canonical URL */}
+                <link rel="canonical" href={`https://chirounlimitedwellness.com/services/${slug}`} />
+
+                {/* Open Graph Tags */}
                 <meta property="og:title" content={service.metaTitle || service.title} />
                 <meta property="og:description" content={service.metaDescription || service.description} />
                 <meta property="og:image" content={service.image} />
                 <meta property="og:url" content={`https://chirounlimitedwellness.com/services/${slug}`} />
                 <meta property="og:type" content="article" />
+                <meta property="og:site_name" content="Chiropractic Unlimited" />
+                <meta property="og:locale" content="en_US" />
+
+                {/* Twitter Card Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={service.metaTitle || service.title} />
+                <meta name="twitter:description" content={service.metaDescription || service.description} />
+                <meta name="twitter:image" content={service.image} />
             </Helmet>
 
             <StructuredData data={[

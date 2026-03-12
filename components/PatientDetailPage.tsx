@@ -37,11 +37,24 @@ export const PatientDetailPage: React.FC = () => {
             <Helmet>
                 <title>{patientGroup.metaTitle || `${patientGroup.title} Chiropractic Care in Valley, AL`}</title>
                 <meta name="description" content={patientGroup.metaDescription || patientGroup.fullDescription.slice(0, 160)} />
+
+                {/* Canonical URL */}
+                <link rel="canonical" href={`https://chirounlimitedwellness.com/patients/${slug}`} />
+
+                {/* Open Graph Tags */}
                 <meta property="og:title" content={patientGroup.metaTitle || patientGroup.title} />
                 <meta property="og:description" content={patientGroup.metaDescription || patientGroup.fullDescription.slice(0, 160)} />
                 <meta property="og:image" content={patientGroup.image} />
                 <meta property="og:url" content={`https://chirounlimitedwellness.com/patients/${slug}`} />
                 <meta property="og:type" content="article" />
+                <meta property="og:site_name" content="Chiropractic Unlimited" />
+                <meta property="og:locale" content="en_US" />
+
+                {/* Twitter Card Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={patientGroup.metaTitle || patientGroup.title} />
+                <meta name="twitter:description" content={patientGroup.metaDescription || patientGroup.fullDescription.slice(0, 160)} />
+                <meta name="twitter:image" content={patientGroup.image} />
             </Helmet>
 
             <StructuredData data={[

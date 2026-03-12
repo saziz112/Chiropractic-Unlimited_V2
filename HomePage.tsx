@@ -35,7 +35,7 @@ export const HomePage: React.FC = () => {
             "latitude": 32.82,
             "longitude": -85.17
         },
-        "url": "https://chiropracticunlimited.com",
+        "url": "https://chirounlimitedwellness.com",
         "priceRange": "$$",
         "openingHoursSpecification": HOURS.map(h => ({
             "@type": "OpeningHoursSpecification",
@@ -50,11 +50,24 @@ export const HomePage: React.FC = () => {
             <Helmet>
                 <title>Chiropractor in Valley, AL | Chiropractic Unlimited</title>
                 <meta name="description" content="Chiropractic Unlimited in Valley, AL offers advanced spinal correction, integrated care, and holistic wellness. Dr. Jason Bang DC FNP treats the root cause of pain." />
+
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://chirounlimitedwellness.com/" />
+
+                {/* Open Graph Tags */}
                 <meta property="og:title" content="Chiropractor in Valley, AL | Chiropractic Unlimited" />
                 <meta property="og:description" content="Advanced spinal correction, integrated care, and holistic wellness in Valley, AL. Dr. Jason Bang DC FNP." />
                 <meta property="og:image" content="https://i.ibb.co/cXh09B2q/Jason-B.jpg" />
-                <meta property="og:url" content="https://chiropracticunlimited.com/" />
+                <meta property="og:url" content="https://chirounlimitedwellness.com/" />
                 <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="Chiropractic Unlimited" />
+                <meta property="og:locale" content="en_US" />
+
+                {/* Twitter Card Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Chiropractor in Valley, AL | Chiropractic Unlimited" />
+                <meta name="twitter:description" content="Advanced spinal correction, integrated care, and holistic wellness in Valley, AL. Dr. Jason Bang DC FNP." />
+                <meta name="twitter:image" content="https://i.ibb.co/cXh09B2q/Jason-B.jpg" />
             </Helmet>
             <StructuredData data={localBusinessSchema} />
             <Hero />

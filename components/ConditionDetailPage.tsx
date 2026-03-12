@@ -65,11 +65,24 @@ export const ConditionDetailPage: React.FC = () => {
             <Helmet>
                 <title>{condition.metaTitle || `${condition.title} | Chiropractic Unlimited`}</title>
                 <meta name="description" content={condition.metaDescription || condition.description} />
+
+                {/* Canonical URL */}
+                <link rel="canonical" href={`https://chirounlimitedwellness.com/conditions/${slug}`} />
+
+                {/* Open Graph Tags */}
                 <meta property="og:title" content={condition.metaTitle || condition.title} />
                 <meta property="og:description" content={condition.metaDescription || condition.description} />
                 <meta property="og:image" content={condition.image} />
                 <meta property="og:url" content={`https://chirounlimitedwellness.com/conditions/${slug}`} />
                 <meta property="og:type" content="article" />
+                <meta property="og:site_name" content="Chiropractic Unlimited" />
+                <meta property="og:locale" content="en_US" />
+
+                {/* Twitter Card Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={condition.metaTitle || condition.title} />
+                <meta name="twitter:description" content={condition.metaDescription || condition.description} />
+                <meta name="twitter:image" content={condition.image} />
             </Helmet>
             <StructuredData data={schemas} />
 
