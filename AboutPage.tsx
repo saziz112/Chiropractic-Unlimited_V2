@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, Award, GraduationCap, Heart, Globe, CalendarCheck, Phone } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Award, GraduationCap, Heart, Globe, CalendarCheck, Phone } from 'lucide-react';
 import { RevealOnScroll } from './components/RevealOnScroll';
 import { StructuredData } from './components/StructuredData';
 import { BUSINESS_INFO } from './constants';
@@ -107,6 +107,10 @@ export const AboutPage: React.FC = () => {
                 <div className="absolute bottom-20 left-10 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+                    <Link to="/" className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-8 group">
+                        <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                        Back to Home
+                    </Link>
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <RevealOnScroll animation="slide-left">
                             <div>

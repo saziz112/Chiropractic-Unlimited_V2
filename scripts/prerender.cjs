@@ -34,6 +34,8 @@ const ROUTES = [
     '/patients/athletes',
     '/patients/pregnancy',
     '/patients/pediatrics',
+    '/privacy',
+    '/terms',
 ];
 
 const PORT = 4173;

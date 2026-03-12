@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BUSINESS_INFO, NAV_ITEMS, SOCIAL_LINKS } from '../constants';
 import { Facebook, Instagram, MapPin } from 'lucide-react';
 
@@ -93,8 +94,8 @@ export const Footer: React.FC = () => {
             &copy; {currentYear} {BUSINESS_INFO.name}. All rights reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
-             <a href="#" className="hover:text-white transition-colors cursor-pointer">Privacy Policy</a>
-             <a href="#" className="hover:text-white transition-colors cursor-pointer">Terms of Service</a>
+             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
