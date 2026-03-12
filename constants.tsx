@@ -50,7 +50,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: 'The Process', href: '/#how-it-works' },
     ]
   },
-  { label: 'Doctors', href: '/#about' },
+  { label: 'About', href: '/about' },
   { label: 'Offers', href: '/#offers' },
   {
     label: 'Other',

@@ -239,7 +239,7 @@ export const ConditionDetailPage: React.FC = () => {
                             Ready to Find Relief from {condition.title}?
                         </h2>
                         <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-                            Don't let pain hold you back. Schedule a consultation with Dr. Jason Bang and take the first step toward lasting recovery.
+                            Don't let pain hold you back. Schedule a consultation with <Link to="/about" className="underline hover:text-white transition-colors">Dr. Jason Bang (DC, FNP)</Link> and take the first step toward lasting recovery.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link

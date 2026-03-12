@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { BIO_TEXT, BUSINESS_INFO } from '../constants';
 import { RevealOnScroll } from './RevealOnScroll';
 
@@ -49,7 +51,7 @@ export const About: React.FC = () => {
                 ))}
               </div>
 
-              <div className="mt-12 flex gap-6">
+              <div className="mt-12 flex flex-wrap gap-6 items-center">
                 <div className="px-8 py-4 bg-brand-bg rounded-xl border border-brand-primary/10 text-center min-w-[120px]">
                   <span className="block text-2xl font-bold text-brand-primary font-display mb-1">DC</span>
                   <span className="text-[10px] uppercase tracking-widest text-brand-muted font-bold">Doctor of Chiropractic</span>
@@ -58,6 +60,13 @@ export const About: React.FC = () => {
                   <span className="block text-2xl font-bold text-brand-primary font-display mb-1">FNP</span>
                   <span className="text-[10px] uppercase tracking-widest text-brand-muted font-bold">Family Nurse Practitioner</span>
                 </div>
+                <Link
+                  to="/about"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-brand-accent text-white font-semibold rounded-full hover:bg-emerald-600 transition-all duration-300 hover:gap-3 group"
+                >
+                  Learn More About Dr. Bang
+                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
               </div>
             </RevealOnScroll>
           </div>

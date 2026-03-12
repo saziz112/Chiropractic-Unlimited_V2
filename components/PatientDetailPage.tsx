@@ -237,7 +237,7 @@ export const PatientDetailPage: React.FC = () => {
                             Ready to Get Started?
                         </h2>
                         <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-                            Take the first step toward better health. Schedule a consultation with Dr. Jason Bang today.
+                            Take the first step toward better health. Schedule a consultation with <Link to="/about" className="underline hover:text-white transition-colors">Dr. Jason Bang (DC, FNP)</Link> today.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
