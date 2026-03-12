@@ -9,6 +9,7 @@ import { Testimonials } from './components/Testimonials';
 import { SpecialOffer } from './components/SpecialOffer';
 import { HowItWorks } from './components/HowItWorks';
 import { InstagramFeature } from './components/InstagramFeature';
+import { LatestBlog } from './components/LatestBlog';
 import { BookingSection } from './components/BookingSection';
 import { StructuredData } from './components/StructuredData';
 import { BUSINESS_INFO, HOURS, SOCIAL_LINKS, SERVICES } from './constants';
@@ -139,6 +140,7 @@ export const HomePage: React.FC = () => {
             <SpecialOffer />
             <About />
             <InstagramFeature />
+            <LatestBlog />
             <BookingSection />
             <Location />
         </>

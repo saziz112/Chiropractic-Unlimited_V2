@@ -75,3 +75,33 @@ export interface BusinessHours {
   day: string;
   hours: string;
 }
+
+export type BlogSectionType = 'paragraph' | 'heading' | 'subheading' | 'list' | 'blockquote' | 'image';
+
+export interface BlogSection {
+  type: BlogSectionType;
+  content: string;
+  items?: string[];
+  src?: string;
+  alt?: string;
+  caption?: string;
+}
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  author: string;
+  authorCredentials: string;
+  publishDate: string;
+  readTime: string;
+  featuredImage: string;
+  featuredImageAlt: string;
+  metaTitle: string;
+  metaDescription: string;
+  sections: BlogSection[];
+  faqs: FAQ[];
+  relatedLinks: { label: string; href: string }[];
+  tags: string[];
+}

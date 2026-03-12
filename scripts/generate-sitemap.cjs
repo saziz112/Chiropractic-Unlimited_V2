@@ -25,6 +25,11 @@ const ROUTES = [
     '/locations/lafayette-al',
     '/locations/west-point-ga',
     '/locations/opelika-al',
+    '/blog',
+    '/blog/what-does-a-chiropractor-do',
+    '/blog/chiropractor-vs-physical-therapist',
+    '/blog/first-chiropractic-visit-what-to-expect',
+    '/blog/is-chiropractic-care-safe',
 ];
 
 const generateSitemap = () => {
@@ -124,9 +129,17 @@ Valley AL, Lanett AL, West Point GA, LaGrange GA, Opelika AL, Auburn AL
 
 Dr. Jason Bang is a graduate of Life University with international mentoring experience across Canada, Germany, and China. He worked as a registered nurse during the COVID-19 pandemic and at the VA Hospital in Birmingham, Alabama. His dual DC and FNP credentials make him uniquely qualified to bridge traditional and alternative medicine for comprehensive patient care.
 
+## Blog
+
+- [What Does a Chiropractor Do? A Doctor Who Does Both Explains](${DOMAIN}/blog/what-does-a-chiropractor-do)
+- [Chiropractor vs. Physical Therapist: How to Choose the Right Provider](${DOMAIN}/blog/chiropractor-vs-physical-therapist)
+- [Your First Chiropractic Visit: What to Expect Step by Step](${DOMAIN}/blog/first-chiropractic-visit-what-to-expect)
+- [Is Chiropractic Care Safe? A Chiropractor and Nurse Practitioner Answers](${DOMAIN}/blog/is-chiropractic-care-safe)
+
 ## Key Pages
 
 - [Home](${DOMAIN}/)
+- [Blog](${DOMAIN}/blog)
 - [About Dr. Bang](${DOMAIN}/about)
 - [Chiropractor Near Lanett, AL](${DOMAIN}/locations/lanett-al)
 - [Chiropractor Near LaFayette, AL](${DOMAIN}/locations/lafayette-al)

@@ -40,6 +40,11 @@ const ROUTES = [
     '/locations/lafayette-al',
     '/locations/west-point-ga',
     '/locations/opelika-al',
+    '/blog',
+    '/blog/what-does-a-chiropractor-do',
+    '/blog/chiropractor-vs-physical-therapist',
+    '/blog/first-chiropractic-visit-what-to-expect',
+    '/blog/is-chiropractic-care-safe',
 ];
 
 const PORT = 4173;
