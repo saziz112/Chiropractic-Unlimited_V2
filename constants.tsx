@@ -52,9 +52,8 @@ export const NAV_ITEMS: NavItem[] = [
   },
   { label: 'About', href: '/about' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Offers', href: '/#offers' },
   {
-    label: 'Areas We Serve',
+    label: 'Locations',
     children: [
       { label: 'Lanett, AL', href: '/locations/lanett-al' },
       { label: 'West Point, GA', href: '/locations/west-point-ga' },
