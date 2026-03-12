@@ -45,18 +45,6 @@ export const PatientDetailPage: React.FC = () => {
             </Helmet>
 
             <StructuredData data={[
-                ...(patientGroup.faqs ? [{
-                    "@context": "https://schema.org",
-                    "@type": "FAQPage",
-                    "mainEntity": patientGroup.faqs.map(faq => ({
-                        "@type": "Question",
-                        "name": faq.question,
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": faq.answer
-                        }
-                    }))
-                }] : []),
                 {
                     "@context": "https://schema.org",
                     "@type": "BreadcrumbList",
@@ -65,19 +53,19 @@ export const PatientDetailPage: React.FC = () => {
                             "@type": "ListItem",
                             "position": 1,
                             "name": "Home",
-                            "item": "https://chiropracticunlimited.com"
+                            "item": "https://chirounlimitedwellness.com"
                         },
                         {
                             "@type": "ListItem",
                             "position": 2,
                             "name": "Patients",
-                            "item": "https://chiropracticunlimited.com/#patients"
+                            "item": "https://chirounlimitedwellness.com/#patients"
                         },
                         {
                             "@type": "ListItem",
                             "position": 3,
                             "name": patientGroup.title,
-                            "item": `https://chiropracticunlimited.com/patients/${slug}`
+                            "item": `https://chirounlimitedwellness.com/patients/${slug}`
                         }
                     ]
                 }

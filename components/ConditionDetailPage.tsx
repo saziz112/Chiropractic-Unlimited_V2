@@ -34,18 +34,6 @@ export const ConditionDetailPage: React.FC = () => {
     }
 
     const schemas = [
-        ...(condition.faqs ? [{
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": condition.faqs.map(faq => ({
-                "@type": "Question",
-                "name": faq.question,
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": faq.answer
-                }
-            }))
-        }] : []),
         {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
@@ -54,19 +42,19 @@ export const ConditionDetailPage: React.FC = () => {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Home",
-                    "item": "https://chiropracticunlimited.com"
+                    "item": "https://chirounlimitedwellness.com"
                 },
                 {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Conditions",
-                    "item": "https://chiropracticunlimited.com/#conditions"
+                    "item": "https://chirounlimitedwellness.com/#conditions"
                 },
                 {
                     "@type": "ListItem",
                     "position": 3,
                     "name": condition.title,
-                    "item": `https://chiropracticunlimited.com/conditions/${slug}`
+                    "item": `https://chirounlimitedwellness.com/conditions/${slug}`
                 }
             ]
         }
