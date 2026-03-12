@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://chiropracticunlimited.com';
+const DOMAIN = 'https://chirounlimitedwellness.com';
 const ROUTES = [
     '/',
     '/conditions/low-back-pain',

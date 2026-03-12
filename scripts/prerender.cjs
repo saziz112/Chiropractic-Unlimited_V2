@@ -98,7 +98,7 @@ async function prerender() {
             const content = await page.content();
 
             // Replace localhost with production domain in canonical/og tags if needed
-            const productionContent = content.replace(/http:\/\/localhost:4173/g, 'https://chiropracticunlimited.com');
+            const productionContent = content.replace(/http:\/\/localhost:4173/g, 'https://chirounlimitedwellness.com');
 
             // Save file
             const filePath = path.join(DIST_DIR, route === '/' ? 'index.html' : `${route}/index.html`);
