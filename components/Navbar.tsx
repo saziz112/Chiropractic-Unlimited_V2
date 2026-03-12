@@ -138,7 +138,7 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-20 lg:h-24">
 
           {/* Logo */}
-          <div className="flex-shrink-0 cursor-pointer" onClick={() => window.location.href = '#'}>
+          <div className="flex-shrink-0 cursor-pointer" onClick={() => navigate('/')}>
             <Logo filter={logoFilter} />
           </div>
 
