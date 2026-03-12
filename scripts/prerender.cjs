@@ -20,6 +20,7 @@ try {
 
 const ROUTES = [
     '/',
+    '/about',
     '/conditions/low-back-pain',
     '/conditions/neck-pain',
     '/conditions/headaches',

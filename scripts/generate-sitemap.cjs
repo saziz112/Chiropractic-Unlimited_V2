@@ -4,6 +4,7 @@ const path = require('path');
 const DOMAIN = 'https://chirounlimitedwellness.com';
 const ROUTES = [
     '/',
+    '/about',
     '/conditions/low-back-pain',
     '/conditions/neck-pain',
     '/conditions/headaches',
