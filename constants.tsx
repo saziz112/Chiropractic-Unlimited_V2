@@ -8,7 +8,7 @@ export const BUSINESS_INFO = {
   phone: "(334) 219-0150",
   address: "3731 20th Ave, Valley, AL 36854",
   locationNote: "Located INSIDE the Workout Anytime gym, in the same plaza as Ace Hardware.",
-  email: "hello@chiropracticunlimited.com", // Placeholder
+  email: "info@chirounlimitedwellness.com",
   mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.867566120892!2d-85.17935492358896!3d32.816698673646985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888cb3764835687b%3A0x63351368560064f7!2s3731%2020th%20Ave%2C%20Valley%2C%20AL%2036854!5e0!3m2!1sen!2sus!4v1714589000000!5m2!1sen!2sus"
 };
 
