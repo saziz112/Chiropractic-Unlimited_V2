@@ -76,7 +76,7 @@ export const PrivacyPage: React.FC = () => {
                                 <ul className="list-disc pl-6 space-y-2">
                                     <li>Provide, maintain, and improve our chiropractic and wellness services</li>
                                     <li>Schedule and manage your appointments</li>
-                                    <li>Process payments and insurance claims</li>
+                                    <li>Process payments</li>
                                     <li>Communicate with you about your care, appointments, and treatment plans</li>
                                     <li>Send appointment reminders and follow-up communications</li>
                                     <li>Comply with legal and regulatory requirements</li>

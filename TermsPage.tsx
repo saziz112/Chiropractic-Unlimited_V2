@@ -78,13 +78,12 @@ export const TermsPage: React.FC = () => {
                             </div>
 
                             <div>
-                                <h2 className="text-2xl font-display font-bold text-brand-primary mb-4">Payment and Insurance</h2>
+                                <h2 className="text-2xl font-display font-bold text-brand-primary mb-4">Payment</h2>
                                 <ul className="list-disc pl-6 space-y-2">
+                                    <li>We are a cash-based practice and do not bill insurance directly</li>
                                     <li>Payment is due at the time of service unless other arrangements have been made</li>
-                                    <li>We accept various forms of payment including cash, credit cards, and select insurance plans</li>
-                                    <li>It is your responsibility to verify your insurance coverage and benefits</li>
-                                    <li>Any balance not covered by insurance is the patient's responsibility</li>
-                                    <li>Special pricing offers (such as new patient specials) cannot be combined with insurance claims</li>
+                                    <li>We accept cash, credit cards, and debit cards</li>
+                                    <li>We can provide documentation for FSA/HSA reimbursement upon request</li>
                                 </ul>
                             </div>
 

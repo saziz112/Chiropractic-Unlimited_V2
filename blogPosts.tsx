@@ -57,7 +57,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: 'list',
         content: '',
         items: [
-          '**Assessment:** Your chiropractor evaluates your posture, range of motion, and spine through hands-on palpation and possibly X-rays on your first visit',
+          '**Assessment:** Your chiropractor evaluates your posture, range of motion, and spine through hands-on palpation on your first visit',
           '**Positioning:** You lie on a specially designed adjustment table. The table may have sections that drop or flex to assist the adjustment',
           '**The adjustment:** Using their hands or a small instrument, the chiropractor applies a quick, controlled thrust to the targeted spinal joint. You may hear a popping sound, which is simply gas releasing from the joint capsule, similar to cracking your knuckles',
           '**Post-adjustment:** Many patients feel immediate relief. Some experience mild soreness for 24-48 hours, similar to the feeling after a good workout',
@@ -110,7 +110,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Your first visit to Chiropractic Unlimited typically lasts about 45-60 minutes. We start with a thorough health history, discuss your symptoms and goals, perform a physical examination including posture analysis and range-of-motion testing, and often take X-rays to see exactly what is happening with your spine. Based on these findings, we create a personalized treatment plan that addresses the **root cause** of your pain, not just the symptoms.'
+        content: 'Your first visit to Chiropractic Unlimited typically lasts about 20-30 minutes. We start with a thorough health history, discuss your symptoms and goals, and perform a physical examination including posture analysis and range-of-motion testing. Based on these findings, we create a personalized treatment plan that addresses the **root cause** of your pain, not just the symptoms.'
       },
       {
         type: 'paragraph',
@@ -132,7 +132,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [
       {
         question: 'Is chiropractic care real medicine?',
-        answer: 'Yes. Doctors of Chiropractic complete a 4-year doctoral program including anatomy, physiology, radiology, and clinical training. Chiropractic is recognized by Medicare, the VA, and major insurance carriers. Research published in journals like The Spine Journal and JAMA supports its effectiveness for musculoskeletal conditions.'
+        answer: 'Yes. Doctors of Chiropractic complete a 4-year doctoral program including anatomy, physiology, radiology, and clinical training. Chiropractic is a recognized healthcare discipline supported by research published in journals like The Spine Journal and JAMA.'
       },
       {
         question: 'Does a chiropractic adjustment hurt?',
@@ -246,7 +246,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Both are licensed healthcare providers, both can diagnose musculoskeletal conditions, and both are covered by most insurance plans. The key difference is in **what they do with that diagnosis**: chiropractors adjust the spine and joints, physical therapists prescribe and guide therapeutic exercise.'
+        content: 'Both are licensed healthcare providers and both can diagnose musculoskeletal conditions. The key difference is in **what they do with that diagnosis**: chiropractors adjust the spine and joints, physical therapists prescribe and guide therapeutic exercise.'
       },
       {
         type: 'heading',
@@ -268,7 +268,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         question: 'Do I need a referral to see a chiropractor?',
-        answer: 'No. In Alabama, you can see a chiropractor without a referral from your primary care doctor. Most insurance plans cover chiropractic care directly.'
+        answer: 'No. In Alabama, you can see a chiropractor without a referral from your primary care doctor. At Chiropractic Unlimited, we are a cash-based practice with transparent, affordable pricing. We can provide documentation for FSA/HSA reimbursement.'
       },
       {
         question: 'Which is better for back pain: chiropractor or PT?',
@@ -295,7 +295,7 @@ export const BLOG_POSTS: BlogPost[] = [
     featuredImage: 'https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=800&auto=format&fit=crop',
     featuredImageAlt: 'A welcoming chiropractic clinic reception area with modern decor',
     metaTitle: 'Your First Chiropractic Visit: What to Expect | Valley AL Chiropractor',
-    metaDescription: 'Step-by-step guide to your first chiropractic visit. Learn what happens during intake, examination, X-rays, and your first adjustment at Chiropractic Unlimited in Valley, AL.',
+    metaDescription: 'Step-by-step guide to your first chiropractic visit. Learn what happens during intake, examination, and your first adjustment at Chiropractic Unlimited in Valley, AL.',
     sections: [
       {
         type: 'paragraph',
@@ -319,7 +319,7 @@ export const BLOG_POSTS: BlogPost[] = [
         items: [
           '**Wear comfortable clothing** that allows you to move freely. Avoid jeans or restrictive outfits. Athletic wear or loose-fitting clothes work best',
           '**Write down your symptoms** including when they started, what makes them better or worse, and any treatments you have already tried',
-          '**Bring your insurance card** and a photo ID. Most insurance plans cover chiropractic care',
+          '**Bring a photo ID** so we can get you checked in quickly',
           '**List your medications** including supplements. As an FNP, I review these for potential interactions',
           '**Arrive 10-15 minutes early** to complete intake paperwork, or ask if you can fill it out online beforehand'
         ]
@@ -357,19 +357,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'heading',
-        content: 'Step 3: X-Rays (If Needed)'
+        content: 'Step 3: Diagnosis and Treatment Plan'
       },
       {
         type: 'paragraph',
-        content: 'Not every patient needs X-rays, but they are often valuable for a first visit. X-rays allow us to see the exact position of your vertebrae, check for disc degeneration, identify any structural abnormalities, and create a baseline for tracking your progress. We use digital X-rays, which involve significantly less radiation than traditional film X-rays. The images are available immediately, and we review them with you on-screen so you can **see what we see**.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 4: Diagnosis and Treatment Plan'
-      },
-      {
-        type: 'paragraph',
-        content: 'Based on your history, examination, and imaging, we explain exactly what we found. We show you where your spine is misaligned, which nerves are affected, and how this connects to the symptoms you are experiencing. There are no vague explanations. You will leave understanding your condition clearly.'
+        content: 'Based on your health history and physical examination, we explain exactly what we found. We walk you through where your spine is misaligned, which nerves may be affected, and how this connects to the symptoms you are experiencing. There are no vague explanations. You will leave understanding your condition clearly.'
       },
       {
         type: 'paragraph',
@@ -377,7 +369,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'heading',
-        content: 'Step 5: Your First Adjustment'
+        content: 'Step 4: Your First Adjustment'
       },
       {
         type: 'paragraph',
@@ -397,7 +389,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Your first visit typically lasts **45-60 minutes**. Subsequent visits are much shorter, usually 15-20 minutes. After your first adjustment, you may feel immediately better, or you may feel slightly sore for 24-48 hours as your body adjusts to the new alignment. Both responses are normal.'
+        content: 'Your first visit typically lasts **20-30 minutes**. Subsequent visits are shorter, usually 10-15 minutes. After your first adjustment, you may feel immediately better, or you may feel slightly sore for 24-48 hours as your body adjusts to the new alignment. Both responses are normal.'
       },
       {
         type: 'paragraph',
@@ -415,7 +407,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [
       {
         question: 'How long does the first chiropractic visit take?',
-        answer: 'Plan for 45-60 minutes for your first visit. This includes your health history, physical examination, any necessary X-rays, and potentially your first adjustment. Follow-up visits are typically 15-20 minutes.'
+        answer: 'Plan for about 20-30 minutes for your first visit. This includes your health history, physical examination, and potentially your first adjustment. Follow-up visits are typically 10-15 minutes.'
       },
       {
         question: 'Will my first adjustment hurt?',
@@ -525,7 +517,7 @@ export const BLOG_POSTS: BlogPost[] = [
         content: '',
         items: [
           '**Severe osteoporosis** where bones are too fragile for manual adjustment',
-          '**Spinal cord compression** requiring surgical intervention',
+          '**Recent major surgery** in the treatment area that has not fully healed',
           '**Certain types of cancer** that have spread to the spine',
           '**Active inflammatory arthritis** in the adjustment area during a flare-up',
           '**Blood clotting disorders** or patients on high-dose blood thinners (assessed case by case)',
