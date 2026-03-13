@@ -45,6 +45,7 @@ const ROUTES = [
     '/blog/chiropractor-vs-physical-therapist',
     '/blog/first-chiropractic-visit-what-to-expect',
     '/blog/is-chiropractic-care-safe',
+    '/blog/chiropractic-vs-opioids',
 ];
 
 const PORT = 4173;

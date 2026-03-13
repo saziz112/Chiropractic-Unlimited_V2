@@ -30,6 +30,7 @@ const ROUTES = [
     '/blog/chiropractor-vs-physical-therapist',
     '/blog/first-chiropractic-visit-what-to-expect',
     '/blog/is-chiropractic-care-safe',
+    '/blog/chiropractic-vs-opioids',
 ];
 
 const generateSitemap = () => {
@@ -135,6 +136,7 @@ Dr. Jason Bang is a graduate of Life University with international mentoring exp
 - [Chiropractor vs. Physical Therapist: How to Choose the Right Provider](${DOMAIN}/blog/chiropractor-vs-physical-therapist)
 - [Your First Chiropractic Visit: What to Expect Step by Step](${DOMAIN}/blog/first-chiropractic-visit-what-to-expect)
 - [Is Chiropractic Care Safe? A Chiropractor and Nurse Practitioner Answers](${DOMAIN}/blog/is-chiropractic-care-safe)
+- [Chiropractic Care vs. Opioids for Pain: What the 2025 Research Shows](${DOMAIN}/blog/chiropractic-vs-opioids)
 
 ## Key Pages
 

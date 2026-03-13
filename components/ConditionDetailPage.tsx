@@ -8,10 +8,18 @@ import { RevealOnScroll } from './RevealOnScroll';
 import { StructuredData } from './StructuredData';
 
 function renderBoldText(text: string) {
-    const parts = text.split(/\*\*(.*?)\*\*/g);
-    return parts.map((part, i) =>
-        i % 2 === 1 ? <strong key={i}>{part}</strong> : part
-    );
+    const regex = /(\*\*.*?\*\*|\[[^\]]+\]\([^)]+\))/g;
+    const parts = text.split(regex);
+    return parts.map((part, i) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+            return <strong key={i}>{part.slice(2, -2)}</strong>;
+        }
+        const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (linkMatch) {
+            return <a key={i} href={linkMatch[2]} className="text-brand-accent hover:text-brand-secondary underline underline-offset-2 transition-colors">{linkMatch[1]}</a>;
+        }
+        return part;
+    });
 }
 
 export const ConditionDetailPage: React.FC = () => {

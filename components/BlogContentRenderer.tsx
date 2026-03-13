@@ -1,11 +1,20 @@
 import React from 'react';
 import { BlogSection } from '../types';
+import { BLOG_CHARTS } from './BlogCharts';
 
-function renderBoldText(text: string) {
-    const parts = text.split(/\*\*(.*?)\*\*/g);
-    return parts.map((part, i) =>
-        i % 2 === 1 ? <strong key={i} className="text-brand-primary font-semibold">{part}</strong> : part
-    );
+function renderRichText(text: string) {
+    const regex = /(\*\*.*?\*\*|\[[^\]]+\]\([^)]+\))/g;
+    const parts = text.split(regex);
+    return parts.map((part, i) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+            return <strong key={i} className="text-brand-primary font-semibold">{part.slice(2, -2)}</strong>;
+        }
+        const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (linkMatch) {
+            return <a key={i} href={linkMatch[2]} className="text-brand-accent hover:text-brand-secondary underline underline-offset-2 transition-colors">{linkMatch[1]}</a>;
+        }
+        return part;
+    });
 }
 
 function slugify(text: string): string {
@@ -24,7 +33,7 @@ export const BlogContentRenderer: React.FC<BlogContentRendererProps> = ({ sectio
                     case 'paragraph':
                         return (
                             <p key={idx} className="text-brand-muted text-lg leading-relaxed mb-6">
-                                {renderBoldText(section.content)}
+                                {renderRichText(section.content)}
                             </p>
                         );
                     case 'heading':
@@ -53,7 +62,7 @@ export const BlogContentRenderer: React.FC<BlogContentRendererProps> = ({ sectio
                                 {section.items?.map((item, i) => (
                                     <li key={i} className="flex gap-3 text-brand-muted text-lg leading-relaxed">
                                         <span className="text-brand-accent mt-1.5 shrink-0">&#8226;</span>
-                                        <span>{renderBoldText(item)}</span>
+                                        <span>{renderRichText(item)}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -62,7 +71,7 @@ export const BlogContentRenderer: React.FC<BlogContentRendererProps> = ({ sectio
                         return (
                             <blockquote key={idx} className="blog-blockquote my-8 pl-6 py-4 border-l-4 border-brand-accent bg-brand-accent/5 rounded-r-xl">
                                 <p className="text-brand-primary text-lg italic leading-relaxed">
-                                    {renderBoldText(section.content)}
+                                    {renderRichText(section.content)}
                                 </p>
                             </blockquote>
                         );
@@ -82,6 +91,10 @@ export const BlogContentRenderer: React.FC<BlogContentRendererProps> = ({ sectio
                                 )}
                             </figure>
                         );
+                    case 'chart': {
+                        const ChartComponent = section.chartId ? BLOG_CHARTS[section.chartId] : null;
+                        return ChartComponent ? <ChartComponent key={idx} /> : null;
+                    }
                     default:
                         return null;
                 }
