@@ -12,7 +12,8 @@ export const BlogDetailPage: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
     const navigate = useNavigate();
     const post = BLOG_POSTS.find(p => p.slug === slug);
-    const relatedPosts = BLOG_POSTS.filter(p => p.slug !== slug).slice(0, 3);
+    const today = new Date().toISOString().split('T')[0];
+    const relatedPosts = BLOG_POSTS.filter(p => p.slug !== slug && p.publishDate <= today).slice(0, 3);
 
     if (!post) {
         return (

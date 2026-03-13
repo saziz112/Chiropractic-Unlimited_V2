@@ -11,9 +11,12 @@ export const BlogListingPage: React.FC = () => {
     const [activeCategory, setActiveCategory] = useState<string>('All');
     const navigate = useNavigate();
 
+    const today = new Date().toISOString().split('T')[0];
+    const publishedPosts = BLOG_POSTS.filter(p => p.publishDate <= today);
+
     const filteredPosts = activeCategory === 'All'
-        ? BLOG_POSTS
-        : BLOG_POSTS.filter(p => p.category === activeCategory);
+        ? publishedPosts
+        : publishedPosts.filter(p => p.category === activeCategory);
 
     const breadcrumbSchema = {
         "@context": "https://schema.org",
