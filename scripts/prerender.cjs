@@ -46,6 +46,9 @@ const ROUTES = [
     '/blog/first-chiropractic-visit-what-to-expect',
     '/blog/is-chiropractic-care-safe',
     '/blog/chiropractic-vs-opioids',
+    '/blog/back-pain-treatment-without-surgery',
+    '/blog/how-often-see-chiropractor',
+    '/blog/chiropractic-for-sciatica',
 ];
 
 const PORT = 4173;

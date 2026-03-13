@@ -31,6 +31,9 @@ const ROUTES = [
     '/blog/first-chiropractic-visit-what-to-expect',
     '/blog/is-chiropractic-care-safe',
     '/blog/chiropractic-vs-opioids',
+    '/blog/back-pain-treatment-without-surgery',
+    '/blog/how-often-see-chiropractor',
+    '/blog/chiropractic-for-sciatica',
 ];
 
 const generateSitemap = () => {
@@ -137,6 +140,9 @@ Dr. Jason Bang is a graduate of Life University with international mentoring exp
 - [Your First Chiropractic Visit: What to Expect Step by Step](${DOMAIN}/blog/first-chiropractic-visit-what-to-expect)
 - [Is Chiropractic Care Safe? A Chiropractor and Nurse Practitioner Answers](${DOMAIN}/blog/is-chiropractic-care-safe)
 - [Chiropractic Care vs. Opioids for Pain: What the 2025 Research Shows](${DOMAIN}/blog/chiropractic-vs-opioids)
+- [Back Pain Treatment Without Surgery: Evidence-Based Options in Valley, AL](${DOMAIN}/blog/back-pain-treatment-without-surgery)
+- [How Often Should You See a Chiropractor? An Evidence-Based Guide](${DOMAIN}/blog/how-often-see-chiropractor)
+- [Chiropractic for Sciatica: Does It Actually Work? Full Research Review](${DOMAIN}/blog/chiropractic-for-sciatica)
 
 ## Key Pages
 
