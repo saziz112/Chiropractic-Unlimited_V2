@@ -96,6 +96,7 @@ export interface BlogPost {
   author: string;
   authorCredentials: string;
   publishDate: string;
+  lastUpdated?: string;
   readTime: string;
   featuredImage: string;
   featuredImageAlt: string;

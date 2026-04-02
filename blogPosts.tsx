@@ -19,6 +19,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'Dr. Jason Bang',
     authorCredentials: 'DC, FNP',
     publishDate: '2026-03-12',
+    lastUpdated: '2026-04-02',
     readTime: '8 min read',
     featuredImage: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=800&auto=format&fit=crop',
     featuredImageAlt: 'Chiropractor performing a spinal adjustment on a patient in a modern clinic',
@@ -83,7 +84,7 @@ export const BLOG_POSTS: BlogPost[] = [
           '**Low back pain:** The American College of Physicians recommends spinal manipulation as a first-line treatment before medication',
           '**Neck pain and stiffness:** Especially effective for pain caused by desk work, phone use, or poor sleeping positions',
           '**Tension headaches and migraines:** Research shows chiropractic adjustments can reduce headache frequency and intensity',
-          '**Sciatica:** Spinal adjustments can relieve pressure on the sciatic nerve without surgery',
+          '**Sciatica:** Spinal adjustments can relieve pressure on the sciatic nerve [without surgery](/blog/chiropractic-for-sciatica)',
           '**Auto injury recovery:** Whiplash and soft tissue injuries often respond faster to chiropractic care than to rest alone',
           '**Posture-related pain:** Tech neck, rounded shoulders, and other postural issues caused by modern lifestyles'
         ]
@@ -122,7 +123,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Chiropractic care is a safe, evidence-based approach to treating musculoskeletal pain and improving nervous system function. It is not a cure-all, and a responsible chiropractor will tell you that. But for the right conditions, particularly back pain, neck pain, headaches, and posture-related issues, it is one of the most effective treatments available, often without the side effects of medication or the risks of surgery.'
+        content: 'Chiropractic care is a safe, evidence-based approach to treating musculoskeletal pain and improving nervous system function. It is not a cure-all, and a responsible chiropractor will tell you that. But for the right conditions, particularly back pain, neck pain, headaches, and posture-related issues, it is one of the most effective treatments available — often [without surgery](/blog/back-pain-treatment-without-surgery) or the side effects of medication. In fact, [2025 research shows chiropractic reduces opioid prescriptions by 64%](/blog/chiropractic-vs-opioids).'
       },
       {
         type: 'paragraph',
@@ -144,10 +145,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     relatedLinks: [
+      { label: 'Chiropractic vs. Opioids: 2025 Research', href: '/blog/chiropractic-vs-opioids' },
+      { label: 'Back Pain Treatment Without Surgery', href: '/blog/back-pain-treatment-without-surgery' },
       { label: 'Low Back Pain Treatment', href: '/conditions/low-back-pain' },
       { label: 'Neck Pain Relief', href: '/conditions/neck-pain' },
       { label: 'About Dr. Jason Bang', href: '/about' },
-      { label: 'Our Services', href: '/#services' },
     ],
     tags: ['chiropractic', 'spinal adjustment', 'what does a chiropractor do', 'Valley AL'],
   },
@@ -159,6 +161,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'Dr. Jason Bang',
     authorCredentials: 'DC, FNP',
     publishDate: '2026-03-15',
+    lastUpdated: '2026-04-02',
     readTime: '7 min read',
     featuredImage: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop',
     featuredImageAlt: 'Healthcare provider helping a patient with physical therapy exercises',
@@ -195,7 +198,7 @@ export const BLOG_POSTS: BlogPost[] = [
         items: [
           '**Acute back or neck pain** that came on suddenly, especially after sleeping wrong, sitting too long, or a minor strain',
           '**Headaches or migraines** that seem to originate from tension in your neck or upper back',
-          '**Sciatica** or radiating pain down your leg, which is often caused by spinal misalignment pressing on the sciatic nerve',
+          '**[Sciatica](/blog/chiropractic-for-sciatica)** or radiating pain down your leg, which is often caused by spinal misalignment pressing on the sciatic nerve',
           '**Post-auto accident pain** including whiplash, where spinal alignment is typically disrupted',
           '**Chronic stiffness** that does not improve with stretching alone',
           '**Posture-related pain** from desk work, phone use, or repetitive movements'
@@ -258,7 +261,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'At Chiropractic Unlimited, we evaluate every patient thoroughly and will refer you to a physical therapist if that is the better path for your situation. My dual credentials as a DC and FNP mean I can assess your condition from multiple angles and recommend the approach that will actually get you better fastest. If your pain is currently being managed with medication and you are looking for a drug-free alternative, our analysis of the [drug-free pain relief research](/blog/chiropractic-vs-opioids) explains what the latest studies show about chiropractic care vs. opioids.'
+        content: 'At Chiropractic Unlimited, we evaluate every patient thoroughly and will refer you to a physical therapist if that is the better path for your situation. My dual credentials as a DC and FNP mean I can assess your condition from multiple angles and recommend the approach that will actually get you better fastest. If your pain is currently being managed with medication and you are looking for a drug-free alternative, our analysis of the [drug-free pain relief research](/blog/chiropractic-vs-opioids) explains what the latest studies show about chiropractic care vs. opioids. You can also learn about [non-surgical back pain options](/blog/back-pain-treatment-without-surgery) and [how often you should see a chiropractor](/blog/how-often-see-chiropractor) once you start treatment.'
       },
     ],
     faqs: [
@@ -276,10 +279,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     relatedLinks: [
+      { label: 'Back Pain Treatment Without Surgery', href: '/blog/back-pain-treatment-without-surgery' },
+      { label: 'Chiropractic for Sciatica', href: '/blog/chiropractic-for-sciatica' },
+      { label: 'How Often Should You See a Chiropractor?', href: '/blog/how-often-see-chiropractor' },
       { label: 'Low Back Pain Treatment', href: '/conditions/low-back-pain' },
-      { label: 'Sciatica Relief', href: '/conditions/sciatica' },
       { label: 'Our Integrated Care Approach', href: '/services/integrated-care' },
-      { label: 'About Dr. Jason Bang', href: '/about' },
     ],
     tags: ['chiropractor vs physical therapist', 'back pain', 'physical therapy', 'Valley AL'],
   },
@@ -291,6 +295,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'Dr. Jason Bang',
     authorCredentials: 'DC, FNP',
     publishDate: '2026-03-19',
+    lastUpdated: '2026-04-02',
     readTime: '6 min read',
     featuredImage: 'https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=800&auto=format&fit=crop',
     featuredImageAlt: 'A welcoming chiropractic clinic reception area with modern decor',
@@ -299,7 +304,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         type: 'paragraph',
-        content: 'Walking into a chiropractor\'s office for the first time can feel intimidating, especially if you do not know what to expect. Will it hurt? How long will it take? What if nothing is wrong? These are completely normal questions, and I hear them from new patients every week at our Valley, AL clinic.'
+        content: 'Walking into a chiropractor\'s office for the first time can feel intimidating, especially if you do not know what to expect. Will it hurt? How long will it take? What if nothing is wrong? These are completely normal questions, and I hear them from new patients every week at our Valley, AL clinic. If safety is your main concern, read our guide on [whether chiropractic care is safe](/blog/is-chiropractic-care-safe) — the short answer is yes, with an exceptionally low risk profile.'
       },
       {
         type: 'paragraph',
@@ -389,7 +394,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Your first visit typically lasts **20-30 minutes**. Subsequent visits are shorter, usually 10-15 minutes. After your first adjustment, you may feel immediately better, or you may feel slightly sore for 24-48 hours as your body adjusts to the new alignment. Both responses are normal.'
+        content: 'Your first visit typically lasts **20-30 minutes**. Subsequent visits are shorter, usually 10-15 minutes. After your first adjustment, you may feel immediately better, or you may feel slightly sore for 24-48 hours as your body adjusts to the new alignment. Both responses are normal. Wondering how many visits you will need? Our guide on [how often you should see a chiropractor](/blog/how-often-see-chiropractor) breaks down the typical treatment phases.'
       },
       {
         type: 'paragraph',
@@ -420,9 +425,10 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedLinks: [
       { label: 'What Does a Chiropractor Do?', href: '/blog/what-does-a-chiropractor-do' },
+      { label: 'Is Chiropractic Care Safe?', href: '/blog/is-chiropractic-care-safe' },
+      { label: 'How Often Should You See a Chiropractor?', href: '/blog/how-often-see-chiropractor' },
       { label: 'Book Your Appointment', href: '/#booking' },
       { label: 'About Dr. Jason Bang', href: '/about' },
-      { label: 'Our Location', href: '/#location' },
     ],
     tags: ['first chiropractic visit', 'what to expect', 'new patient', 'Valley AL'],
   },
@@ -434,6 +440,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'Dr. Jason Bang',
     authorCredentials: 'DC, FNP',
     publishDate: '2026-03-22',
+    lastUpdated: '2026-04-02',
     readTime: '7 min read',
     featuredImage: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop',
     featuredImageAlt: 'Doctor reviewing patient health records in a clinical setting',
@@ -550,7 +557,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'At Chiropractic Unlimited in Valley, AL, you get an extra layer of safety from my dual DC and FNP credentials. Every patient is thoroughly evaluated before treatment, and I am trained to recognize medical conditions that require a different approach. If you have been hesitant about trying chiropractic care because of safety concerns, **I encourage you to schedule a consultation.** We will answer all your questions and determine if chiropractic care is the right choice for your situation.'
+        content: 'At Chiropractic Unlimited in Valley, AL, you get an extra layer of safety from my dual DC and FNP credentials. Every patient is thoroughly evaluated before treatment, and I am trained to recognize medical conditions that require a different approach. If you have been hesitant about trying chiropractic care because of safety concerns, **I encourage you to schedule a consultation.** Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect), read about [how often you should see a chiropractor](/blog/how-often-see-chiropractor), or explore [non-surgical back pain options](/blog/back-pain-treatment-without-surgery).'
       },
     ],
     faqs: [
@@ -569,8 +576,9 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedLinks: [
       { label: 'What Does a Chiropractor Do?', href: '/blog/what-does-a-chiropractor-do' },
+      { label: 'Chiropractic for Sciatica', href: '/blog/chiropractic-for-sciatica' },
+      { label: 'Back Pain Treatment Without Surgery', href: '/blog/back-pain-treatment-without-surgery' },
       { label: 'Prenatal Chiropractic Care', href: '/patients/pregnancy' },
-      { label: 'Pediatric Chiropractic Care', href: '/patients/pediatrics' },
       { label: 'About Dr. Jason Bang', href: '/about' },
     ],
     tags: ['chiropractic safety', 'is chiropractic safe', 'chiropractic risks', 'evidence-based chiropractic'],
@@ -583,6 +591,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'Dr. Jason Bang',
     authorCredentials: 'DC, FNP',
     publishDate: '2026-04-02',
+    lastUpdated: '2026-04-02',
     readTime: '8 min read',
     featuredImage: 'https://images.pexels.com/photos/4506113/pexels-photo-4506113.jpeg?auto=compress&cs=tinysrgb&w=800',
     featuredImageAlt: 'Chiropractor examining a patient\'s spine in a clinical setting',
@@ -771,7 +780,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'At Chiropractic Unlimited, your first visit includes a comprehensive evaluation to determine if chiropractic care is right for your condition. New patients receive a full examination for just $20. We are located inside Workout Anytime at 3731 20th Ave, Valley, AL 36854, and we serve patients from Valley, Lanett, West Point, LaFayette, and Opelika. Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect).'
+        content: 'At Chiropractic Unlimited, your first visit includes a comprehensive evaluation to determine if chiropractic care is right for your condition. New patients receive a full examination for just $20. We are located inside Workout Anytime at 3731 20th Ave, Valley, AL 36854, and we serve patients from Valley, Lanett, West Point, LaFayette, and Opelika. Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect) and [how often you should see a chiropractor](/blog/how-often-see-chiropractor) for your specific condition.'
       },
       {
         type: 'paragraph',
@@ -814,8 +823,9 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     relatedLinks: [
+      { label: 'Chiropractic for Sciatica', href: '/blog/chiropractic-for-sciatica' },
+      { label: 'How Often Should You See a Chiropractor?', href: '/blog/how-often-see-chiropractor' },
       { label: 'Low Back Pain Treatment', href: '/conditions/low-back-pain' },
-      { label: 'Sciatica Relief', href: '/conditions/sciatica' },
       { label: 'Spinal Correction Services', href: '/services/spinal-correction' },
       { label: 'About Dr. Jason Bang', href: '/about' },
     ],
@@ -829,6 +839,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'Dr. Jason Bang',
     authorCredentials: 'DC, FNP',
     publishDate: '2026-04-09',
+    lastUpdated: '2026-04-02',
     readTime: '7 min read',
     featuredImage: 'https://images.unsplash.com/photo-1544991875-5dc1b05f607d?q=80&w=800&auto=format&fit=crop',
     featuredImageAlt: 'Person holding their lower back experiencing back pain',
@@ -943,7 +954,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect) or read about the [safety of chiropractic care](/blog/is-chiropractic-care-safe). To schedule, call **(334) 219-0150** or book online. [Dr. Jason Bang](/about) will give you an honest assessment of whether chiropractic care is the right fit for your back pain.'
+        content: 'Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect), find out [how often you should see a chiropractor](/blog/how-often-see-chiropractor), or read about [chiropractic for sciatica](/blog/chiropractic-for-sciatica) if that is your specific concern. To schedule, call **(334) 219-0150** or book online. [Dr. Jason Bang](/about) will give you an honest assessment of whether chiropractic care is the right fit for your back pain.'
       },
       {
         type: 'heading',
@@ -978,10 +989,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     relatedLinks: [
+      { label: 'Chiropractic for Sciatica', href: '/blog/chiropractic-for-sciatica' },
+      { label: 'How Often Should You See a Chiropractor?', href: '/blog/how-often-see-chiropractor' },
+      { label: 'What Does a Chiropractor Do?', href: '/blog/what-does-a-chiropractor-do' },
       { label: 'Low Back Pain Treatment', href: '/conditions/low-back-pain' },
-      { label: 'Sciatica Relief', href: '/conditions/sciatica' },
       { label: 'Spinal Correction Services', href: '/services/spinal-correction' },
-      { label: 'About Dr. Jason Bang', href: '/about' },
     ],
     tags: ['back pain treatment', 'non-surgical back pain', 'back pain without surgery', 'Valley AL', 'evidence-based treatment'],
   },

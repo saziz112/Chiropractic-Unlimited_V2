@@ -36,7 +36,7 @@ export const BlogDetailPage: React.FC = () => {
             "description": post.excerpt,
             "image": post.featuredImage,
             "datePublished": post.publishDate,
-            "dateModified": post.publishDate,
+            "dateModified": post.lastUpdated || post.publishDate,
             "author": {
                 "@type": "Person",
                 "name": post.author,
@@ -92,6 +92,11 @@ export const BlogDetailPage: React.FC = () => {
         month: 'long',
         day: 'numeric',
     });
+    const formattedUpdated = post.lastUpdated ? new Date(post.lastUpdated).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    }) : null;
 
     return (
         <>
@@ -107,6 +112,7 @@ export const BlogDetailPage: React.FC = () => {
                 <meta property="og:site_name" content="Chiropractic Unlimited" />
                 <meta property="og:locale" content="en_US" />
                 <meta property="article:published_time" content={post.publishDate} />
+                {post.lastUpdated && <meta property="article:modified_time" content={post.lastUpdated} />}
                 <meta property="article:author" content={post.author} />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content={post.metaTitle} />
@@ -150,6 +156,7 @@ export const BlogDetailPage: React.FC = () => {
                             <span className="flex items-center gap-1.5">
                                 <Clock className="w-4 h-4" />
                                 {formattedDate}
+                                {formattedUpdated && <span className="text-white/50 ml-1">(Updated {formattedUpdated})</span>}
                             </span>
                             <span className="flex items-center gap-1.5">
                                 <Tag className="w-4 h-4" />
