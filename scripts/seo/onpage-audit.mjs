@@ -31,6 +31,7 @@ try {
   const tasks = await callAPI('/on_page/instant_pages', [
     {
       url,
+      enable_browser_rendering: true,
       browser_preset: browserPreset,
       load_resources: true,
       enable_javascript: true,
