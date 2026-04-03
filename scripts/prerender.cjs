@@ -49,6 +49,10 @@ const ROUTES = [
     '/blog/back-pain-treatment-without-surgery',
     '/blog/how-often-see-chiropractor',
     '/blog/chiropractic-for-sciatica',
+    '/blog/chiropractic-during-pregnancy',
+    '/blog/rural-alabama-pain-rates',
+    '/blog/chiropractic-for-kids',
+    '/blog/auto-accident-injuries-i85',
 ];
 
 const PORT = 4173;

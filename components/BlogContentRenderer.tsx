@@ -78,12 +78,14 @@ export const BlogContentRenderer: React.FC<BlogContentRendererProps> = ({ sectio
                     case 'image':
                         return (
                             <figure key={idx} className="my-8">
-                                <img
-                                    src={section.src}
-                                    alt={section.alt || ''}
-                                    className="w-full rounded-2xl shadow-lg"
-                                    loading="lazy"
-                                />
+                                <div className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-lg">
+                                    <img
+                                        src={section.src}
+                                        alt={section.alt || 'Chiropractic care illustration'}
+                                        className="w-full h-full object-cover"
+                                        loading="lazy"
+                                    />
+                                </div>
                                 {section.caption && (
                                     <figcaption className="text-center text-brand-muted text-sm mt-3 italic">
                                         {section.caption}

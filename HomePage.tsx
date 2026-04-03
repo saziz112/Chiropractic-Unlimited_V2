@@ -98,12 +98,22 @@ export const HomePage: React.FC = () => {
                 }
             }))
         },
-        "openingHoursSpecification": HOURS.filter(h => h.hours !== "Closed").map(h => ({
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": h.day,
-            "opens": h.hours.split(' – ')[0],
-            "closes": h.hours.split(' – ')[1]
-        }))
+        "openingHoursSpecification": HOURS.filter(h => h.hours !== "Closed").map(h => {
+            const [openStr, closeStr] = h.hours.split(' – ');
+            const to24 = (t: string) => {
+                const [time, period] = t.split(' ');
+                let [hr, min] = time.split(':').map(Number);
+                if (period === 'PM' && hr !== 12) hr += 12;
+                if (period === 'AM' && hr === 12) hr = 0;
+                return `${hr.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')}`;
+            };
+            return {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": h.day,
+                "opens": to24(openStr),
+                "closes": to24(closeStr)
+            };
+        })
     };
 
     return (

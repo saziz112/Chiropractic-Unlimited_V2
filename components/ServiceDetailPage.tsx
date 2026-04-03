@@ -138,6 +138,26 @@ export const ServiceDetailPage: React.FC = () => {
                 </div>
             </section>
 
+            {/* Author Attribution & Medical Review */}
+            <section className="bg-white border-b border-gray-100">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                    <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-brand-muted">
+                        <div className="flex items-center gap-2">
+                            <img
+                                src="https://i.ibb.co/cXh09B2q/Jason-B.jpg"
+                                alt="Dr. Jason Bang"
+                                className="w-8 h-8 rounded-full object-cover"
+                                width={32}
+                                height={32}
+                            />
+                            <span>Reviewed by <Link to="/about" className="text-brand-primary font-semibold hover:text-brand-secondary transition-colors">Dr. Jason Bang, DC, FNP</Link></span>
+                        </div>
+                        <span className="hidden sm:inline text-gray-300">|</span>
+                        <span>Last updated: April 2, 2026</span>
+                    </div>
+                </div>
+            </section>
+
             {/* Full Description */}
             <section className="py-16 md:py-24 bg-brand-bg relative overflow-hidden">
                 <div className="absolute -top-20 -right-20 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl"></div>
@@ -232,6 +252,16 @@ export const ServiceDetailPage: React.FC = () => {
                     </div>
                 </section>
             )}
+
+            {/* Medical Disclaimer */}
+            <section className="bg-gray-50 border-t border-gray-200">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                        <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for medical concerns. Dr. Jason Bang holds both Doctor of Chiropractic (DC) and Family Nurse Practitioner (FNP) credentials.{' '}
+                        <Link to="/about" className="text-brand-accent hover:underline">Learn more about Dr. Bang's qualifications</Link>.
+                    </p>
+                </div>
+            </section>
 
             {/* CTA Banner */}
             <section id="booking-cta" className="py-16 md:py-24 bg-brand-accent text-white relative overflow-hidden">

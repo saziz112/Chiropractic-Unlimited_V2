@@ -78,7 +78,7 @@ export const AboutPage: React.FC = () => {
         <>
             <Helmet>
                 <title>About Dr. Jason Bang DC FNP | Chiropractor in Valley, AL</title>
-                <meta name="description" content="Meet Dr. Jason Bang, Valley AL's only chiropractor with dual DC and FNP credentials. Life University graduate offering integrated wellness care combining chiropractic and medical expertise." />
+                <meta name="description" content="Meet Dr. Jason Bang, Valley AL's only chiropractor with dual DC and FNP credentials. Integrated wellness care combining chiropractic and medical expertise." />
 
                 {/* Canonical URL */}
                 <link rel="canonical" href="https://chirounlimitedwellness.com/about" />
