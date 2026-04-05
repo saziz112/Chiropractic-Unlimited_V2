@@ -170,9 +170,7 @@ export const BlogDetailPage: React.FC = () => {
             {/* Article Content */}
             <article className="py-16 md:py-24 bg-brand-bg">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <RevealOnScroll animation="fade-up">
-                        <BlogContentRenderer sections={post.sections} />
-                    </RevealOnScroll>
+                    <BlogContentRenderer sections={post.sections} />
                 </div>
             </article>
 

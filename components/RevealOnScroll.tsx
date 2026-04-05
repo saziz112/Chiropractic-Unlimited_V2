@@ -40,7 +40,7 @@ export const RevealOnScroll: React.FC<Props> = ({
           observer.disconnect();
         }
       },
-      { threshold },
+      { threshold, rootMargin: '0px 0px 50px 0px' },
     );
 
     if (ref.current) {
