@@ -44,7 +44,7 @@ export const BookingSection: React.FC = () => {
                     </div>
 
                     <p className="text-center text-sm text-brand-muted mt-6">
-                        Prefer to call? Reach us at <a href="tel:3342190150" className="text-brand-primary font-bold hover:underline cursor-pointer">(334) 219-0150</a>
+                        Prefer to call? Reach us at <a href="tel:3342037032" className="text-brand-primary font-bold hover:underline cursor-pointer">(334) 203-7032</a>
                     </p>
                 </RevealOnScroll>
             </div>

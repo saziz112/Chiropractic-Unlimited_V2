@@ -406,7 +406,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'If you are in Valley, Lanett, West Point, LaFayette, or the surrounding area, we would love to meet you. Chiropractic Unlimited is located inside the Workout Anytime gym at 3731 20th Ave, Valley, AL 36854. **Book your consultation online** or call us at (334) 219-0150. New patients receive a comprehensive evaluation to determine if chiropractic care is right for their condition.'
+        content: 'If you are in Valley, Lanett, West Point, LaFayette, or the surrounding area, we would love to meet you. Chiropractic Unlimited is located inside the Workout Anytime gym at 3731 20th Ave, Valley, AL 36854. **Book your consultation online** or call us at (334) 203-7032. New patients receive a comprehensive evaluation to determine if chiropractic care is right for their condition.'
       },
     ],
     faqs: [
@@ -784,7 +784,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: '[Dr. Jason Bang\'s](/about) dual DC and FNP credentials mean you are not just seeing a chiropractor — you are seeing a provider who understands both pharmaceutical and non-pharmaceutical approaches and can guide you to the right one. To schedule your appointment, call **(334) 219-0150** or book online.'
+        content: '[Dr. Jason Bang\'s](/about) dual DC and FNP credentials mean you are not just seeing a chiropractor — you are seeing a provider who understands both pharmaceutical and non-pharmaceutical approaches and can guide you to the right one. To schedule your appointment, call **(334) 203-7032** or book online.'
       },
       {
         type: 'heading',
@@ -954,7 +954,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect), find out [how often you should see a chiropractor](/blog/how-often-see-chiropractor), or read about [chiropractic for sciatica](/blog/chiropractic-for-sciatica) if that is your specific concern. To schedule, call **(334) 219-0150** or book online. [Dr. Jason Bang](/about) will give you an honest assessment of whether chiropractic care is the right fit for your back pain.'
+        content: 'Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect), find out [how often you should see a chiropractor](/blog/how-often-see-chiropractor), or read about [chiropractic for sciatica](/blog/chiropractic-for-sciatica) if that is your specific concern. To schedule, call **(334) 203-7032** or book online. [Dr. Jason Bang](/about) will give you an honest assessment of whether chiropractic care is the right fit for your back pain.'
       },
       {
         type: 'heading',
@@ -1128,7 +1128,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'If you are unsure whether you need chiropractic care or how often you should be going, the best first step is a proper evaluation. At Chiropractic Unlimited, new patients receive a comprehensive assessment for just $20. We are located inside Workout Anytime at 3731 20th Ave, Valley, AL 36854. Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect) or call **(334) 219-0150** to book.'
+        content: 'If you are unsure whether you need chiropractic care or how often you should be going, the best first step is a proper evaluation. At Chiropractic Unlimited, new patients receive a comprehensive assessment for just $20. We are located inside Workout Anytime at 3731 20th Ave, Valley, AL 36854. Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect) or call **(334) 203-7032** to book.'
       },
       {
         type: 'paragraph',
@@ -1306,7 +1306,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect) or call **(334) 219-0150** to book. Read about the [safety of chiropractic care](/blog/is-chiropractic-care-safe) if you have concerns.'
+        content: 'Learn [what to expect at your first visit](/blog/first-chiropractic-visit-what-to-expect) or call **(334) 203-7032** to book. Read about the [safety of chiropractic care](/blog/is-chiropractic-care-safe) if you have concerns.'
       },
       {
         type: 'heading',

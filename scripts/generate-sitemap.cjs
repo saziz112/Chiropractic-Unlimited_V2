@@ -86,7 +86,7 @@ const generateLlmsTxt = () => {
 - **Provider:** Dr. Jason Bang, DC, FNP
 - **Practice Name:** Chiropractic Unlimited
 - **Address:** 3731 20th Ave, Valley, AL 36854
-- **Phone:** (334) 219-0150
+- **Phone:** (334) 203-7032
 - **Email:** info@chirounlimitedwellness.com
 - **Website:** ${DOMAIN}
 - **Location Note:** Located inside the Workout Anytime gym, in the same plaza as Ace Hardware

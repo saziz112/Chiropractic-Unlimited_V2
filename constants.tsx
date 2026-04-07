@@ -5,7 +5,7 @@ import { BusinessHours, NavItem, ServiceItem, ConditionItem, ServiceAreaItem } f
 export const BUSINESS_INFO = {
   name: "Chiropractic Unlimited",
   doctor: "Dr. Jason Bang DC FNP",
-  phone: "(334) 219-0150",
+  phone: "(334) 203-7032",
   address: "3731 20th Ave, Valley, AL 36854",
   locationNote: "Located INSIDE the Workout Anytime gym, in the same plaza as Ace Hardware.",
   email: "info@chirounlimitedwellness.com",
@@ -648,7 +648,7 @@ export const SERVICE_AREAS: ServiceAreaItem[] = [
       },
       {
         question: "Do I need a referral to be seen?",
-        answer: "No referral is necessary. You can call us directly at (334) 219-0150 or book online through our website. We welcome walk-ins when scheduling allows, but appointments are recommended to minimize your wait time."
+        answer: "No referral is necessary. You can call us directly at (334) 203-7032 or book online through our website. We welcome walk-ins when scheduling allows, but appointments are recommended to minimize your wait time."
       },
       {
         question: "What are your hours?",

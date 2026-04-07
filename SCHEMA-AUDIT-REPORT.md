@@ -38,7 +38,7 @@ The site has a solid schema foundation with JSON-LD on every page template. Blog
 | @type is valid | PASS | Chiropractor is a recognized schema.org type under MedicalBusiness > LocalBusiness |
 | name | PASS | "Chiropractic Unlimited" |
 | address (PostalAddress) | PASS | Full address with streetAddress, locality, region, postal, country |
-| telephone | PASS | "(334) 219-0150" |
+| telephone | PASS | "(334) 203-7032" |
 | url | PASS | Absolute URL |
 | geo (GeoCoordinates) | PASS | lat/lng present |
 | openingHoursSpecification | **FAIL** | Time format is wrong -- uses "10:00 AM" / "5:00 PM" instead of ISO 24-hour "10:00" / "17:00" |
