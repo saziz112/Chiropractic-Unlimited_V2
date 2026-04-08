@@ -65,6 +65,60 @@ export const ConditionDetailPage: React.FC = () => {
                     "item": `https://chirounlimitedwellness.com/conditions/${slug}`
                 }
             ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "MedicalWebPage",
+            "name": condition.metaTitle || `${condition.title} | Chiropractic Unlimited`,
+            "description": condition.metaDescription || condition.description,
+            "url": `https://chirounlimitedwellness.com/conditions/${slug}`,
+            "lastReviewed": "2026-04-02",
+            "medicalAudience": {
+                "@type": "PatientAudience"
+            },
+            "reviewedBy": {
+                "@type": "Person",
+                "name": "Dr. Jason Bang",
+                "jobTitle": "Doctor of Chiropractic & Family Nurse Practitioner",
+                "url": "https://chirounlimitedwellness.com/about"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Chiropractor",
+            "name": "Chiropractic Unlimited",
+            "url": "https://chirounlimitedwellness.com",
+            "telephone": BUSINESS_INFO.phone,
+            "email": "info@chirounlimitedwellness.com",
+            "image": "https://chirounlimitedwellness.com/og-image.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3731 20th Ave",
+                "addressLocality": "Valley",
+                "addressRegion": "AL",
+                "postalCode": "36854",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 32.8167,
+                "longitude": -85.1794
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                    "opens": "10:00",
+                    "closes": "17:00"
+                }
+            ],
+            "areaServed": [
+                { "@type": "City", "name": "Valley" },
+                { "@type": "City", "name": "Lanett" },
+                { "@type": "City", "name": "West Point" },
+                { "@type": "City", "name": "LaFayette" },
+                { "@type": "City", "name": "Opelika" }
+            ]
         }
     ];
 
@@ -119,6 +173,7 @@ export const ConditionDetailPage: React.FC = () => {
                         <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Condition We Treat</span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
                             {condition.title}
+                            <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-brand-accent mt-2">Treatment in Valley, AL</span>
                         </h1>
                         <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
                             {condition.description}
@@ -169,7 +224,7 @@ export const ConditionDetailPage: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <RevealOnScroll animation="fade-up">
                         <div className="max-w-3xl">
-                            <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">Understanding {condition.title}</h2>
+                            <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">{condition.title} Treatment in Valley, AL</h2>
                             {condition.details.split('\n\n').map((para, i) => (
                                 <p key={i} className="text-brand-muted text-lg leading-relaxed mb-4 last:mb-0">
                                     {renderBoldText(para)}
@@ -229,7 +284,7 @@ export const ConditionDetailPage: React.FC = () => {
                         <RevealOnScroll animation="fade-up">
                             <div className="max-w-3xl">
                                 <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Take Action</span>
-                                <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">When to See a Chiropractor</h2>
+                                <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">When to See a Chiropractor in Valley, AL</h2>
                                 {condition.whenToSee.split('\n\n').map((para, i) => (
                                     <p key={i} className="text-brand-muted text-lg leading-relaxed mb-4 last:mb-0">
                                         {renderBoldText(para)}
@@ -314,7 +369,7 @@ export const ConditionDetailPage: React.FC = () => {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <RevealOnScroll animation="scale-up">
                         <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                            Ready to Find Relief from {condition.title}?
+                            Get {condition.title} Relief in Valley, AL
                         </h2>
                         <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
                             Don't let pain hold you back. Schedule a consultation with <Link to="/about" className="underline hover:text-white transition-colors">Dr. Jason Bang (DC, FNP)</Link> and take the first step toward lasting recovery.
@@ -345,7 +400,7 @@ export const ConditionDetailPage: React.FC = () => {
                     <RevealOnScroll animation="fade-up">
                         <div className="text-center mb-12">
                             <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Explore More</span>
-                            <h2 className="text-3xl md:text-4xl font-display text-brand-primary">Other Conditions We Treat</h2>
+                            <h2 className="text-3xl md:text-4xl font-display text-brand-primary">Other Conditions We Treat in Valley, AL</h2>
                         </div>
                     </RevealOnScroll>
 

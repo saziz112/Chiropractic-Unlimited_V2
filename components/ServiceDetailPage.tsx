@@ -81,6 +81,59 @@ export const ServiceDetailPage: React.FC = () => {
                             "item": `https://chirounlimitedwellness.com/services/${slug}`
                         }
                     ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "MedicalWebPage",
+                    "name": service.metaTitle || `${service.title} | Chiropractic Unlimited`,
+                    "description": service.metaDescription || service.description,
+                    "url": `https://chirounlimitedwellness.com/services/${slug}`,
+                    "lastReviewed": "2026-04-02",
+                    "medicalAudience": {
+                        "@type": "PatientAudience"
+                    },
+                    "reviewedBy": {
+                        "@type": "Person",
+                        "name": "Dr. Jason Bang",
+                        "jobTitle": "Doctor of Chiropractic & Family Nurse Practitioner",
+                        "url": "https://chirounlimitedwellness.com/about"
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Chiropractor",
+                    "name": "Chiropractic Unlimited",
+                    "url": "https://chirounlimitedwellness.com",
+                    "telephone": BUSINESS_INFO.phone,
+                    "email": "info@chirounlimitedwellness.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "3731 20th Ave",
+                        "addressLocality": "Valley",
+                        "addressRegion": "AL",
+                        "postalCode": "36854",
+                        "addressCountry": "US"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 32.8167,
+                        "longitude": -85.1794
+                    },
+                    "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                            "opens": "10:00",
+                            "closes": "17:00"
+                        }
+                    ],
+                    "areaServed": [
+                        { "@type": "City", "name": "Valley" },
+                        { "@type": "City", "name": "Lanett" },
+                        { "@type": "City", "name": "West Point" },
+                        { "@type": "City", "name": "LaFayette" },
+                        { "@type": "City", "name": "Opelika" }
+                    ]
                 }
             ]} />
 
@@ -113,6 +166,7 @@ export const ServiceDetailPage: React.FC = () => {
                             </div>
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight">
                                 {service.title}
+                                <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-brand-accent mt-2">in Valley, AL</span>
                             </h1>
                         </div>
                         <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
@@ -164,7 +218,7 @@ export const ServiceDetailPage: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <RevealOnScroll animation="fade-up">
                         <div className="max-w-3xl">
-                            <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">What is {service.title}?</h2>
+                            <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">{service.title} in Valley, AL</h2>
                             <p className="text-brand-muted text-lg leading-relaxed">
                                 {service.fullDescription}
                             </p>
@@ -269,7 +323,7 @@ export const ServiceDetailPage: React.FC = () => {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <RevealOnScroll animation="scale-up">
                         <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                            Ready to Experience {service.title}?
+                            Experience {service.title} in Valley, AL
                         </h2>
                         <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
                             Take the first step toward better health. Schedule a consultation with <Link to="/about" className="underline hover:text-white transition-colors">Dr. Jason Bang (DC, FNP)</Link> today.
@@ -300,7 +354,7 @@ export const ServiceDetailPage: React.FC = () => {
                     <RevealOnScroll animation="fade-up">
                         <div className="text-center mb-12">
                             <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Explore More</span>
-                            <h2 className="text-3xl md:text-4xl font-display text-brand-primary">Other Services We Offer</h2>
+                            <h2 className="text-3xl md:text-4xl font-display text-brand-primary">Other Services We Offer in Valley, AL</h2>
                         </div>
                     </RevealOnScroll>
 
