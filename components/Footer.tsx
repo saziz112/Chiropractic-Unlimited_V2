@@ -94,6 +94,7 @@ export const Footer: React.FC = () => {
             &copy; {currentYear} {BUSINESS_INFO.name}. All rights reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
+             <Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link>
              <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
              <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>

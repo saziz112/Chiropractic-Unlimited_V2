@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
 import { BUSINESS_INFO } from '../constants';
@@ -30,6 +31,9 @@ export const SpecialOffer: React.FC = () => {
                     <p className="text-sm text-white/60 italic mt-4">
                         * A $350 Value. Terms and conditions apply.
                     </p>
+                    <Link to="/pricing" className="inline-flex items-center gap-1 text-brand-accent hover:text-white text-sm font-semibold mt-3 transition-colors">
+                        View full pricing & payment options <ArrowRight className="w-4 h-4" />
+                    </Link>
                 </div>
                 
                 <div className="mt-10 md:mt-0 md:w-2/5 flex flex-col items-center relative z-10">
