@@ -393,7 +393,7 @@ export const AboutPage: React.FC = () => {
                     </RevealOnScroll>
 
                     <div className="grid md:grid-cols-3 gap-6">
-                        <RevealOnScroll animation="slide-up" delay={100}>
+                        <RevealOnScroll animation="fade-up" delay={100}>
                             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
                                 <div className="text-4xl mb-4">🏆</div>
                                 <h3 className="text-xl font-bold mb-3">Unique Dual Credentials</h3>
@@ -403,7 +403,7 @@ export const AboutPage: React.FC = () => {
                             </div>
                         </RevealOnScroll>
 
-                        <RevealOnScroll animation="slide-up" delay={200}>
+                        <RevealOnScroll animation="fade-up" delay={200}>
                             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
                                 <div className="text-4xl mb-4">🌍</div>
                                 <h3 className="text-xl font-bold mb-3">Global Perspective</h3>
@@ -413,7 +413,7 @@ export const AboutPage: React.FC = () => {
                             </div>
                         </RevealOnScroll>
 
-                        <RevealOnScroll animation="slide-up" delay={300}>
+                        <RevealOnScroll animation="fade-up" delay={300}>
                             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
                                 <div className="text-4xl mb-4">❤️</div>
                                 <h3 className="text-xl font-bold mb-3">Compassionate Care</h3>
@@ -423,7 +423,7 @@ export const AboutPage: React.FC = () => {
                             </div>
                         </RevealOnScroll>
 
-                        <RevealOnScroll animation="slide-up" delay={100}>
+                        <RevealOnScroll animation="fade-up" delay={100}>
                             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
                                 <div className="text-4xl mb-4">🎯</div>
                                 <h3 className="text-xl font-bold mb-3">Root Cause Focus</h3>
@@ -433,7 +433,7 @@ export const AboutPage: React.FC = () => {
                             </div>
                         </RevealOnScroll>
 
-                        <RevealOnScroll animation="slide-up" delay={200}>
+                        <RevealOnScroll animation="fade-up" delay={200}>
                             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
                                 <div className="text-4xl mb-4">🔬</div>
                                 <h3 className="text-xl font-bold mb-3">Evidence-Based</h3>
@@ -443,7 +443,7 @@ export const AboutPage: React.FC = () => {
                             </div>
                         </RevealOnScroll>
 
-                        <RevealOnScroll animation="slide-up" delay={300}>
+                        <RevealOnScroll animation="fade-up" delay={300}>
                             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
                                 <div className="text-4xl mb-4">🤝</div>
                                 <h3 className="text-xl font-bold mb-3">Patient Partnership</h3>
