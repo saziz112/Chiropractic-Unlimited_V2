@@ -46,7 +46,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: 'Pregnancy', href: '/patients/pregnancy' },
       { label: 'Pediatrics', href: '/patients/pediatrics' },
       { label: 'Testimonials', href: '/#testimonials' },
-      { label: 'New Patient Offer', href: '/#offers' },
+      { label: 'Pricing & Affordability', href: '/pricing' },
       { label: 'The Process', href: '/#how-it-works' },
     ]
   },

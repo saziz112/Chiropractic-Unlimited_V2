@@ -27,6 +27,7 @@ const ROUTES = [
     '/patients/athletes',
     '/patients/pregnancy',
     '/patients/pediatrics',
+    '/pricing',
     '/privacy',
     '/terms',
 ];

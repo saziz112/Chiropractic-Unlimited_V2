@@ -40,6 +40,7 @@ const ROUTES = [
     '/locations/lafayette-al',
     '/locations/west-point-ga',
     '/locations/opelika-al',
+    '/pricing',
     '/blog',
     '/blog/what-does-a-chiropractor-do',
     '/blog/chiropractor-vs-physical-therapist',

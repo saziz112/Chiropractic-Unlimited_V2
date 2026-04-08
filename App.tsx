@@ -17,6 +17,7 @@ const PatientDetailPage = lazy(() => import('./components/PatientDetailPage').th
 const ServiceAreaPage = lazy(() => import('./components/ServiceAreaPage').then(m => ({ default: m.ServiceAreaPage })));
 const BlogListingPage = lazy(() => import('./components/BlogListingPage').then(m => ({ default: m.BlogListingPage })));
 const BlogDetailPage = lazy(() => import('./components/BlogDetailPage').then(m => ({ default: m.BlogDetailPage })));
+const PricingPage = lazy(() => import('./PricingPage').then(m => ({ default: m.PricingPage })));
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -56,6 +57,7 @@ function App() {
               <Route path="/services/:slug" element={<ServiceDetailPage />} />
               <Route path="/patients/:slug" element={<PatientDetailPage />} />
               <Route path="/locations/:slug" element={<ServiceAreaPage />} />
+              <Route path="/pricing" element={<PricingPage />} />
               <Route path="/blog" element={<BlogListingPage />} />
               <Route path="/blog/:slug" element={<BlogDetailPage />} />
             </Routes>
