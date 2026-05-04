@@ -138,29 +138,54 @@ async function prerender() {
     }
     const page = await browser.newPage();
 
+    // Block video/audio downloads during prerender — they keep the network busy
+    // and time out networkidle waits without contributing to the rendered HTML.
+    await page.setRequestInterception(true);
+    page.on('request', (req) => {
+        const url = req.url();
+        const type = req.resourceType();
+        if (type === 'media' || /\.(mp4|webm|mov|m4v|avi|mp3|wav|ogg)(\?|$)/i.test(url)) {
+            req.abort();
+        } else {
+            req.continue();
+        }
+    });
+
+    // Read the base SPA shell once for fallback when prerender fails
+    const baseIndexPath = path.join(DIST_DIR, 'index.html');
+    const baseSpaShell = fs.existsSync(baseIndexPath) ? fs.readFileSync(baseIndexPath, 'utf8') : null;
+
+    let succeeded = 0, failed = 0;
     for (const route of ROUTES) {
         console.log(`Prerendering: ${route}`);
-        try {
-            await page.goto(`http://localhost:${PORT}${route}`, { waitUntil: 'networkidle0', timeout: 30000 });
+        const filePath = path.join(DIST_DIR, route === '/' ? 'index.html' : `${route}/index.html`);
+        const dir = path.dirname(filePath);
+        if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
-            // Wait for Helmet to update title/meta (simple delay to be safe)
-            await new Promise(r => setTimeout(r, 500));
+        try {
+            // domcontentloaded fires once HTML is parsed — fast and reliable.
+            // Videos are blocked above, but other XHRs/scripts may still load.
+            await page.goto(`http://localhost:${PORT}${route}`, { waitUntil: 'domcontentloaded', timeout: 60000 });
+
+            // Give Helmet + lazy components time to render meta tags + content
+            await new Promise(r => setTimeout(r, 1500));
 
             const content = await page.content();
-
-            // Replace localhost with production domain in canonical/og tags if needed
             const productionContent = content.replace(/http:\/\/localhost:4173/g, 'https://chirounlimitedwellness.com');
-
-            // Save file
-            const filePath = path.join(DIST_DIR, route === '/' ? 'index.html' : `${route}/index.html`);
-            const dir = path.dirname(filePath);
-            if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-
             fs.writeFileSync(filePath, productionContent);
+            succeeded++;
         } catch (e) {
-            console.error(`Failed to prerender ${route}:`, e);
+            console.error(`⚠️  Failed to prerender ${route}: ${e.message}`);
+            // Fallback: write the base SPA shell so the route returns 200 with client-side rendering
+            // (worse for SEO than a prerendered page, but vastly better than a 404).
+            if (baseSpaShell && route !== '/') {
+                fs.writeFileSync(filePath, baseSpaShell);
+                console.log(`   → wrote SPA fallback for ${route}`);
+            }
+            failed++;
         }
     }
+    console.log(`Prerender summary: ${succeeded} succeeded, ${failed} failed (with SPA fallback)`);
 
     await browser.close();
     server.close();
