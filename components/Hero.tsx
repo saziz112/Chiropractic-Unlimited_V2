@@ -8,8 +8,7 @@ export const Hero: React.FC = () => {
             {/* Full-bleed background video */}
             <div className="absolute inset-0 z-0">
                 <video
-                    src="/clinic-tour.mp4"
-                    poster="/clinic-tour-poster.jpg"
+                    src="/clinic-approach.mp4"
                     autoPlay
                     muted
                     loop

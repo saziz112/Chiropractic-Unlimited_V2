@@ -252,38 +252,20 @@ export const AboutPage: React.FC = () => {
                         </div>
                     </RevealOnScroll>
                     <RevealOnScroll animation="scale-up" delay={150}>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                            <figure className="space-y-3">
-                                <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[9/16] bg-brand-primary">
-                                    <video
-                                        src="/clinic-tour.mp4"
-                                        poster="/clinic-tour-poster.jpg"
-                                        autoPlay
-                                        muted
-                                        loop
-                                        playsInline
-                                        preload="metadata"
-                                        className="w-full h-full object-cover"
-                                        aria-label="Tour video: getting your first adjustment at Chiropractic Unlimited"
-                                    />
-                                </div>
-                                <figcaption className="text-center text-sm text-brand-muted">Your first adjustment, in 23 seconds.</figcaption>
-                            </figure>
-                            <figure className="space-y-3">
-                                <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[9/16] bg-brand-primary">
-                                    <video
-                                        src="/clinic-approach.mp4"
-                                        autoPlay
-                                        muted
-                                        loop
-                                        playsInline
-                                        preload="metadata"
-                                        className="w-full h-full object-cover"
-                                        aria-label="Walking up to the Chiropractic Unlimited storefront inside Workout Anytime, Valley AL"
-                                    />
-                                </div>
-                                <figcaption className="text-center text-sm text-brand-muted">Look for the green sign on the door.</figcaption>
-                            </figure>
+                        <div className="max-w-md mx-auto">
+                            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[9/16] bg-brand-primary">
+                                <video
+                                    src="/clinic-tour.mp4"
+                                    poster="/clinic-tour-poster.jpg"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    preload="metadata"
+                                    className="w-full h-full object-cover"
+                                    aria-label="Tour video: getting your first adjustment at Chiropractic Unlimited"
+                                />
+                            </div>
                         </div>
                     </RevealOnScroll>
                 </div>
