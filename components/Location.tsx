@@ -82,15 +82,31 @@ export const Location: React.FC = () => {
                         </RevealOnScroll>
                     </div>
 
-                    {/* Map Side */}
-                    <div className="order-1 lg:order-2 h-full min-h-[350px] md:min-h-[500px]">
-                        <RevealOnScroll delay={200} className="h-full">
-                            <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white relative group">
+                    {/* Photo + Map Side */}
+                    <div className="order-1 lg:order-2 space-y-6">
+                        <RevealOnScroll delay={200}>
+                            <figure className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                                <img
+                                    src="/clinic-exterior.jpg"
+                                    alt="Dr. Jason Bang at the entrance of Chiropractic Unlimited inside Workout Anytime, Valley AL"
+                                    className="w-full h-auto block transition-transform duration-700 ease-out hover:scale-105"
+                                    loading="lazy"
+                                    width={1200}
+                                    height={1600}
+                                />
+                                <figcaption className="bg-white px-5 py-3 text-xs text-brand-muted">
+                                    Look for the green <strong className="text-brand-primary">CHIROPRACTIC UNLIMITED</strong> sign on the door at the Workout Anytime storefront.
+                                </figcaption>
+                            </figure>
+                        </RevealOnScroll>
+
+                        <RevealOnScroll delay={300}>
+                            <div className="w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white relative group">
                                 <iframe
                                     src={BUSINESS_INFO.mapUrl}
                                     width="100%"
                                     height="100%"
-                                    className="border-0 min-h-[350px] md:min-h-[600px] grayscale hover:grayscale-0 transition-all duration-700"
+                                    className="border-0 min-h-[280px] md:min-h-[320px] grayscale hover:grayscale-0 transition-all duration-700"
                                     allowFullScreen
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"

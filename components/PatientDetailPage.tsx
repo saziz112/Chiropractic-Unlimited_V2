@@ -81,6 +81,30 @@ export const PatientDetailPage: React.FC = () => {
                             "item": `https://chirounlimitedwellness.com/patients/${slug}`
                         }
                     ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "MedicalWebPage",
+                    "name": patientGroup.metaTitle || `${patientGroup.title} Chiropractic Care in Valley, AL`,
+                    "description": patientGroup.metaDescription || patientGroup.fullDescription.slice(0, 160),
+                    "url": `https://chirounlimitedwellness.com/patients/${slug}`,
+                    "lastReviewed": "2026-04-02",
+                    "medicalAudience": {
+                        "@type": "MedicalAudience",
+                        "audienceType": patientGroup.title
+                    },
+                    "reviewedBy": {
+                        "@type": "Person",
+                        "@id": "https://chirounlimitedwellness.com/about#person",
+                        "name": "Dr. Jason Bang",
+                        "jobTitle": "Doctor of Chiropractic & Family Nurse Practitioner",
+                        "url": "https://chirounlimitedwellness.com/about"
+                    },
+                    "about": {
+                        "@type": "Chiropractor",
+                        "@id": "https://chirounlimitedwellness.com/#organization"
+                    },
+                    "inLanguage": "en-US"
                 }
             ]} />
 

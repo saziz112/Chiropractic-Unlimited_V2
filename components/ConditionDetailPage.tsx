@@ -78,14 +78,17 @@ export const ConditionDetailPage: React.FC = () => {
             },
             "reviewedBy": {
                 "@type": "Person",
+                "@id": "https://chirounlimitedwellness.com/about#person",
                 "name": "Dr. Jason Bang",
                 "jobTitle": "Doctor of Chiropractic & Family Nurse Practitioner",
                 "url": "https://chirounlimitedwellness.com/about"
-            }
+            },
+            "inLanguage": "en-US"
         },
         {
             "@context": "https://schema.org",
             "@type": "Chiropractor",
+            "@id": "https://chirounlimitedwellness.com/#organization",
             "name": "Chiropractic Unlimited",
             "url": "https://chirounlimitedwellness.com",
             "telephone": BUSINESS_INFO.phone,

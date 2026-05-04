@@ -101,7 +101,7 @@ This is the best-implemented schema on the site. Both datePublished and dateModi
 
 ### 3. Condition Page (/conditions/low-back-pain)
 
-**Schema types found:** BreadcrumbList only (1 block)
+**Schema types found:** BreadcrumbList, MedicalWebPage, Chiropractor (3 blocks) -- **UPDATED April 7, 2026**
 
 **Block: BreadcrumbList**
 
@@ -112,9 +112,36 @@ This is the best-implemented schema on the site. Both datePublished and dateModi
 | itemListElement | PASS | 3 items |
 | Position 2 item URL | **WARNING** | Uses `https://chirounlimitedwellness.com/#conditions` -- a hash URL. Google prefers full page URLs. This is technically valid but suboptimal since /#conditions is an anchor, not a standalone page. |
 
-**Missing schema opportunities:**
-- **MedicalCondition or MedicalWebPage** -- This is a healthcare condition page with symptoms, causes, and treatment information. A `MedicalWebPage` or `MedicalCondition` schema would signal medical authority to Google. See opportunities section.
-- **No LocalBusiness reference** -- Unlike the service area pages, condition pages don't reference the business entity at all.
+**Block: MedicalWebPage** -- ADDED April 7, 2026
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| @context | PASS | |
+| @type | PASS | MedicalWebPage |
+| name | PASS | Uses metaTitle |
+| description | PASS | Uses metaDescription |
+| url | PASS | Absolute URL |
+| lastReviewed | PASS | "2026-04-02" |
+| medicalAudience | PASS | PatientAudience |
+| reviewedBy | PASS | Person with name, jobTitle, url |
+| Missing: reviewedBy.@id | **MISSING** | Should reference shared Person entity |
+
+**Block: Chiropractor (LocalBusiness)** -- ADDED April 7, 2026
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| @context | PASS | |
+| @type | PASS | Chiropractor |
+| name, url, telephone, email | PASS | All present |
+| address (PostalAddress) | PASS | Full address |
+| geo (GeoCoordinates) | PASS | lat/lng present |
+| openingHoursSpecification | PASS | ISO 8601 24-hour format |
+| areaServed | PASS | 5 cities |
+| Missing: @id | **MISSING** | Should reference shared organization entity |
+
+**Previously missing, now resolved:**
+- ~~**MedicalCondition or MedicalWebPage**~~ -- **DONE (Apr 7):** MedicalWebPage schema added with lastReviewed and reviewedBy
+- ~~**No LocalBusiness reference**~~ -- **DONE (Apr 7):** Chiropractor schema with full NAP, geo, hours, and areaServed added
 
 ---
 
@@ -230,40 +257,13 @@ The homepage should include a `WebSite` schema. Even without a site search funct
 
 ---
 
-### Opportunity 2: MedicalWebPage Schema (Condition Pages)
+### ~~Opportunity 2: MedicalWebPage Schema (Condition Pages)~~ ✅ IMPLEMENTED (April 7, 2026)
 
-Condition pages currently only have BreadcrumbList. For a YMYL healthcare site, adding `MedicalWebPage` signals medical content authority.
+**Status:** MedicalWebPage schema added to ALL condition pages AND service pages. Includes `lastReviewed`, `medicalAudience` (PatientAudience), and `reviewedBy` (Dr. Jason Bang with jobTitle and URL).
 
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  "name": "Low Back Pain Treatment in Valley, AL",
-  "description": "...",
-  "url": "https://chirounlimitedwellness.com/conditions/low-back-pain",
-  "about": {
-    "@type": "MedicalCondition",
-    "name": "Low Back Pain",
-    "signOrSymptom": [
-      { "@type": "MedicalSignOrSymptom", "name": "Persistent aching or stiffness" },
-      { "@type": "MedicalSignOrSymptom", "name": "Sharp pain in the lower back" }
-    ],
-    "possibleTreatment": {
-      "@type": "MedicalTherapy",
-      "name": "Chiropractic Spinal Adjustment"
-    }
-  },
-  "lastReviewed": "2026-04-02",
-  "reviewedBy": {
-    "@type": "Person",
-    "@id": "https://chirounlimitedwellness.com/about#person",
-    "name": "Dr. Jason Bang"
-  }
-}
-```
+Additionally, Chiropractor (LocalBusiness) schema with full NAP, geo coordinates, opening hours, and areaServed (5 cities) was added to every condition and service page.
 
-**Priority:** High  
-**Impact:** Strong E-E-A-T signal for YMYL content. The `reviewedBy` property with the practitioner's credentials is a direct trust signal for Google's quality raters.
+**Remaining improvement:** Add `@id` to `reviewedBy` Person to cross-reference with the Person entity on /about. Add `about` with `MedicalCondition` sub-schema for richer condition data.
 
 ---
 

@@ -37,6 +37,23 @@ export const BlogListingPage: React.FC = () => {
         ]
     };
 
+    const collectionPageSchema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Chiropractic Blog | Health Tips from Dr. Jason Bang DC FNP",
+        "description": "Expert chiropractic and wellness articles from Dr. Jason Bang, a chiropractor and nurse practitioner in Valley, AL.",
+        "url": "https://chirounlimitedwellness.com/blog",
+        "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://chirounlimitedwellness.com/#website"
+        },
+        "publisher": {
+            "@type": "Chiropractor",
+            "@id": "https://chirounlimitedwellness.com/#organization"
+        },
+        "inLanguage": "en-US"
+    };
+
     return (
         <>
             <Helmet>
@@ -53,7 +70,7 @@ export const BlogListingPage: React.FC = () => {
                 <meta name="twitter:title" content="Chiropractic Blog | Chiropractic Unlimited" />
                 <meta name="twitter:description" content="Expert chiropractic and wellness articles from Dr. Jason Bang DC FNP in Valley, AL." />
             </Helmet>
-            <StructuredData data={breadcrumbSchema} />
+            <StructuredData data={[breadcrumbSchema, collectionPageSchema]} />
 
             {/* Hero */}
             <section className="relative bg-brand-primary overflow-hidden">

@@ -39,6 +39,11 @@ const ROUTES = [
     '/blog/rural-alabama-pain-rates',
     '/blog/chiropractic-for-kids',
     '/blog/auto-accident-injuries-i85',
+    '/blog/chiropractor-for-headaches',
+    '/blog/chiropractic-vs-surgery-back-pain',
+    '/blog/medicare-chiropractic-coverage',
+    '/blog/sports-chiropractic',
+    '/blog/drug-free-pain-management',
 ];
 
 const generateSitemap = () => {
@@ -87,10 +92,12 @@ const generateLlmsTxt = () => {
 - **Provider:** Dr. Jason Bang, DC, FNP
 - **Practice Name:** Chiropractic Unlimited
 - **Address:** 3731 20th Ave, Valley, AL 36854
-- **Phone:** (334) 203-7032
+- **Phone:** (334) 203-7032 (this is the chiropractic clinic line; the number on the gym signage, 334.219.0150, belongs to Workout Anytime, not the clinic)
 - **Email:** info@chirounlimitedwellness.com
 - **Website:** ${DOMAIN}
 - **Location Note:** Located inside the Workout Anytime gym, in the same plaza as Ace Hardware
+- **Storefront photo:** ${DOMAIN}/clinic-exterior.jpg
+- **Clinic tour video:** ${DOMAIN}/clinic-tour.mp4
 
 ## Credentials
 
@@ -148,6 +155,15 @@ Dr. Jason Bang is a graduate of Life University with international mentoring exp
 - [Back Pain Treatment Without Surgery: Evidence-Based Options in Valley, AL](${DOMAIN}/blog/back-pain-treatment-without-surgery)
 - [How Often Should You See a Chiropractor? An Evidence-Based Guide](${DOMAIN}/blog/how-often-see-chiropractor)
 - [Chiropractic for Sciatica: Does It Actually Work? Full Research Review](${DOMAIN}/blog/chiropractic-for-sciatica)
+- [Chiropractic During Pregnancy: Benefits, Safety, and What to Expect](${DOMAIN}/blog/chiropractic-during-pregnancy)
+- [Why Rural Alabama Has Higher Pain Rates](${DOMAIN}/blog/rural-alabama-pain-rates)
+- [Chiropractic for Kids: What Parents Need to Know](${DOMAIN}/blog/chiropractic-for-kids)
+- [Auto Accident Injuries on I-85: When to See a Chiropractor After a Crash](${DOMAIN}/blog/auto-accident-injuries-i85)
+- [Can a Chiropractor Help with Headaches? What the Research Shows](${DOMAIN}/blog/chiropractor-for-headaches)
+- [Chiropractic vs. Surgery for Back Pain: Cost, Recovery, and Outcomes Compared](${DOMAIN}/blog/chiropractic-vs-surgery-back-pain)
+- [What Medicare Covers for Chiropractic Care in 2025-2026](${DOMAIN}/blog/medicare-chiropractic-coverage)
+- [Sports Chiropractic: How Athletes Recover Faster and Prevent Injuries](${DOMAIN}/blog/sports-chiropractic)
+- [The Complete Guide to Drug-Free Pain Management (Pillar)](${DOMAIN}/blog/drug-free-pain-management)
 
 ## Key Pages
 

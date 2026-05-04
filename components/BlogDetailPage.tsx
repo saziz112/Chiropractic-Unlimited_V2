@@ -39,6 +39,7 @@ export const BlogDetailPage: React.FC = () => {
             "dateModified": post.lastUpdated || post.publishDate,
             "author": {
                 "@type": "Person",
+                "@id": "https://chirounlimitedwellness.com/about#person",
                 "name": post.author,
                 "jobTitle": "Doctor of Chiropractic & Family Nurse Practitioner",
                 "url": "https://chirounlimitedwellness.com/about",
@@ -46,6 +47,7 @@ export const BlogDetailPage: React.FC = () => {
             },
             "publisher": {
                 "@type": "Organization",
+                "@id": "https://chirounlimitedwellness.com/#organization",
                 "name": "Chiropractic Unlimited",
                 "url": "https://chirounlimitedwellness.com",
                 "logo": {
@@ -58,6 +60,7 @@ export const BlogDetailPage: React.FC = () => {
                 "@id": `https://chirounlimitedwellness.com/blog/${slug}`
             },
             "url": `https://chirounlimitedwellness.com/blog/${slug}`,
+            "inLanguage": "en-US",
             "wordCount": post.sections.reduce((acc, s) => acc + (s.content?.split(' ').length || 0) + (s.items?.join(' ').split(' ').length || 0), 0),
             "keywords": post.tags.join(', ')
         },

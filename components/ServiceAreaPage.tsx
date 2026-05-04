@@ -59,10 +59,12 @@ export const ServiceAreaPage: React.FC = () => {
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "Chiropractor",
+        "@id": "https://chirounlimitedwellness.com/#organization",
         "name": BUSINESS_INFO.name,
         "url": "https://chirounlimitedwellness.com",
         "telephone": BUSINESS_INFO.phone,
         "email": BUSINESS_INFO.email,
+        "image": "https://i.ibb.co/cXh09B2q/Jason-B.jpg",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "3731 20th Ave",
@@ -71,6 +73,19 @@ export const ServiceAreaPage: React.FC = () => {
             "postalCode": "36854",
             "addressCountry": "US"
         },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 32.8167,
+            "longitude": -85.1794
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "10:00",
+                "closes": "17:00"
+            }
+        ],
         "areaServed": {
             "@type": "City",
             "name": area.city,

@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, CheckCircle2, Award, GraduationCap, Heart, Globe, CalendarCheck, Phone } from 'lucide-react';
 import { RevealOnScroll } from './components/RevealOnScroll';
 import { StructuredData } from './components/StructuredData';
-import { BUSINESS_INFO } from './constants';
+import { BUSINESS_INFO, SOCIAL_LINKS } from './constants';
 
 export const AboutPage: React.FC = () => {
     const personSchema = {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://chirounlimitedwellness.com/about#person",
         "name": "Dr. Jason Bang",
         "jobTitle": "Doctor of Chiropractic and Family Nurse Practitioner",
         "description": "Board-certified chiropractor and family nurse practitioner offering integrated wellness care in Valley, AL",
@@ -17,6 +18,11 @@ export const AboutPage: React.FC = () => {
         "url": "https://chirounlimitedwellness.com/about",
         "telephone": BUSINESS_INFO.phone,
         "email": BUSINESS_INFO.email,
+        "medicalSpecialty": "Musculoskeletal",
+        "sameAs": [
+            SOCIAL_LINKS.instagram,
+            SOCIAL_LINKS.google
+        ],
         "alumniOf": [
             {
                 "@type": "EducationalOrganization",
@@ -42,7 +48,8 @@ export const AboutPage: React.FC = () => {
             }
         ],
         "worksFor": {
-            "@type": "MedicalBusiness",
+            "@type": "Chiropractor",
+            "@id": "https://chirounlimitedwellness.com/#organization",
             "name": BUSINESS_INFO.name,
             "address": {
                 "@type": "PostalAddress",
@@ -229,6 +236,56 @@ export const AboutPage: React.FC = () => {
                             </div>
                         </RevealOnScroll>
                     </div>
+                </div>
+            </section>
+
+            {/* Clinic Tour Video */}
+            <section className="py-16 md:py-24 bg-brand-bg">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <RevealOnScroll animation="fade-up">
+                        <div className="text-center max-w-3xl mx-auto mb-10">
+                            <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Visit Our Clinic</span>
+                            <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-4">A Quick Tour Before Your First Visit</h2>
+                            <p className="text-brand-muted text-lg leading-relaxed">
+                                Located inside Workout Anytime in Valley, AL — here is what to expect when you arrive.
+                            </p>
+                        </div>
+                    </RevealOnScroll>
+                    <RevealOnScroll animation="scale-up" delay={150}>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                            <figure className="space-y-3">
+                                <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[9/16] bg-brand-primary">
+                                    <video
+                                        src="/clinic-tour.mp4"
+                                        poster="/clinic-tour-poster.jpg"
+                                        autoPlay
+                                        muted
+                                        loop
+                                        playsInline
+                                        preload="metadata"
+                                        className="w-full h-full object-cover"
+                                        aria-label="Tour video: getting your first adjustment at Chiropractic Unlimited"
+                                    />
+                                </div>
+                                <figcaption className="text-center text-sm text-brand-muted">Your first adjustment, in 23 seconds.</figcaption>
+                            </figure>
+                            <figure className="space-y-3">
+                                <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[9/16] bg-brand-primary">
+                                    <video
+                                        src="/clinic-approach.mp4"
+                                        autoPlay
+                                        muted
+                                        loop
+                                        playsInline
+                                        preload="metadata"
+                                        className="w-full h-full object-cover"
+                                        aria-label="Walking up to the Chiropractic Unlimited storefront inside Workout Anytime, Valley AL"
+                                    />
+                                </div>
+                                <figcaption className="text-center text-sm text-brand-muted">Look for the green sign on the door.</figcaption>
+                            </figure>
+                        </div>
+                    </RevealOnScroll>
                 </div>
             </section>
 
