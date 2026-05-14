@@ -81,6 +81,14 @@ export const BRAND_ASSETS = {
   doctorPhoto: 'https://chirounlimitedwellness.com/jason-bang.jpg',
 };
 
+// Single source of truth for geo coordinates. Use across every page's
+// LocalBusiness/Chiropractor schema so Google fuses the entity correctly.
+// Derived from the Google Maps embed URL — matches GMB to within a meter.
+export const GEO_COORDINATES = {
+  latitude: 32.8167,
+  longitude: -85.1794,
+};
+
 // Schema.org openingHoursSpecification derived from HOURS — single source of truth
 // for every page's LocalBusiness/Chiropractor JSON-LD. Filters out closed days.
 export const OPENING_HOURS_SPECIFICATION = HOURS

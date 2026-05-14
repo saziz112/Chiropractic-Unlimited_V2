@@ -12,7 +12,7 @@ import { InstagramFeature } from './components/InstagramFeature';
 import { LatestBlog } from './components/LatestBlog';
 import { BookingSection } from './components/BookingSection';
 import { StructuredData } from './components/StructuredData';
-import { BUSINESS_INFO, HOURS, SOCIAL_LINKS, SERVICES } from './constants';
+import { BUSINESS_INFO, HOURS, SOCIAL_LINKS, SERVICES, GEO_COORDINATES } from './constants';
 import { Helmet } from 'react-helmet-async';
 
 export const HomePage: React.FC = () => {
@@ -35,8 +35,7 @@ export const HomePage: React.FC = () => {
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 32.82,
-            "longitude": -85.17
+            ...GEO_COORDINATES
         },
         "url": "https://chirounlimitedwellness.com",
         "priceRange": "$$",
