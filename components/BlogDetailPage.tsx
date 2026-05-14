@@ -28,10 +28,14 @@ export const BlogDetailPage: React.FC = () => {
         );
     }
 
+    // Pillar pages are hub content; emit as Article (Google's preferred hub type)
+    // rather than BlogPosting (chronological per-post type).
+    const isPillar = slug === 'drug-free-pain-management';
+
     const schemas = [
         {
             "@context": "https://schema.org",
-            "@type": "BlogPosting",
+            "@type": isPillar ? "Article" : "BlogPosting",
             "headline": post.title,
             "description": post.excerpt,
             "image": post.featuredImage,
@@ -52,7 +56,7 @@ export const BlogDetailPage: React.FC = () => {
                 "url": "https://chirounlimitedwellness.com",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://chirounlimitedwellness.com/Logo_Chiro%20Unlimited%20White%20Sidetrack.png"
+                    "url": "https://chirounlimitedwellness.com/logo.png"
                 }
             },
             "mainEntityOfPage": {
