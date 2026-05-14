@@ -200,7 +200,7 @@ export const ConditionDetailPage: React.FC = () => {
                     <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-brand-muted">
                         <div className="flex items-center gap-2">
                             <img
-                                src="https://i.ibb.co/cXh09B2q/Jason-B.jpg"
+                                src="/jason-bang.jpg"
                                 alt="Dr. Jason Bang"
                                 className="w-8 h-8 rounded-full object-cover"
                                 width={32}

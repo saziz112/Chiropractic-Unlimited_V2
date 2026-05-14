@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
                         </h1>
 
                         <p className="text-lg md:text-xl text-white/85 mb-10 font-light leading-relaxed max-w-xl drop-shadow-lg">
-                            Treating the root cause and healing from the inside out — chiropractic wellness and integrated care from <strong className="font-semibold text-white">Dr. Jason Bang DC FNP</strong>, the only DC + Family Nurse Practitioner in Valley.
+                            Treating the root cause and healing from the inside out — your <strong className="font-semibold text-white">Valley chiropractor</strong>, Dr. Jason Bang DC FNP, the only chiropractor and Family Nurse Practitioner in Valley, AL.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">

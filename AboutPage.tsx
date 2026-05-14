@@ -14,7 +14,7 @@ export const AboutPage: React.FC = () => {
         "name": "Dr. Jason Bang",
         "jobTitle": "Doctor of Chiropractic and Family Nurse Practitioner",
         "description": "Board-certified chiropractor and family nurse practitioner offering integrated wellness care in Valley, AL",
-        "image": "https://i.ibb.co/cXh09B2q/Jason-B.jpg",
+        "image": "https://chirounlimitedwellness.com/jason-bang.jpg",
         "url": "https://chirounlimitedwellness.com/about",
         "telephone": BUSINESS_INFO.phone,
         "email": BUSINESS_INFO.email,
@@ -81,6 +81,21 @@ export const AboutPage: React.FC = () => {
         ]
     };
 
+    const tourVideoSchema = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Inside Chiropractic Unlimited: A First-Visit Tour",
+        "description": "POV tour of Chiropractic Unlimited in Valley, AL — what to expect on your first chiropractic visit with Dr. Jason Bang DC FNP, including the clinic interior and treatment area inside the Workout Anytime gym.",
+        "thumbnailUrl": "https://chirounlimitedwellness.com/clinic-tour-poster.jpg",
+        "contentUrl": "https://chirounlimitedwellness.com/clinic-tour.mp4",
+        "uploadDate": "2026-05-04",
+        "duration": "PT23S",
+        "publisher": {
+            "@type": "Chiropractor",
+            "@id": "https://chirounlimitedwellness.com/#organization"
+        }
+    };
+
     return (
         <>
             <Helmet>
@@ -93,7 +108,7 @@ export const AboutPage: React.FC = () => {
                 {/* Open Graph Tags */}
                 <meta property="og:title" content="About Dr. Jason Bang DC FNP | Chiropractor in Valley, AL" />
                 <meta property="og:description" content="Meet Dr. Jason Bang, Valley AL's only chiropractor with dual DC and FNP credentials. Offering integrated wellness care combining chiropractic and medical expertise." />
-                <meta property="og:image" content="https://i.ibb.co/cXh09B2q/Jason-B.jpg" />
+                <meta property="og:image" content="https://chirounlimitedwellness.com/jason-bang.jpg" />
                 <meta property="og:url" content="https://chirounlimitedwellness.com/about" />
                 <meta property="og:type" content="profile" />
                 <meta property="og:site_name" content="Chiropractic Unlimited" />
@@ -103,9 +118,9 @@ export const AboutPage: React.FC = () => {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="About Dr. Jason Bang DC FNP | Chiropractor in Valley, AL" />
                 <meta name="twitter:description" content="Meet Dr. Jason Bang, Valley AL's only chiropractor with dual DC and FNP credentials. Offering integrated wellness care." />
-                <meta name="twitter:image" content="https://i.ibb.co/cXh09B2q/Jason-B.jpg" />
+                <meta name="twitter:image" content="https://chirounlimitedwellness.com/jason-bang.jpg" />
             </Helmet>
-            <StructuredData data={[personSchema, breadcrumbSchema]} />
+            <StructuredData data={[personSchema, breadcrumbSchema, tourVideoSchema]} />
 
             {/* Hero Section */}
             <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-brand-primary via-brand-primary to-brand-secondary overflow-hidden">
@@ -153,7 +168,7 @@ export const AboutPage: React.FC = () => {
                                 <div className="absolute -inset-4 bg-brand-accent/20 rounded-3xl blur-2xl"></div>
                                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="https://i.ibb.co/cXh09B2q/Jason-B.jpg"
+                                        src="/jason-bang.jpg"
                                         alt="Dr. Jason Bang DC FNP"
                                         className="w-full h-full object-cover"
                                     />

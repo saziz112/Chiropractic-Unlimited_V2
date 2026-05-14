@@ -8,7 +8,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 const Logo: React.FC<{ filter?: string }> = ({ filter }) => (
   <div className="flex items-center gap-2">
     <img
-      src="https://i.imgur.com/IPLXpTb.png"
+      src="/logo.png"
       alt="Chiropractic Unlimited Logo"
       className="h-12 lg:h-16 w-auto object-contain transition-all duration-300"
       style={{ filter: filter }}

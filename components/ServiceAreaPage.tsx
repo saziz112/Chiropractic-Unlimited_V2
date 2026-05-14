@@ -64,7 +64,7 @@ export const ServiceAreaPage: React.FC = () => {
         "url": "https://chirounlimitedwellness.com",
         "telephone": BUSINESS_INFO.phone,
         "email": BUSINESS_INFO.email,
-        "image": "https://i.ibb.co/cXh09B2q/Jason-B.jpg",
+        "image": "https://chirounlimitedwellness.com/jason-bang.jpg",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "3731 20th Ave",

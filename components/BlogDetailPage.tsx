@@ -43,7 +43,7 @@ export const BlogDetailPage: React.FC = () => {
                 "name": post.author,
                 "jobTitle": "Doctor of Chiropractic & Family Nurse Practitioner",
                 "url": "https://chirounlimitedwellness.com/about",
-                "image": "https://i.ibb.co/cXh09B2q/Jason-B.jpg"
+                "image": "https://chirounlimitedwellness.com/jason-bang.jpg"
             },
             "publisher": {
                 "@type": "Organization",

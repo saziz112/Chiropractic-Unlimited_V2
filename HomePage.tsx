@@ -22,7 +22,7 @@ export const HomePage: React.FC = () => {
         "@id": "https://chirounlimitedwellness.com/#organization",
         "name": BUSINESS_INFO.name,
         "description": "Chiropractic Unlimited provides advanced spinal correction, integrated wellness care, and holistic health services in Valley, AL. Dr. Jason Bang DC FNP combines chiropractic expertise with nursing knowledge for comprehensive patient care.",
-        "image": "https://i.ibb.co/cXh09B2q/Jason-B.jpg",
+        "image": "https://chirounlimitedwellness.com/jason-bang.jpg",
         "telephone": BUSINESS_INFO.phone,
         "email": BUSINESS_INFO.email,
         "address": {
@@ -85,7 +85,7 @@ export const HomePage: React.FC = () => {
             "name": "Dr. Jason Bang",
             "jobTitle": "Doctor of Chiropractic & Family Nurse Practitioner",
             "description": "Dr. Jason Bang DC FNP is a graduate of Life University with dual credentials in chiropractic and nursing. He brings a uniquely integrated approach to patient care.",
-            "image": "https://i.ibb.co/cXh09B2q/Jason-B.jpg",
+            "image": "https://chirounlimitedwellness.com/jason-bang.jpg",
             "url": "https://chirounlimitedwellness.com/about",
             "medicalSpecialty": "Musculoskeletal"
         },
@@ -133,6 +133,21 @@ export const HomePage: React.FC = () => {
         "inLanguage": "en-US"
     };
 
+    const heroVideoSchema = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Dr. Jason Bang Arriving at Chiropractic Unlimited",
+        "description": "Short video showing Dr. Jason Bang walking up to the Chiropractic Unlimited storefront in Valley, AL — the real clinical environment patients visit for chiropractic and integrated wellness care.",
+        "thumbnailUrl": "https://chirounlimitedwellness.com/clinic-approach-poster.jpg",
+        "contentUrl": "https://chirounlimitedwellness.com/clinic-approach.mp4",
+        "uploadDate": "2026-05-04",
+        "duration": "PT21S",
+        "publisher": {
+            "@type": "Chiropractor",
+            "@id": "https://chirounlimitedwellness.com/#organization"
+        }
+    };
+
     return (
         <>
             <Helmet>
@@ -145,7 +160,7 @@ export const HomePage: React.FC = () => {
                 {/* Open Graph Tags */}
                 <meta property="og:title" content="Chiropractor in Valley, AL | Chiropractic Unlimited" />
                 <meta property="og:description" content="Advanced spinal correction, integrated care, and holistic wellness in Valley, AL. Dr. Jason Bang DC FNP." />
-                <meta property="og:image" content="https://i.ibb.co/cXh09B2q/Jason-B.jpg" />
+                <meta property="og:image" content="https://chirounlimitedwellness.com/jason-bang.jpg" />
                 <meta property="og:url" content="https://chirounlimitedwellness.com/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Chiropractic Unlimited" />
@@ -155,9 +170,9 @@ export const HomePage: React.FC = () => {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Chiropractor in Valley, AL | Chiropractic Unlimited" />
                 <meta name="twitter:description" content="Advanced spinal correction, integrated care, and holistic wellness in Valley, AL. Dr. Jason Bang DC FNP." />
-                <meta name="twitter:image" content="https://i.ibb.co/cXh09B2q/Jason-B.jpg" />
+                <meta name="twitter:image" content="https://chirounlimitedwellness.com/jason-bang.jpg" />
             </Helmet>
-            <StructuredData data={[localBusinessSchema, websiteSchema]} />
+            <StructuredData data={[localBusinessSchema, websiteSchema, heroVideoSchema]} />
             <Hero />
             <Conditions />
             <Testimonials />

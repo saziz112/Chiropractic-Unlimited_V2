@@ -16,7 +16,7 @@ export const About: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 {/* Updated Doctor Image URL */}
                 <img
-                  src="https://i.ibb.co/cXh09B2q/Jason-B.jpg"
+                  src="/jason-bang.jpg"
                   alt={BUSINESS_INFO.doctor}
                   className="w-full h-auto object-cover max-h-[700px]"
                 />

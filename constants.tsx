@@ -74,6 +74,13 @@ export const HOURS: BusinessHours[] = [
   { day: 'Sunday', hours: 'Closed' },
 ];
 
+// Self-hosted brand assets. Replaces i.imgur.com (logo) and i.ibb.co (doctor photo)
+// which add DNS overhead, TTFB, and disappearance risk.
+export const BRAND_ASSETS = {
+  logo: 'https://chirounlimitedwellness.com/logo.png',
+  doctorPhoto: 'https://chirounlimitedwellness.com/jason-bang.jpg',
+};
+
 // Schema.org openingHoursSpecification derived from HOURS — single source of truth
 // for every page's LocalBusiness/Chiropractor JSON-LD. Filters out closed days.
 export const OPENING_HOURS_SPECIFICATION = HOURS
