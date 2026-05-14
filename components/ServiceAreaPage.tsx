@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { SERVICE_AREAS, CONDITIONS, BUSINESS_INFO, HOURS } from '../constants';
+import { SERVICE_AREAS, CONDITIONS, BUSINESS_INFO, HOURS, OPENING_HOURS_SPECIFICATION } from '../constants';
 import { ArrowLeft, MapPin, Clock, Phone, CalendarCheck, ArrowRight, Navigation, CheckCircle2 } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
 import { StructuredData } from './StructuredData';
@@ -78,14 +78,7 @@ export const ServiceAreaPage: React.FC = () => {
             "latitude": 32.8167,
             "longitude": -85.1794
         },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-                "opens": "10:00",
-                "closes": "17:00"
-            }
-        ],
+        "openingHoursSpecification": OPENING_HOURS_SPECIFICATION,
         "areaServed": {
             "@type": "City",
             "name": area.city,

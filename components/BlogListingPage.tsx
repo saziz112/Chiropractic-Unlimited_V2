@@ -112,10 +112,16 @@ export const BlogListingPage: React.FC = () => {
                         </div>
                     </RevealOnScroll>
 
-                    {/* Posts Grid */}
+                    {/* Posts Grid — reserve vertical space to prevent CLS during font/image load.
+                        Each card averages ~460px tall (16:10 image + ~180px content). */}
                     {filteredPosts.length > 0 ? (
                         <RevealOnScroll animation="stagger">
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                                style={{
+                                    minHeight: `${Math.ceil(filteredPosts.length / 3) * 460 + Math.max(0, Math.ceil(filteredPosts.length / 3) - 1) * 32}px`,
+                                }}
+                            >
                                 {filteredPosts.map((post) => {
                                     const formattedDate = new Date(post.publishDate).toLocaleDateString('en-US', {
                                         year: 'numeric',

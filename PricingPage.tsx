@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { BUSINESS_INFO } from './constants';
+import { BUSINESS_INFO, OPENING_HOURS_SPECIFICATION } from './constants';
 import { RevealOnScroll } from './components/RevealOnScroll';
 import { StructuredData } from './components/StructuredData';
 import { CheckCircle2, Phone, CalendarCheck, ArrowRight, DollarSign, Clock, Shield, Heart } from 'lucide-react';
@@ -62,14 +62,7 @@ export const PricingPage: React.FC = () => {
                 "latitude": 32.8167,
                 "longitude": -85.1794
             },
-            "openingHoursSpecification": [
-                {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-                    "opens": "10:00",
-                    "closes": "17:00"
-                }
-            ],
+            "openingHoursSpecification": OPENING_HOURS_SPECIFICATION,
             "areaServed": [
                 { "@type": "City", "name": "Valley" },
                 { "@type": "City", "name": "Lanett" },

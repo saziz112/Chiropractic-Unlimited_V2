@@ -3,64 +3,80 @@ const path = require('path');
 
 const DOMAIN = 'https://chirounlimitedwellness.com';
 const INDEXNOW_KEY = 'e6d6b5c8f9a4423e8b1d7c3a2f0e9d8c';
-const ROUTES = [
-    '/',
-    '/about',
-    '/conditions/low-back-pain',
-    '/conditions/neck-pain',
-    '/conditions/headaches',
-    '/conditions/sciatica',
-    '/conditions/auto-injuries',
-    '/conditions/poor-posture',
-    '/services/holistic-wellness',
-    '/services/spinal-correction',
-    '/services/integrated-care',
-    '/services/performance',
-    '/patients/athletes',
-    '/patients/pregnancy',
-    '/patients/pediatrics',
-    '/privacy',
-    '/terms',
-    '/locations/lanett-al',
-    '/locations/lafayette-al',
-    '/locations/west-point-ga',
-    '/locations/opelika-al',
-    '/pricing',
-    '/blog',
-    '/blog/what-does-a-chiropractor-do',
-    '/blog/chiropractor-vs-physical-therapist',
-    '/blog/first-chiropractic-visit-what-to-expect',
-    '/blog/is-chiropractic-care-safe',
-    '/blog/chiropractic-vs-opioids',
-    '/blog/back-pain-treatment-without-surgery',
-    '/blog/how-often-see-chiropractor',
-    '/blog/chiropractic-for-sciatica',
-    '/blog/chiropractic-during-pregnancy',
-    '/blog/rural-alabama-pain-rates',
-    '/blog/chiropractic-for-kids',
-    '/blog/auto-accident-injuries-i85',
-    '/blog/chiropractor-for-headaches',
-    '/blog/chiropractic-vs-surgery-back-pain',
-    '/blog/medicare-chiropractic-coverage',
-    '/blog/sports-chiropractic',
-    '/blog/drug-free-pain-management',
+const TODAY = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+
+// Static (non-blog) routes with their last meaningful update.
+// Update lastmod here when a page's content is substantively revised.
+const STATIC_ROUTES = [
+    { path: '/', lastmod: '2026-05-04' }, // hero video + schema overhaul
+    { path: '/about', lastmod: '2026-05-04' }, // clinic tour videos added
+    { path: '/conditions/low-back-pain', lastmod: '2026-04-07' },
+    { path: '/conditions/neck-pain', lastmod: '2026-04-07' },
+    { path: '/conditions/headaches', lastmod: '2026-04-07' },
+    { path: '/conditions/sciatica', lastmod: '2026-04-07' },
+    { path: '/conditions/auto-injuries', lastmod: '2026-04-07' },
+    { path: '/conditions/poor-posture', lastmod: '2026-04-07' },
+    { path: '/services/holistic-wellness', lastmod: '2026-05-04' },
+    { path: '/services/spinal-correction', lastmod: '2026-05-04' },
+    { path: '/services/integrated-care', lastmod: '2026-05-04' },
+    { path: '/services/performance', lastmod: '2026-05-04' },
+    { path: '/patients/athletes', lastmod: '2026-05-04' },
+    { path: '/patients/pregnancy', lastmod: '2026-05-04' },
+    { path: '/patients/pediatrics', lastmod: '2026-05-04' },
+    { path: '/privacy', lastmod: '2026-04-03' },
+    { path: '/terms', lastmod: '2026-04-03' },
+    { path: '/locations/lanett-al', lastmod: '2026-04-07' },
+    { path: '/locations/lafayette-al', lastmod: '2026-04-07' },
+    { path: '/locations/west-point-ga', lastmod: '2026-04-07' },
+    { path: '/locations/opelika-al', lastmod: '2026-04-07' },
+    { path: '/pricing', lastmod: '2026-04-07' },
+    { path: '/blog', lastmod: TODAY },
 ];
 
+// Parse blog posts from blogPosts.tsx without needing TS tooling.
+// Top-level post objects start with `    slug:` at exactly 4 spaces of indent.
+// `relatedLinks` and other inline slug references live deeper and are skipped.
+const parseBlogPosts = () => {
+    const src = fs.readFileSync(path.join(__dirname, '../blogPosts.tsx'), 'utf8');
+    const slugRe = /^    slug: '([^']+)'/gm;
+    const posts = [];
+    let m;
+    while ((m = slugRe.exec(src)) !== null) {
+        const slug = m[1];
+        // Look forward in the file from this slug to find publishDate and optional lastUpdated.
+        // Stop searching when we hit the next top-level slug or a closing `  },` at 2-space indent.
+        const tail = src.slice(m.index, m.index + 4000);
+        const pub = tail.match(/publishDate: '(\d{4}-\d{2}-\d{2})'/);
+        const lu = tail.match(/lastUpdated: '(\d{4}-\d{2}-\d{2})'/);
+        if (pub) {
+            posts.push({ slug, publishDate: pub[1], lastUpdated: (lu && lu[1]) || pub[1] });
+        }
+    }
+    return posts;
+};
+
 const generateSitemap = () => {
+    const allPosts = parseBlogPosts();
+    const publishedPosts = allPosts.filter(p => p.publishDate <= TODAY);
+    const skipped = allPosts.length - publishedPosts.length;
+
+    const blogRoutes = publishedPosts.map(p => ({
+        path: `/blog/${p.slug}`,
+        lastmod: p.lastUpdated,
+    }));
+
+    const routes = [...STATIC_ROUTES, ...blogRoutes];
+
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${ROUTES.map(route => `
-  <url>
-    <loc>${DOMAIN}${route}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>${route === '/' ? 'daily' : 'weekly'}</changefreq>
-    <priority>${route === '/' ? '1.0' : '0.8'}</priority>
-  </url>
-  `).join('')}
+${routes.map(r => `  <url>
+    <loc>${DOMAIN}${r.path}</loc>
+    <lastmod>${r.lastmod}</lastmod>
+  </url>`).join('\n')}
 </urlset>`;
 
-    fs.writeFileSync(path.join(__dirname, '../dist/sitemap.xml'), sitemap.trim());
-    console.log('✅ Generated sitemap.xml');
+    fs.writeFileSync(path.join(__dirname, '../dist/sitemap.xml'), sitemap);
+    console.log(`✅ Generated sitemap.xml (${routes.length} URLs, ${skipped} future-dated blog posts excluded)`);
 };
 
 const generateRobots = () => {

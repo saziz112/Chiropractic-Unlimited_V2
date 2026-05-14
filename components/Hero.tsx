@@ -9,11 +9,12 @@ export const Hero: React.FC = () => {
             <div className="absolute inset-0 z-0">
                 <video
                     src="/clinic-approach.mp4"
+                    poster="/clinic-approach-poster.jpg"
                     autoPlay
                     muted
                     loop
                     playsInline
-                    preload="metadata"
+                    preload="none"
                     aria-hidden="true"
                     className="w-full h-full object-cover"
                 />

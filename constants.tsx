@@ -74,6 +74,27 @@ export const HOURS: BusinessHours[] = [
   { day: 'Sunday', hours: 'Closed' },
 ];
 
+// Schema.org openingHoursSpecification derived from HOURS — single source of truth
+// for every page's LocalBusiness/Chiropractor JSON-LD. Filters out closed days.
+export const OPENING_HOURS_SPECIFICATION = HOURS
+  .filter(h => h.hours !== 'Closed')
+  .map(h => {
+    const [openStr, closeStr] = h.hours.split(' – ');
+    const to24 = (t: string) => {
+      const [time, period] = t.split(' ');
+      let [hr, min] = time.split(':').map(Number);
+      if (period === 'PM' && hr !== 12) hr += 12;
+      if (period === 'AM' && hr === 12) hr = 0;
+      return `${hr.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')}`;
+    };
+    return {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: h.day,
+      opens: to24(openStr),
+      closes: to24(closeStr),
+    };
+  });
+
 export const PATIENTS: import('./types').PatientItem[] = [
   {
     slug: "athletes",

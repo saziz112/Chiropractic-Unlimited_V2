@@ -171,7 +171,14 @@ async function prerender() {
             await new Promise(r => setTimeout(r, 1500));
 
             const content = await page.content();
-            const productionContent = content.replace(/http:\/\/localhost:4173/g, 'https://chirounlimitedwellness.com');
+            let productionContent = content.replace(/http:\/\/localhost:4173/g, 'https://chirounlimitedwellness.com');
+            // React drops the `muted` boolean attribute when serializing to HTML, which breaks
+            // mobile autoplay (browsers require muted to be present on the attribute, not just
+            // the DOM property). Inject it on any <video autoplay> that doesn't already have it.
+            productionContent = productionContent.replace(
+                /<video\b([^>]*\bautoplay\b[^>]*)>/gi,
+                (match, attrs) => /\bmuted\b/.test(attrs) ? match : `<video${attrs} muted>`
+            );
             fs.writeFileSync(filePath, productionContent);
             succeeded++;
         } catch (e) {
