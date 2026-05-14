@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { BUSINESS_INFO, OPENING_HOURS_SPECIFICATION } from './constants';
 import { RevealOnScroll } from './components/RevealOnScroll';
 import { StructuredData } from './components/StructuredData';
+import { QuickAnswer } from './components/QuickAnswer';
 import { CheckCircle2, Phone, CalendarCheck, ArrowRight, DollarSign, Clock, Shield, Heart } from 'lucide-react';
 
 export const PricingPage: React.FC = () => {
@@ -167,6 +168,10 @@ export const PricingPage: React.FC = () => {
                         <div className="max-w-3xl">
                             <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Why Cash-Based Care</span>
                             <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">How Much Does a Chiropractor Cost Without Insurance?</h2>
+                            <QuickAnswer
+                                text="At Chiropractic Unlimited in Valley, AL, the new-patient visit is $20 and ongoing visits range from $40 to $75. National averages run $30 to $200 per session and $100 to $400 for initial consultations. We are a cash-based clinic, which keeps prices transparent and lets Dr. Bang treat based on clinical need rather than insurance restrictions."
+                                label="How much does a chiropractor cost?"
+                            />
                             <p className="text-brand-muted text-lg leading-relaxed mb-4">
                                 National averages for chiropractic visits range from $30 to $200 per session, with initial consultations often running $100 to $400. At Chiropractic Unlimited, our first visit is just $20 — a fraction of what most clinics charge, with or without insurance.
                             </p>

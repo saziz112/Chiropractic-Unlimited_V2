@@ -6,6 +6,7 @@ import { ArrowLeft, CheckCircle2, Phone, CalendarCheck, ArrowRight } from 'lucid
 import { RevealOnScroll } from './RevealOnScroll';
 
 import { StructuredData } from './StructuredData';
+import { QuickAnswer } from './QuickAnswer';
 
 function renderBoldText(text: string) {
     const regex = /(\*\*.*?\*\*|\[[^\]]+\]\([^)]+\))/g;
@@ -221,6 +222,7 @@ export const ConditionDetailPage: React.FC = () => {
                     <RevealOnScroll animation="fade-up">
                         <div className="max-w-3xl">
                             <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">{condition.title} Treatment in Valley, AL</h2>
+                            <QuickAnswer source={condition.details} label={`What is ${condition.title}?`} />
                             {condition.details.split('\n\n').map((para, i) => (
                                 <p key={i} className="text-brand-muted text-lg leading-relaxed mb-4 last:mb-0">
                                     {renderBoldText(para)}

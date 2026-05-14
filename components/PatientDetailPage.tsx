@@ -5,6 +5,7 @@ import { PATIENTS, BUSINESS_INFO } from '../constants';
 import { ArrowLeft, CheckCircle2, Phone, CalendarCheck, ArrowRight } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
 import { StructuredData } from './StructuredData';
+import { QuickAnswer } from './QuickAnswer';
 
 function renderBoldText(text: string) {
     const parts = text.split(/\*\*(.*?)\*\*/g);
@@ -184,6 +185,7 @@ export const PatientDetailPage: React.FC = () => {
                     <RevealOnScroll animation="fade-up">
                         <div className="max-w-3xl">
                             <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">Chiropractic Care for {patientGroup.title}</h2>
+                            <QuickAnswer source={patientGroup.fullDescription} label={`Chiropractic for ${patientGroup.title}`} />
                             <p className="text-brand-muted text-lg leading-relaxed">
                                 {patientGroup.fullDescription}
                             </p>
