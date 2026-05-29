@@ -21,6 +21,28 @@ export const HomePage: React.FC = () => {
         "@type": "Chiropractor",
         "@id": "https://chirounlimitedwellness.com/#organization",
         "name": BUSINESS_INFO.name,
+        "alternateName": [
+            "Chiro Unlimited",
+            "Chiropractor Unlimited",
+            "Unlimited Chiropractic",
+            "Chiropractic Unlimited Valley",
+            "Chiropractic Unlimited Valley AL"
+        ],
+        "slogan": "Valley, AL's only chiropractor with dual DC + FNP credentials",
+        "knowsAbout": [
+            "Spinal adjustment",
+            "Chiropractic adjustment",
+            "Spinal decompression",
+            "Sciatica treatment",
+            "Auto accident injury",
+            "Whiplash",
+            "Low back pain",
+            "Neck pain",
+            "Chronic headache",
+            "Pediatric chiropractic",
+            "Prenatal chiropractic",
+            "Sports chiropractic"
+        ],
         "description": "Chiropractic Unlimited provides advanced spinal correction, integrated wellness care, and holistic health services in Valley, AL. Dr. Jason Bang DC FNP combines chiropractic expertise with nursing knowledge for comprehensive patient care.",
         "image": "https://chirounlimitedwellness.com/jason-bang.jpg",
         "telephone": BUSINESS_INFO.phone,

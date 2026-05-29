@@ -185,7 +185,11 @@ export const PatientDetailPage: React.FC = () => {
                     <RevealOnScroll animation="fade-up">
                         <div className="max-w-3xl">
                             <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">Chiropractic Care for {patientGroup.title}</h2>
-                            <QuickAnswer source={patientGroup.fullDescription} label={`Chiropractic for ${patientGroup.title}`} />
+                            <QuickAnswer
+                                text={patientGroup.quickAnswerText}
+                                source={patientGroup.fullDescription}
+                                label={patientGroup.quickAnswerLabel || `Chiropractic for ${patientGroup.title}`}
+                            />
                             <p className="text-brand-muted text-lg leading-relaxed">
                                 {patientGroup.fullDescription}
                             </p>

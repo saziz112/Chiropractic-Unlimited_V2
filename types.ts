@@ -52,6 +52,11 @@ export interface PatientItem {
   metaDescription?: string;
   approach?: string;
   faqs?: FAQ[];
+  // See ServiceItem — same pattern: override the auto-extracted QuickAnswer
+  // when the page ranks for a phrase that differs from the display title
+  // (e.g. /patients/pediatrics also ranking for "chiropractic for teens").
+  quickAnswerLabel?: string;
+  quickAnswerText?: string;
 }
 
 export interface ServiceAreaItem {

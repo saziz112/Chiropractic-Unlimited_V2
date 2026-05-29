@@ -182,22 +182,30 @@ export const PATIENTS: import('./types').PatientItem[] = [
   {
     slug: "pediatrics",
     title: "Pediatrics",
-    description: "Gentle chiropractic for growing bodies.",
-    fullDescription: "From birth trauma to heavy backpacks and tech-neck, children experience stress on their spines too. We provide extremely gentle, safe adjustments to help children grow straight and healthy.",
+    description: "Gentle chiropractic for kids and teens.",
+    fullDescription: "From birth trauma and heavy backpacks to sports injuries and tech-neck, children and teenagers experience real stress on their spines. We provide gentle, safe adjustments tailored to each developmental stage — from newborns to teens — to support healthy growth, recovery, and performance.",
     benefits: [
-      "Support for ear infections & colic",
+      "Support for ear infections & colic (infants)",
       "Better sleep quality",
       "Improved immune system",
-      "Healthy spinal development"
+      "Healthy spinal development",
+      "Sports injury recovery (teens)",
+      "Tech-neck and posture correction (teens)"
     ],
     image: "https://images.unsplash.com/photo-1602052793312-b99c2a9ee797?q=80&w=800&auto=format&fit=crop",
-    metaTitle: "Pediatric Chiropractor in Valley, AL | Gentle Care for Kids",
-    metaDescription: "Safe, gentle chiropractic care for children in Valley, AL. From colic and ear infections to growing pains, Dr. Bang helps kids grow up healthy and strong.",
-    approach: "Children are not small adults — their spines and nervous systems are developing rapidly, and even minor misalignments can affect their health in ways that aren't always obvious. We use **extremely gentle, low-force techniques** specifically designed for pediatric patients. Our evaluations look at spinal alignment, posture, and neurological development to catch issues early. Whether your child is dealing with colic, ear infections, growing pains, or the effects of screen time and heavy backpacks, we provide safe, effective care that supports their growth and development.",
+    metaTitle: "Pediatric & Teen Chiropractor in Valley, AL | Gentle Care",
+    metaDescription: "Safe, gentle chiropractic care for kids and teens in Valley, AL. From colic and growing pains to sports injuries, tech-neck, and posture — Dr. Bang treats every age.",
+    quickAnswerLabel: "Do You Treat Kids and Teens?",
+    quickAnswerText: "Yes — Chiropractic Unlimited treats patients of every age, from newborns through teenagers and beyond. **For infants and young children**, we use extremely gentle, low-force techniques to address colic, ear infections, sleep issues, and healthy spinal development. **For teens**, we focus on sports injuries, posture and tech-neck from heavy phone/screen use, scoliosis screening, and growth-related back pain. Every adjustment is tailored to the child's age and size — pediatric care is nothing like adult care.",
+    approach: "Children are not small adults — their spines and nervous systems are developing rapidly, and the right approach changes completely between an infant, a school-age child, and a teenager. We use **extremely gentle, low-force techniques** specifically designed for pediatric patients, and step up to more standard but still age-appropriate adjustments as teens grow.\n\n**For kids**, we focus on early spinal development, colic and ear infections, sleep, growing pains, and the effects of heavy backpacks and screen time. **For teens**, the picture shifts: sports injuries (especially in football, soccer, gymnastics, and cheer), posture and tech-neck from phone and laptop use, scoliosis screening, and growth-spurt back pain become the priority. Dr. Bang's FNP credentials add an extra layer of safety — if anything we see during evaluation suggests a non-mechanical cause, he can refer or co-manage appropriately.",
     faqs: [
       {
         question: "At what age can a child see a chiropractor?",
         answer: "Children can benefit from chiropractic care at any age, even as newborns. Birth itself can place significant stress on a baby's spine and nervous system. Our pediatric adjustments are incredibly gentle — using no more pressure than you'd use to test the ripeness of a tomato."
+      },
+      {
+        question: "Do you treat teenagers?",
+        answer: "Yes — teens are one of our most common patient groups. We see a lot of sports injuries (football, soccer, gymnastics, cheer), posture and tech-neck issues from phone and laptop use, scoliosis concerns, and back pain that comes with rapid growth spurts. Teen care uses age-appropriate adjustment techniques that are gentler than adult adjustments but more involved than infant care. Dr. Bang's FNP background also means he can screen for sports-related concerns that go beyond the spine."
       },
       {
         question: "Is chiropractic safe for children?",
@@ -205,7 +213,7 @@ export const PATIENTS: import('./types').PatientItem[] = [
       },
       {
         question: "What signs might indicate my child needs chiropractic care?",
-        answer: "Common signs include frequent ear infections, colic, difficulty sleeping, poor posture, complaints of back or neck pain, headaches, and uneven gait or movement patterns. Even children without obvious symptoms can benefit from wellness check-ups."
+        answer: "Common signs include frequent ear infections, colic, difficulty sleeping, poor posture, complaints of back or neck pain, headaches, and uneven gait or movement patterns. For teens, watch for sports injuries that aren't healing, persistent neck pain after long screen sessions, and complaints of back pain during growth spurts. Even children without obvious symptoms can benefit from wellness check-ups."
       },
       {
         question: "How often does a child need to be adjusted?",
