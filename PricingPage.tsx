@@ -79,7 +79,7 @@ export const PricingPage: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>Chiropractor Cost Without Insurance | Valley, AL | $20 New Patient Special</title>
+                <title>Chiropractor Cost in Valley, AL | $20 New Patient Special</title>
                 <meta name="description" content="Affordable chiropractic care in Valley, AL — no insurance needed. $20 new patient special includes consultation, exam, and report of findings. Transparent pricing from Dr. Jason Bang DC FNP." />
                 <link rel="canonical" href="https://chirounlimitedwellness.com/pricing" />
 

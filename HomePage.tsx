@@ -150,7 +150,7 @@ export const HomePage: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>Chiropractor in Valley, AL | Chiropractic Unlimited</title>
+                <title>Chiropractic Unlimited | Valley, AL Chiropractor (DC + FNP)</title>
                 <meta name="description" content="Chiropractic Unlimited in Valley, AL offers advanced spinal correction, integrated care, and holistic wellness. Dr. Jason Bang DC FNP treats the root cause of pain." />
 
                 {/* Canonical URL */}

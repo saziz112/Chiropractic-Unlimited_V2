@@ -99,7 +99,7 @@ export const AboutPage: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>About Dr. Jason Bang DC FNP | Chiropractor in Valley, AL</title>
+                <title>Dr. Jason Bang — Valley AL Chiropractor + Nurse Practitioner</title>
                 <meta name="description" content="Meet Dr. Jason Bang, Valley AL's only chiropractor with dual DC and FNP credentials. Integrated wellness care combining chiropractic and medical expertise." />
 
                 {/* Canonical URL */}
