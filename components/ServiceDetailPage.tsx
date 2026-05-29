@@ -228,7 +228,11 @@ export const ServiceDetailPage: React.FC = () => {
                     <RevealOnScroll animation="fade-up">
                         <div className="max-w-3xl">
                             <h2 className="text-3xl md:text-4xl font-display text-brand-primary mb-6">{service.title} in Valley, AL</h2>
-                            <QuickAnswer source={service.fullDescription} label={`What is ${service.title}?`} />
+                            <QuickAnswer
+                                text={service.quickAnswerText}
+                                source={service.fullDescription}
+                                label={service.quickAnswerLabel || `What is ${service.title}?`}
+                            />
                             <p className="text-brand-muted text-lg leading-relaxed">
                                 {service.fullDescription}
                             </p>

@@ -254,6 +254,8 @@ export const SERVICES: ServiceItem[] = [
     title: "Spinal Correction",
     description: "Gentle and effective spinal adjustments to restore proper alignment and function.",
     fullDescription: "Precise spinal adjustments are the foundation of chiropractic care. By restoring proper alignment, we remove interference from your nervous system, allowing your body to heal and function at its best. At Chiropractic Unlimited, we go beyond quick fixes — our corrective care plans are designed to produce lasting structural changes that hold over time.",
+    quickAnswerLabel: "What Is a Spinal Adjustment?",
+    quickAnswerText: "A **spinal adjustment** (also called a **chiropractic adjustment** or **spinal manipulation**) is a precise, controlled force applied by hand or instrument to a specific vertebra to restore proper joint motion and reduce nerve irritation — letting the body heal without medication or surgery. The popping sound is gas releasing from the joint capsule, completely normal and painless. At Chiropractic Unlimited in Valley, AL, Dr. Jason Bang's dual DC + FNP credentials mean he can screen for the rare conditions where adjustment is not appropriate before any treatment begins.",
     benefits: [
       "Improved nervous system function",
       "Reduced joint inflammation",
@@ -268,6 +270,14 @@ export const SERVICES: ServiceItem[] = [
     metaDescription: "Gentle, precise spinal correction in Valley, AL. Dr. Jason Bang restores proper alignment to relieve pain and optimize nervous system function. Book now.",
     approach: "We start with a thorough spinal evaluation to identify misalignments (subluxations) and their impact on your nervous system. Using gentle, specific adjustment techniques, we progressively restore proper spinal curves and alignment. Unlike quick-fix approaches, our corrective care plans include follow-up assessments to track structural improvement and ensure your spine holds its correction long-term.",
     faqs: [
+      {
+        question: "What is a spinal adjustment?",
+        answer: "A spinal adjustment (also called a chiropractic adjustment or spinal manipulation) is a precise, controlled force applied to a specific vertebra in the spine to restore proper joint motion and reduce nerve irritation. The technique is performed by a licensed Doctor of Chiropractic using either the hands or a small adjusting instrument. The goal is to correct a vertebral misalignment (subluxation), relieve pressure on surrounding nerves, and let the body heal without medication or surgery."
+      },
+      {
+        question: "Are spinal adjustments and chiropractic adjustments the same thing?",
+        answer: "Yes — \"spinal adjustment,\" \"chiropractic adjustment,\" and \"spinal manipulation\" all refer to the same procedure: a precise, controlled force applied to a vertebra to restore proper alignment. Different chiropractors and patients use the terms interchangeably."
+      },
       {
         question: "Does a chiropractic adjustment hurt?",
         answer: "Most patients feel immediate relief after an adjustment. You may hear a popping sound, which is simply gas releasing from the joint — it's completely normal. Dr. Bang uses gentle, controlled techniques suited to your comfort level."

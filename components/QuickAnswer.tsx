@@ -16,6 +16,14 @@ interface Props {
  * concise passage rather than guessing from prose. The label + visual treatment
  * also signals to humans that this is the short version.
  */
+function renderBold(text: string) {
+    return text.split(/(\*\*.*?\*\*)/g).map((part, i) =>
+        part.startsWith('**') && part.endsWith('**')
+            ? <strong key={i} className="font-semibold text-brand-primary">{part.slice(2, -2)}</strong>
+            : part
+    );
+}
+
 export const QuickAnswer: React.FC<Props> = ({ text, source, label = 'Quick Answer' }) => {
     const summary = text || extractSummary(source || '');
     if (!summary) return null;
@@ -35,7 +43,7 @@ export const QuickAnswer: React.FC<Props> = ({ text, source, label = 'Quick Answ
                         {label}
                     </h2>
                     <p className="text-brand-text text-base md:text-lg leading-relaxed m-0">
-                        {summary}
+                        {renderBold(summary)}
                     </p>
                 </div>
             </div>

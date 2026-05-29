@@ -12,6 +12,12 @@ export interface ServiceItem {
   metaDescription?: string;
   approach?: string;
   faqs?: FAQ[];
+  // Optional overrides for the QuickAnswer box. When the service page ranks
+  // for a query phrase that differs from the service title (e.g. "spinal
+  // adjustments" while the service is named "Spinal Correction"), set these
+  // so the AI-Overview-citable passage answers the actual search query.
+  quickAnswerLabel?: string;
+  quickAnswerText?: string;
 }
 
 export interface FAQ {
