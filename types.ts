@@ -76,7 +76,7 @@ export interface BusinessHours {
   hours: string;
 }
 
-export type BlogSectionType = 'paragraph' | 'heading' | 'subheading' | 'list' | 'blockquote' | 'image' | 'chart';
+export type BlogSectionType = 'paragraph' | 'heading' | 'subheading' | 'list' | 'blockquote' | 'image' | 'chart' | 'tldr';
 
 export interface BlogSection {
   type: BlogSectionType;
@@ -86,6 +86,7 @@ export interface BlogSection {
   alt?: string;
   caption?: string;
   chartId?: string;
+  label?: string;
 }
 
 export interface BlogPost {

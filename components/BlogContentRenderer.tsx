@@ -1,4 +1,5 @@
 import React from 'react';
+import { CheckCircle2 } from 'lucide-react';
 import { BlogSection } from '../types';
 import { BLOG_CHARTS } from './BlogCharts';
 
@@ -75,6 +76,31 @@ export const BlogContentRenderer: React.FC<BlogContentRendererProps> = ({ sectio
                                 </p>
                             </blockquote>
                         );
+                    case 'tldr': {
+                        const labelId = `tldr-label-${idx}`;
+                        return (
+                            <aside
+                                key={idx}
+                                className="my-6 rounded-2xl border-l-4 border-brand-accent bg-emerald-50/60 p-6 md:p-7 shadow-sm"
+                                aria-labelledby={labelId}
+                            >
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-6 h-6 text-brand-accent flex-shrink-0 mt-1" aria-hidden="true" />
+                                    <div>
+                                        <h2
+                                            id={labelId}
+                                            className="text-sm font-semibold tracking-widest uppercase text-brand-accent mb-2"
+                                        >
+                                            {section.label || 'Quick Answer'}
+                                        </h2>
+                                        <p className="text-brand-text text-base md:text-lg leading-relaxed m-0">
+                                            {renderRichText(section.content)}
+                                        </p>
+                                    </div>
+                                </div>
+                            </aside>
+                        );
+                    }
                     case 'image':
                         return (
                             <figure key={idx} className="my-8">
