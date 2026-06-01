@@ -94,7 +94,7 @@ export const ConditionDetailPage: React.FC = () => {
             "url": "https://chirounlimitedwellness.com",
             "telephone": BUSINESS_INFO.phone,
             "email": "info@chirounlimitedwellness.com",
-            "image": "https://chirounlimitedwellness.com/og-image.jpg",
+            "image": "https://chirounlimitedwellness.com/jason-bang.jpg",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "3731 20th Ave",
