@@ -110,13 +110,13 @@ export const ServiceDetailPage: React.FC = () => {
                     "url": `https://chirounlimitedwellness.com/services/${slug}`,
                     "medicalSpecialty": "Musculoskeletal",
                     "provider": {
-                        "@type": "Chiropractor",
+                        "@type": ["MedicalBusiness", "LocalBusiness"],
                         "@id": "https://chirounlimitedwellness.com/#organization"
                     }
                 },
                 {
                     "@context": "https://schema.org",
-                    "@type": "Chiropractor",
+                    "@type": ["MedicalBusiness", "LocalBusiness"],
                     "@id": "https://chirounlimitedwellness.com/#organization",
                     "name": "Chiropractic Unlimited",
                     "url": "https://chirounlimitedwellness.com",

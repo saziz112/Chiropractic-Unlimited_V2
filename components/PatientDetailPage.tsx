@@ -102,7 +102,7 @@ export const PatientDetailPage: React.FC = () => {
                         "url": "https://chirounlimitedwellness.com/about"
                     },
                     "about": {
-                        "@type": "Chiropractor",
+                        "@type": ["MedicalBusiness", "LocalBusiness"],
                         "@id": "https://chirounlimitedwellness.com/#organization"
                     },
                     "inLanguage": "en-US"

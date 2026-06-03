@@ -88,7 +88,7 @@ export const ConditionDetailPage: React.FC = () => {
         },
         {
             "@context": "https://schema.org",
-            "@type": "Chiropractor",
+            "@type": ["MedicalBusiness", "LocalBusiness"],
             "@id": "https://chirounlimitedwellness.com/#organization",
             "name": "Chiropractic Unlimited",
             "url": "https://chirounlimitedwellness.com",

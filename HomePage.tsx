@@ -18,7 +18,7 @@ import { Helmet } from 'react-helmet-async';
 export const HomePage: React.FC = () => {
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "Chiropractor",
+        "@type": ["MedicalBusiness", "LocalBusiness"],
         "@id": "https://chirounlimitedwellness.com/#organization",
         "name": BUSINESS_INFO.name,
         "alternateName": [
@@ -108,7 +108,6 @@ export const HomePage: React.FC = () => {
             "description": "Dr. Jason Bang DC FNP is a graduate of Life University with dual credentials in chiropractic and nursing. He brings a uniquely integrated approach to patient care.",
             "image": "https://chirounlimitedwellness.com/jason-bang.jpg",
             "url": "https://chirounlimitedwellness.com/about",
-            "medicalSpecialty": "Musculoskeletal"
         },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -148,7 +147,7 @@ export const HomePage: React.FC = () => {
         "name": "Chiropractic Unlimited",
         "url": "https://chirounlimitedwellness.com",
         "publisher": {
-            "@type": "Chiropractor",
+            "@type": ["MedicalBusiness", "LocalBusiness"],
             "@id": "https://chirounlimitedwellness.com/#organization"
         },
         "inLanguage": "en-US"
@@ -164,7 +163,7 @@ export const HomePage: React.FC = () => {
         "uploadDate": "2026-05-04",
         "duration": "PT21S",
         "publisher": {
-            "@type": "Chiropractor",
+            "@type": ["MedicalBusiness", "LocalBusiness"],
             "@id": "https://chirounlimitedwellness.com/#organization"
         }
     };

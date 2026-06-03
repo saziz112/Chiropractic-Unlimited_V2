@@ -48,7 +48,7 @@ export const BlogListingPage: React.FC = () => {
             "@id": "https://chirounlimitedwellness.com/#website"
         },
         "publisher": {
-            "@type": "Chiropractor",
+            "@type": ["MedicalBusiness", "LocalBusiness"],
             "@id": "https://chirounlimitedwellness.com/#organization"
         },
         "inLanguage": "en-US"
