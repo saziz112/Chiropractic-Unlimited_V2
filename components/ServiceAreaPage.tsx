@@ -58,7 +58,7 @@ export const ServiceAreaPage: React.FC = () => {
 
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": ["MedicalBusiness", "LocalBusiness"],
+        "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
         "@id": "https://chirounlimitedwellness.com/#organization",
         "name": BUSINESS_INFO.name,
         "url": "https://chirounlimitedwellness.com",

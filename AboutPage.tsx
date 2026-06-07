@@ -19,8 +19,7 @@ export const AboutPage: React.FC = () => {
         "telephone": BUSINESS_INFO.phone,
         "email": BUSINESS_INFO.email,
         "sameAs": [
-            SOCIAL_LINKS.instagram,
-            SOCIAL_LINKS.google
+            SOCIAL_LINKS.instagram
         ],
         "alumniOf": [
             {
@@ -47,7 +46,7 @@ export const AboutPage: React.FC = () => {
             }
         ],
         "worksFor": {
-            "@type": ["MedicalBusiness", "LocalBusiness"],
+            "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
             "@id": "https://chirounlimitedwellness.com/#organization",
             "name": BUSINESS_INFO.name,
             "address": {
@@ -90,7 +89,7 @@ export const AboutPage: React.FC = () => {
         "uploadDate": "2026-05-04",
         "duration": "PT23S",
         "publisher": {
-            "@type": ["MedicalBusiness", "LocalBusiness"],
+            "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
             "@id": "https://chirounlimitedwellness.com/#organization"
         }
     };

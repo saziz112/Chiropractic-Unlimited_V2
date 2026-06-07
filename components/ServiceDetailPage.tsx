@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { SERVICES, BUSINESS_INFO, OPENING_HOURS_SPECIFICATION } from '../constants';
+import { SERVICES, BUSINESS_INFO, OPENING_HOURS_SPECIFICATION, AREA_SERVED } from '../constants';
 import { ArrowLeft, CheckCircle2, Phone, CalendarCheck, ArrowRight } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
 import { StructuredData, faqPageSchema } from './StructuredData';
@@ -110,13 +110,13 @@ export const ServiceDetailPage: React.FC = () => {
                     "url": `https://chirounlimitedwellness.com/services/${slug}`,
                     "medicalSpecialty": "Musculoskeletal",
                     "provider": {
-                        "@type": ["MedicalBusiness", "LocalBusiness"],
+                        "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
                         "@id": "https://chirounlimitedwellness.com/#organization"
                     }
                 },
                 {
                     "@context": "https://schema.org",
-                    "@type": ["MedicalBusiness", "LocalBusiness"],
+                    "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
                     "@id": "https://chirounlimitedwellness.com/#organization",
                     "name": "Chiropractic Unlimited",
                     "url": "https://chirounlimitedwellness.com",
@@ -136,13 +136,7 @@ export const ServiceDetailPage: React.FC = () => {
                         "longitude": -85.1794
                     },
                     "openingHoursSpecification": OPENING_HOURS_SPECIFICATION,
-                    "areaServed": [
-                        { "@type": "City", "name": "Valley" },
-                        { "@type": "City", "name": "Lanett" },
-                        { "@type": "City", "name": "West Point" },
-                        { "@type": "City", "name": "LaFayette" },
-                        { "@type": "City", "name": "Opelika" }
-                    ]
+                    "areaServed": AREA_SERVED
                 }
             , ...faqPageSchema(service.faqs)]} />
 

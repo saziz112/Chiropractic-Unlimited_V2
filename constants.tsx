@@ -89,6 +89,19 @@ export const GEO_COORDINATES = {
   longitude: -85.1794,
 };
 
+// Canonical service-area list for schema markup. Single source of truth —
+// pages previously defined drifting 5- and 6-city variants, which sends
+// conflicting geographic signals to Google's Knowledge Graph.
+export const AREA_SERVED = [
+  { "@type": "City", "name": "Valley", "containedInPlace": { "@type": "State", "name": "Alabama" } },
+  { "@type": "City", "name": "Lanett", "containedInPlace": { "@type": "State", "name": "Alabama" } },
+  { "@type": "City", "name": "LaFayette", "containedInPlace": { "@type": "State", "name": "Alabama" } },
+  { "@type": "City", "name": "Opelika", "containedInPlace": { "@type": "State", "name": "Alabama" } },
+  { "@type": "City", "name": "Auburn", "containedInPlace": { "@type": "State", "name": "Alabama" } },
+  { "@type": "City", "name": "West Point", "containedInPlace": { "@type": "State", "name": "Georgia" } },
+  { "@type": "City", "name": "LaGrange", "containedInPlace": { "@type": "State", "name": "Georgia" } },
+];
+
 // Schema.org openingHoursSpecification derived from HOURS — single source of truth
 // for every page's LocalBusiness/Chiropractor JSON-LD. Filters out closed days.
 export const OPENING_HOURS_SPECIFICATION = HOURS

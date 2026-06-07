@@ -12,13 +12,13 @@ import { InstagramFeature } from './components/InstagramFeature';
 import { LatestBlog } from './components/LatestBlog';
 import { BookingSection } from './components/BookingSection';
 import { StructuredData } from './components/StructuredData';
-import { BUSINESS_INFO, HOURS, SOCIAL_LINKS, SERVICES, GEO_COORDINATES } from './constants';
+import { BUSINESS_INFO, HOURS, SOCIAL_LINKS, SERVICES, GEO_COORDINATES, AREA_SERVED } from './constants';
 import { Helmet } from 'react-helmet-async';
 
 export const HomePage: React.FC = () => {
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": ["MedicalBusiness", "LocalBusiness"],
+        "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
         "@id": "https://chirounlimitedwellness.com/#organization",
         "name": BUSINESS_INFO.name,
         "alternateName": [
@@ -63,43 +63,12 @@ export const HomePage: React.FC = () => {
         "priceRange": "$$",
         "paymentAccepted": "Cash, Credit Card, Debit Card",
         "currenciesAccepted": "USD",
+        // TODO: add the GBP profile share URL (business.google.com → share profile) once Sam provides it
         "sameAs": [
             SOCIAL_LINKS.instagram,
-            SOCIAL_LINKS.google,
         ],
         "hasMap": "https://www.google.com/maps?q=3731+20th+Ave,+Valley,+AL+36854",
-        "areaServed": [
-            {
-                "@type": "City",
-                "name": "Valley",
-                "containedInPlace": { "@type": "State", "name": "Alabama" }
-            },
-            {
-                "@type": "City",
-                "name": "Lanett",
-                "containedInPlace": { "@type": "State", "name": "Alabama" }
-            },
-            {
-                "@type": "City",
-                "name": "West Point",
-                "containedInPlace": { "@type": "State", "name": "Georgia" }
-            },
-            {
-                "@type": "City",
-                "name": "LaGrange",
-                "containedInPlace": { "@type": "State", "name": "Georgia" }
-            },
-            {
-                "@type": "City",
-                "name": "Opelika",
-                "containedInPlace": { "@type": "State", "name": "Alabama" }
-            },
-            {
-                "@type": "City",
-                "name": "Auburn",
-                "containedInPlace": { "@type": "State", "name": "Alabama" }
-            }
-        ],
+        "areaServed": AREA_SERVED,
         "founder": {
             "@type": "Person",
             "@id": "https://chirounlimitedwellness.com/about#person",
@@ -147,7 +116,7 @@ export const HomePage: React.FC = () => {
         "name": "Chiropractic Unlimited",
         "url": "https://chirounlimitedwellness.com",
         "publisher": {
-            "@type": ["MedicalBusiness", "LocalBusiness"],
+            "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
             "@id": "https://chirounlimitedwellness.com/#organization"
         },
         "inLanguage": "en-US"
@@ -163,7 +132,7 @@ export const HomePage: React.FC = () => {
         "uploadDate": "2026-05-04",
         "duration": "PT21S",
         "publisher": {
-            "@type": ["MedicalBusiness", "LocalBusiness"],
+            "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
             "@id": "https://chirounlimitedwellness.com/#organization"
         }
     };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { BUSINESS_INFO, OPENING_HOURS_SPECIFICATION } from './constants';
+import { BUSINESS_INFO, OPENING_HOURS_SPECIFICATION, AREA_SERVED } from './constants';
 import { RevealOnScroll } from './components/RevealOnScroll';
 import { StructuredData, faqPageSchema } from './components/StructuredData';
 import { QuickAnswer } from './components/QuickAnswer';
@@ -71,7 +71,7 @@ export const PricingPage: React.FC = () => {
         },
         {
             "@context": "https://schema.org",
-            "@type": ["MedicalBusiness", "LocalBusiness"],
+            "@type": ["Chiropractor", "MedicalBusiness", "LocalBusiness"],
             "@id": "https://chirounlimitedwellness.com/#organization",
             "name": "Chiropractic Unlimited",
             "url": "https://chirounlimitedwellness.com",
@@ -93,13 +93,7 @@ export const PricingPage: React.FC = () => {
                 "longitude": -85.1794
             },
             "openingHoursSpecification": OPENING_HOURS_SPECIFICATION,
-            "areaServed": [
-                { "@type": "City", "name": "Valley" },
-                { "@type": "City", "name": "Lanett" },
-                { "@type": "City", "name": "West Point" },
-                { "@type": "City", "name": "LaFayette" },
-                { "@type": "City", "name": "Opelika" }
-            ]
+            "areaServed": AREA_SERVED
         }
     ];
 
