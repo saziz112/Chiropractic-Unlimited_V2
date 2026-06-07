@@ -54,7 +54,7 @@ export const LatestBlog: React.FC = () => {
                                     </div>
                                     <div className="p-6">
                                         <h3 className="font-bold text-brand-primary text-lg leading-snug mb-3 group-hover:text-brand-secondary transition-colors">
-                                            {post.title}
+                                            <Link to={`/blog/${post.slug}`} onClick={(e) => e.stopPropagation()}>{post.title}</Link>
                                         </h3>
                                         <p className="text-brand-muted text-sm leading-relaxed mb-4 line-clamp-2">
                                             {post.excerpt}

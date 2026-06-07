@@ -169,7 +169,7 @@ export const ConditionDetailPage: React.FC = () => {
                     <RevealOnScroll animation="slide-left">
                         <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Condition We Treat</span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
-                            {condition.title}
+                            {condition.title}{' '}
                             <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-brand-accent mt-2">Treatment in Valley, AL</span>
                         </h1>
                         <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
@@ -419,7 +419,7 @@ export const ConditionDetailPage: React.FC = () => {
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
                                         <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
-                                            <h4 className="text-white font-bold text-sm leading-tight mb-1">{related.title}</h4>
+                                            <h4 className="text-white font-bold text-sm leading-tight mb-1"><Link to={`/conditions/${related.slug}`} onClick={(e) => e.stopPropagation()}>{related.title}</Link></h4>
                                             <div className="flex items-center gap-1 text-white/70 text-xs group-hover:text-brand-accent transition-colors duration-300">
                                                 Learn more <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
                                             </div>

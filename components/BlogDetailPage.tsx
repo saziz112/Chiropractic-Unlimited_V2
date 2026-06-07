@@ -293,7 +293,7 @@ export const BlogDetailPage: React.FC = () => {
                                             </div>
                                         </div>
                                         <h3 className="font-bold text-brand-primary text-lg leading-snug mb-2 group-hover:text-brand-secondary transition-colors">
-                                            {related.title}
+                                            <Link to={`/blog/${related.slug}`} onClick={(e) => e.stopPropagation()}>{related.title}</Link>
                                         </h3>
                                         <p className="text-brand-muted text-sm line-clamp-2">{related.excerpt}</p>
                                     </div>

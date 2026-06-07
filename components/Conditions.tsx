@@ -2,7 +2,7 @@ import React from 'react';
 import { CONDITIONS } from '../constants';
 import { RevealOnScroll } from './RevealOnScroll';
 import { ArrowRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Conditions: React.FC = () => {
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ export const Conditions: React.FC = () => {
                   {/* Overlay Text */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                     <h4 className="text-white font-bold font-sans text-base leading-tight mb-1">
-                      {condition.title}
+                      <Link to={`/conditions/${condition.slug}`} onClick={(e) => e.stopPropagation()}>{condition.title}</Link>
                     </h4>
                     <div className="w-full h-0.5 bg-brand-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { SERVICES } from '../constants';
 import { RevealOnScroll } from './RevealOnScroll';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Services: React.FC = () => {
   const navigate = useNavigate();
@@ -45,7 +45,7 @@ export const Services: React.FC = () => {
                 </div>
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-grow">
-                  <h4 className="text-xl font-bold text-brand-primary mb-3 font-display">{service.title}</h4>
+                  <h4 className="text-xl font-bold text-brand-primary mb-3 font-display"><Link to={`/services/${service.slug}`} onClick={(e) => e.stopPropagation()}>{service.title}</Link></h4>
                   <p className="text-brand-muted leading-relaxed text-sm flex-grow">
                     {service.description}
                   </p>

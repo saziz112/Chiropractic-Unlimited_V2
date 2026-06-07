@@ -104,7 +104,7 @@ export const PricingPage: React.FC = () => {
                     <RevealOnScroll animation="slide-left">
                         <span className="text-brand-accent font-semibold tracking-widest uppercase text-xs mb-4 block">Transparent Pricing</span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
-                            Affordable Chiropractor
+                            Affordable Chiropractor{' '}
                             <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-brand-accent mt-2">in Valley, AL — No Insurance Needed</span>
                         </h1>
                         <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">

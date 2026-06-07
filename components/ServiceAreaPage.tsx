@@ -223,7 +223,7 @@ export const ServiceAreaPage: React.FC = () => {
                                         className="group cursor-pointer bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/20 hover:border-white/30 transition-all duration-300"
                                         onClick={() => navigate(`/conditions/${condition.slug}`)}
                                     >
-                                        <h3 className="text-white font-semibold text-sm mb-1">{condition.title}</h3>
+                                        <h3 className="text-white font-semibold text-sm mb-1"><Link to={`/conditions/${condition.slug}`} onClick={(e) => e.stopPropagation()}>{condition.title}</Link></h3>
                                         <div className="flex items-center gap-1 text-brand-accent text-xs group-hover:translate-x-1 transition-transform">
                                             Learn more <ArrowRight className="w-3 h-3" />
                                         </div>
@@ -390,7 +390,7 @@ export const ServiceAreaPage: React.FC = () => {
                                         <MapPin className="w-5 h-5 text-brand-accent shrink-0 mt-1" />
                                         <div>
                                             <h3 className="font-bold text-brand-primary text-lg group-hover:text-brand-accent transition-colors">
-                                                {otherArea.city}, {otherArea.state}
+                                                <Link to={`/locations/${otherArea.slug}`} onClick={(e) => e.stopPropagation()}>{otherArea.city}, {otherArea.state}</Link>
                                             </h3>
                                             <p className="text-brand-muted text-sm">{otherArea.distance} &middot; {otherArea.driveTime} drive</p>
                                         </div>

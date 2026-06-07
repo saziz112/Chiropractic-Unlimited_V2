@@ -170,6 +170,41 @@ async function prerender() {
             // Give Helmet + lazy components time to render meta tags + content
             await new Promise(r => setTimeout(r, 1500));
 
+            // Helmet can race: a snapshot taken before it flushes captures the previous
+            // page's canonical (this shipped a homepage canonical on a blog post once).
+            // Wait until the rendered canonical actually matches this route.
+            const expectedCanonical = `https://chirounlimitedwellness.com${route === '/' ? '/' : route}`;
+            try {
+                await page.waitForFunction(
+                    (expected) => document.querySelector('link[rel="canonical"]')?.href === expected,
+                    { timeout: 10000 },
+                    expectedCanonical
+                );
+            } catch {
+                throw new Error(`canonical mismatch on ${route}: got "${await page.evaluate(() => document.querySelector('link[rel="canonical"]')?.href)}", expected "${expectedCanonical}"`);
+            }
+
+            // React renders adjacent JSX text segments ("Call {phone}") as separate
+            // text nodes, but HTML serialization merges them into one. On hydration
+            // the boundaries no longer match and React 18 throws #418, tearing down
+            // the DOM (the sitewide footer-CLS bug). ReactDOMServer solves this with
+            // <!-- --> separator comments — inject the same markers before capturing.
+            await page.evaluate(() => {
+                const walk = (node) => {
+                    let child = node.firstChild;
+                    while (child) {
+                        const next = child.nextSibling;
+                        if (child.nodeType === Node.TEXT_NODE && next && next.nodeType === Node.TEXT_NODE) {
+                            node.insertBefore(document.createComment(' '), next);
+                        }
+                        if (child.nodeType === Node.ELEMENT_NODE) walk(child);
+                        child = next;
+                    }
+                };
+                const root = document.getElementById('root');
+                if (root) walk(root);
+            });
+
             const content = await page.content();
             let productionContent = content.replace(/http:\/\/localhost:4173/g, 'https://chirounlimitedwellness.com');
             // React drops the `muted` boolean attribute when serializing to HTML, which breaks
@@ -178,6 +213,31 @@ async function prerender() {
             productionContent = productionContent.replace(
                 /<video\b([^>]*\bautoplay\b[^>]*)>/gi,
                 (match, attrs) => /\bmuted\b/.test(attrs) ? match : `<video${attrs} muted>`
+            );
+            // Routes are lazy() inside <Suspense> (App.tsx). hydrateRoot needs the
+            // SSR suspense-boundary markers (<!--$--> ... <!--/$-->) to treat the
+            // prerendered route content as a dehydrated boundary — otherwise the
+            // lazy chunk suspends with no marker, hydration fails (#418), and React
+            // tears down the DOM (the footer-CLS bug). Inject the markers exactly
+            // where ReactDOMServer would emit them.
+            // Plain-string replace is only safe while the document has exactly one
+            // <main> — assert it so a future second match can never corrupt markup.
+            if ((productionContent.match(/<\/main>/g) || []).length !== 1) {
+                throw new Error(`expected exactly one </main> on ${route} — suspense-marker injection would be ambiguous`);
+            }
+            productionContent = productionContent
+                .replace('<main id="main-content">', '<main id="main-content"><!--$-->')
+                .replace('</main>', '<!--/$--></main>');
+            // Normalize every reveal section to `is-visible`. The snapshot captures
+            // below-fold sections in their hidden state, but the client's hydration
+            // pass renders everything visible (RevealOnScroll initialPageLoad) — the
+            // server HTML must match or React 18 falls back to a full client
+            // re-render, shifting the footer (the sitewide CLS bug).
+            // Assumes Puppeteer-serialized HTML: class attributes are always
+            // double-quoted with no newlines (true for page.content() output).
+            productionContent = productionContent.replace(
+                /class="([^"]*\b(?:fade-in-section|stagger-children)\b[^"]*)"/g,
+                (match, cls) => /\bis-visible\b/.test(cls) ? match : `class="${cls} is-visible"`
             );
             fs.writeFileSync(filePath, productionContent);
             succeeded++;

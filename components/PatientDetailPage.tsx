@@ -346,7 +346,7 @@ export const PatientDetailPage: React.FC = () => {
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
                                         <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
-                                            <h4 className="text-white font-bold text-sm leading-tight mb-1">{related.title}</h4>
+                                            <h4 className="text-white font-bold text-sm leading-tight mb-1"><Link to={`/patients/${related.slug}`} onClick={(e) => e.stopPropagation()}>{related.title}</Link></h4>
                                             <p className="text-white/70 text-xs mb-2 line-clamp-2">{related.description}</p>
                                             <div className="flex items-center gap-1 text-white/70 text-xs group-hover:text-brand-accent transition-colors duration-300">
                                                 Learn more <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
