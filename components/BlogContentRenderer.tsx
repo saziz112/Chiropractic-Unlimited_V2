@@ -8,7 +8,8 @@ function renderRichText(text: string) {
     const parts = text.split(regex);
     return parts.map((part, i) => {
         if (part.startsWith('**') && part.endsWith('**')) {
-            return <strong key={i} className="text-brand-primary font-semibold">{part.slice(2, -2)}</strong>;
+            // Recurse so markdown links inside bold (**[text](url)**) still render as anchors
+            return <strong key={i} className="text-brand-primary font-semibold">{renderRichText(part.slice(2, -2))}</strong>;
         }
         const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
         if (linkMatch) {

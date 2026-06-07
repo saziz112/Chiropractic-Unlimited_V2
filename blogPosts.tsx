@@ -49,7 +49,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'The primary tool in a chiropractor\'s toolkit is the **spinal adjustment**, also called spinal manipulation. This is a controlled, precise force applied to a specific joint in the spine. The goal is to restore normal movement, reduce nerve irritation, and allow the body to heal itself. It is supported by decades of research and is recommended by organizations including the American College of Physicians for conditions like low back pain.'
+        content: 'The primary tool in a chiropractor\'s toolkit is the **spinal adjustment**, also called spinal manipulation. This is a controlled, precise force applied to a specific joint in the spine. The goal is to restore normal movement, reduce nerve irritation, and allow the body to heal itself. It is supported by decades of research and is recommended by organizations including the [American College of Physicians](https://www.acponline.org/acp-newsroom/american-college-of-physicians-issues-guideline-for-treating-nonradicular-low-back-pain) for conditions like low back pain.'
       },
       {
         type: 'heading',
@@ -86,7 +86,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: 'list',
         content: '',
         items: [
-          '**Low back pain:** The American College of Physicians recommends spinal manipulation as a first-line treatment before medication',
+          '**Low back pain:** The [American College of Physicians](https://www.acponline.org/acp-newsroom/american-college-of-physicians-issues-guideline-for-treating-nonradicular-low-back-pain) recommends spinal manipulation as a first-line treatment before medication',
           '**Neck pain and stiffness:** Especially effective for pain caused by desk work, phone use, or poor sleeping positions',
           '**Tension headaches and migraines:** Research shows chiropractic adjustments can reduce headache frequency and intensity',
           '**Sciatica:** Spinal adjustments can relieve pressure on the sciatic nerve [without surgery](/blog/chiropractic-for-sciatica)',
@@ -312,7 +312,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         question: 'Which is better for back pain: chiropractor or PT?',
-        answer: 'For acute back pain, chiropractic care is often more effective as a first-line treatment because it directly addresses spinal alignment issues. The American College of Physicians recommends spinal manipulation before medication for acute low back pain. For chronic back pain, a combination of chiropractic and PT often produces the best long-term results.'
+        answer: 'For acute back pain, chiropractic care is often more effective as a first-line treatment because it directly addresses spinal alignment issues. The [American College of Physicians](https://www.acponline.org/acp-newsroom/american-college-of-physicians-issues-guideline-for-treating-nonradicular-low-back-pain) recommends spinal manipulation before medication for acute low back pain. For chronic back pain, a combination of chiropractic and PT often produces the best long-term results.'
       },
       {
         question: 'Is physical therapy or chiropractic cheaper?',
@@ -513,9 +513,9 @@ export const BLOG_POSTS: BlogPost[] = [
         type: 'list',
         content: '',
         items: [
-          'A 2017 systematic review in the **Journal of the American Medical Association (JAMA)** found that spinal manipulation is effective for acute low back pain with minimal risk of adverse events',
+          'A 2017 systematic review in the **[Journal of the American Medical Association (JAMA)](https://jamanetwork.com/journals/jama/fullarticle/2616395)** found that spinal manipulation is effective for acute low back pain with minimal risk of adverse events',
           'The **Bone and Joint Decade Task Force** reviewed decades of evidence and concluded that chiropractic manipulation of the cervical spine is safe when performed by a trained professional',
-          'A 2007 study in **Spine** journal found the risk of a serious adverse event from cervical manipulation to be approximately **1 in 5.85 million adjustments**, making it statistically safer than taking over-the-counter NSAIDs like ibuprofen',
+          'A 2007 study in **[Spine](https://pubmed.ncbi.nlm.nih.gov/17906581/)** journal found the risk of a serious adverse event from cervical manipulation to be approximately **1 in 5.85 million adjustments**, making it statistically safer than taking over-the-counter NSAIDs like ibuprofen',
           'Research published in the **European Spine Journal** shows that spinal manipulation has a lower complication rate than spinal surgery or long-term NSAID use'
         ]
       },
@@ -591,7 +591,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: '**Over-the-counter NSAIDs** (ibuprofen, naproxen) cause an estimated 16,500 deaths per year in the United States from gastrointestinal complications, according to the American Gastroenterological Association. **Prescription opioids** carry well-documented risks of addiction and overdose. **Spinal surgery** has a complication rate of 10-15% and a recovery time measured in months. By comparison, chiropractic care has an extraordinarily low serious adverse event rate and zero risk of addiction. In fact, a 2025 meta-analysis of over 6.8 million patients found that chiropractic care reduces opioid prescriptions by 64% — see our full breakdown of the [2025 research on chiropractic vs opioids](/blog/chiropractic-vs-opioids).'
+        content: '**Over-the-counter NSAIDs** (ibuprofen, naproxen) cause an estimated 16,500 deaths per year in the United States from gastrointestinal complications, according to the American Gastroenterological Association. **Prescription opioids** carry well-documented risks of addiction and overdose. **Spinal surgery** has a complication rate of 10-15% and a recovery time measured in months. By comparison, chiropractic care has an extraordinarily low serious adverse event rate and zero risk of addiction. In fact, a [2025 meta-analysis of over 6 million patients](https://pmc.ncbi.nlm.nih.gov/articles/PMC12705058/) found that chiropractic care reduces opioid prescriptions by 64% — see our full breakdown of the [2025 research on chiropractic vs opioids](/blog/chiropractic-vs-opioids).'
       },
       {
         type: 'heading',
@@ -652,11 +652,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'As someone who holds **both a Doctor of Chiropractic (DC) degree and a Family Nurse Practitioner (FNP) license**, I am trained to prescribe medications — and I am trained to help patients avoid them. This article reviews the 2025 research on chiropractic care vs. opioids for pain management. The data comes from three major studies published in 2025 covering more than 6.8 million patients — the largest body of evidence ever assembled on this question.'
+        content: 'As someone who holds **both a Doctor of Chiropractic (DC) degree and a Family Nurse Practitioner (FNP) license**, I am trained to prescribe medications — and I am trained to help patients avoid them. This article reviews the 2025 research on chiropractic care vs. opioids for pain management. The data comes from three major studies published in 2025 covering more than 6 million patients — the largest body of evidence ever assembled on this question.'
       },
       {
         type: 'blockquote',
-        content: '**TL;DR:** A 2025 meta-analysis of over 6.8 million patients found chiropractic care reduces opioid prescriptions by 64% (Pain Reports, 2025). Veterans receiving chiropractic had 90% decreased odds of opioid use. Both the CDC and American College of Physicians now recommend non-pharmacological approaches — including spinal manipulation — as first-line treatment for pain before considering opioids.'
+        content: '**TL;DR:** A 2025 meta-analysis of over 6 million patients found chiropractic care reduces opioid prescriptions by 64% (Pain Reports, 2025). Veterans receiving chiropractic had 90% decreased odds of opioid use. Both the CDC and American College of Physicians now recommend non-pharmacological approaches — including spinal manipulation — as first-line treatment for pain before considering opioids.'
       },
       {
         type: 'heading',
@@ -717,7 +717,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'The largest-ever meta-analysis on this topic — covering over **6.8 million patients** — found chiropractic care reduces opioid prescriptions by 64%. But that is just one of three landmark 2025 studies that collectively represent the strongest evidence ever published on chiropractic care as an alternative to opioids.'
+        content: 'The largest-ever meta-analysis on this topic — covering over **6 million patients** — found chiropractic care reduces opioid prescriptions by 64%. But that is just one of three landmark 2025 studies that collectively represent the strongest evidence ever published on chiropractic care as an alternative to opioids.'
       },
       {
         type: 'subheading',
@@ -725,7 +725,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Published in [Pain Reports](https://pmc.ncbi.nlm.nih.gov/articles/PMC12705058/), this systematic review and meta-analysis combined data from 2 randomized controlled trials and 18 cohort studies covering more than 6.8 million participants. The results were striking: patients who received chiropractic care had **64% lower odds of receiving an opioid prescription** (odds ratio: 0.36) compared to those who did not receive chiropractic care.'
+        content: 'Published in [Pain Reports](https://pmc.ncbi.nlm.nih.gov/articles/PMC12705058/), this systematic review and meta-analysis combined data from 2 randomized controlled trials and 18 cohort studies covering more than 6 million participants. The results were striking: patients who received chiropractic care had **64% lower odds of receiving an opioid prescription** (odds ratio: 0.36) compared to those who did not receive chiropractic care.'
       },
       {
         type: 'paragraph',
@@ -817,7 +817,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'If you are dealing with [low back pain](/conditions/low-back-pain), [neck pain](/conditions/neck-pain), [headaches](/conditions/headaches), or [sciatica](/conditions/sciatica), chiropractic care is a safe, evidence-based first step. The research we covered in this article — spanning more than 6.8 million patients — consistently shows that chiropractic care reduces opioid use, costs less, and produces high patient satisfaction.'
+        content: 'If you are dealing with [low back pain](/conditions/low-back-pain), [neck pain](/conditions/neck-pain), [headaches](/conditions/headaches), or [sciatica](/conditions/sciatica), chiropractic care is a safe, evidence-based first step. The research we covered in this article — spanning more than 6 million patients — consistently shows that chiropractic care reduces opioid use, costs less, and produces high patient satisfaction.'
       },
       {
         type: 'image',
@@ -967,7 +967,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Over-the-counter NSAIDs like ibuprofen can provide temporary relief, but they come with risks: an estimated 16,500 deaths per year from gastrointestinal complications. Prescription opioids carry even greater risks. A [2025 meta-analysis of 6.8 million patients](/blog/chiropractic-vs-opioids) found that chiropractic care reduces opioid prescriptions by 64%. Medication has a role for short-term pain management, but it should never be the primary strategy — it treats symptoms while the structural cause remains.'
+        content: 'Over-the-counter NSAIDs like ibuprofen can provide temporary relief, but they come with risks: an estimated 16,500 deaths per year from gastrointestinal complications. Prescription opioids carry even greater risks. A [2025 meta-analysis of 6 million patients](/blog/chiropractic-vs-opioids) found that chiropractic care reduces opioid prescriptions by 64%. Medication has a role for short-term pain management, but it should never be the primary strategy — it treats symptoms while the structural cause remains.'
       },
       {
         type: 'heading',
@@ -1246,7 +1246,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'The [2025 meta-analysis](/blog/chiropractic-vs-opioids) covering 6.8 million patients found that chiropractic care reduces opioid prescriptions by 64% — and early initiation of care (within 30 days of symptom onset) produced even stronger results. This suggests that both the timing and consistency of chiropractic visits matter for long-term outcomes.'
+        content: 'The [2025 meta-analysis](/blog/chiropractic-vs-opioids) covering 6 million patients found that chiropractic care reduces opioid prescriptions by 64% — and early initiation of care (within 30 days of symptom onset) produced even stronger results. This suggests that both the timing and consistency of chiropractic visits matter for long-term outcomes.'
       },
       {
         type: 'heading',
@@ -1378,15 +1378,15 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'A study published in [Spine](https://www.acatoday.org/research/what-research-shows/) (Schneider et al.) found that **94% of patients with acute radiculopathy** — including sciatica — achieved greater than 30% pain reduction with spinal manipulation therapy. This is a remarkably high success rate for a condition that many patients are told requires surgery.'
+        content: 'A study published in [Spine](https://pubmed.ncbi.nlm.nih.gov/25423308/) (Schneider et al.) found that **94% of patients with acute radiculopathy** — including sciatica — achieved greater than 30% pain reduction with spinal manipulation therapy. This is a remarkably high success rate for a condition that many patients are told requires surgery.'
       },
       {
         type: 'paragraph',
-        content: 'Research from MedicalXpress (2024) found that sciatica patients who received spinal manipulation had **45% fewer reoperations** compared to those who did not receive chiropractic care. This is significant because it suggests that chiropractic does not just delay surgery — it may eliminate the need for it entirely in many cases.'
+        content: 'Research from [MedicalXpress (2024)](https://medicalxpress.com/news/2024-01-reveals-significant-reduction-lumbar-spine.html) found that sciatica patients who received spinal manipulation had **45% fewer reoperations** compared to those who did not receive chiropractic care. This is significant because it suggests that chiropractic does not just delay surgery — it may eliminate the need for it entirely in many cases.'
       },
       {
         type: 'paragraph',
-        content: 'The [2025 meta-analysis](/blog/chiropractic-vs-opioids) covering 6.8 million patients found **64% lower opioid prescription rates** among chiropractic patients. For sciatica patients specifically, this matters because opioids are commonly prescribed for sciatic nerve pain despite doing nothing to address the structural cause.'
+        content: 'The [2025 meta-analysis](/blog/chiropractic-vs-opioids) covering 6 million patients found **64% lower opioid prescription rates** among chiropractic patients. For sciatica patients specifically, this matters because opioids are commonly prescribed for sciatic nerve pain despite doing nothing to address the structural cause.'
       },
       {
         type: 'chart',
@@ -1543,7 +1543,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Research published in the journal BMC Pregnancy and Childbirth estimates that **between 50% and 70% of pregnant women experience low back pain** at some point during pregnancy. Pelvic girdle pain affects approximately 20% of pregnant women and can be severe enough to limit daily activities like walking, climbing stairs, and sleeping.'
+        content: 'Research published in the journal [BMC Pregnancy and Childbirth](https://link.springer.com/article/10.1186/s12884-023-06151-x) estimates that **between 50% and 70% of pregnant women experience low back pain** at some point during pregnancy. Pelvic girdle pain affects approximately 20% of pregnant women and can be severe enough to limit daily activities like walking, climbing stairs, and sleeping.'
       },
       {
         type: 'paragraph',
@@ -1757,11 +1757,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'The CDC\'s National Health Interview Survey data shows a stark divide. **31.4% of adults in rural areas report chronic pain**, compared to **20.5% in urban areas**. That is more than a 50% higher rate. For high-impact chronic pain — the kind that limits daily activities — the gap is even wider: 13.4% in rural areas vs. 7.5% in urban areas.'
+        content: 'The [CDC\'s National Health Interview Survey data](https://www.cdc.gov/nchs/products/databriefs/db518.htm) shows a stark divide. **31.4% of adults in rural areas report chronic pain**, compared to **20.5% in urban areas**. That is more than a 50% higher rate. For high-impact chronic pain — the kind that limits daily activities — the gap is even wider: 13.4% in rural areas vs. 7.5% in urban areas.'
       },
       {
         type: 'paragraph',
-        content: 'Alabama-specific data paints an even more concerning picture. The state has an **obesity rate of 38.9%**, the 4th highest in the nation (Trust for America\'s Health, 2024). Obesity is one of the strongest risk factors for low back pain, knee pain, and overall musculoskeletal dysfunction. When you combine high obesity rates with physically demanding jobs — manufacturing, agriculture, construction — the result is a population with disproportionate pain.'
+        content: 'Alabama-specific data paints an even more concerning picture. The state has an **obesity rate of 38.9%**, the [4th highest in the nation (Trust for America\'s Health, 2024)](https://www.tfah.org/report-details/state-of-obesity-2024/). Obesity is one of the strongest risk factors for low back pain, knee pain, and overall musculoskeletal dysfunction. When you combine high obesity rates with physically demanding jobs — manufacturing, agriculture, construction — the result is a population with disproportionate pain.'
       },
       {
         type: 'heading',
@@ -1918,7 +1918,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'The short answer: **yes, when performed by a trained practitioner using age-appropriate techniques**. A 2019 systematic review published in BMC Musculoskeletal Disorders examined adverse events in pediatric chiropractic care and concluded that serious adverse events were "rare" and that minor side effects (mild soreness, fussiness in infants) were "self-limiting and transient."'
+        content: 'The short answer: **yes, when performed by a trained practitioner using age-appropriate techniques**. A systematic review published in [Chiropractic & Manual Therapies](https://chiromt.biomedcentral.com/articles/10.1186/s12998-020-0299-y) (BMC) examined adverse events in pediatric chiropractic care and concluded that serious adverse events were "rare" and that minor side effects (mild soreness, fussiness in infants) were "self-limiting and transient."'
       },
       {
         type: 'paragraph',
@@ -1956,7 +1956,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'If your child plays sports, the numbers should get your attention. According to the American Academy of Pediatrics (AAP), approximately **50% of all youth sports injuries are overuse injuries** — the repetitive strain type that develops gradually rather than from a single traumatic event. These injuries respond exceptionally well to chiropractic care because they are fundamentally biomechanical: improper joint alignment, muscle imbalances, and poor movement patterns that compound over time.'
+        content: 'If your child plays sports, the numbers should get your attention. According to the [American Academy of Pediatrics (AAP)](https://publications.aap.org/pediatrics/article/153/2/e2023065129/196435/Overuse-Injuries-Overtraining-and-Burnout-in-Young), approximately **50% of all youth sports injuries are overuse injuries** — the repetitive strain type that develops gradually rather than from a single traumatic event. These injuries respond exceptionally well to chiropractic care because they are fundamentally biomechanical: improper joint alignment, muscle imbalances, and poor movement patterns that compound over time.'
       },
       {
         type: 'paragraph',
@@ -2440,7 +2440,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         type: 'paragraph',
-        content: '**Quick answer:** Yes, **Medicare Part B covers chiropractic care** — but only manual manipulation of the spine to correct a documented subluxation. Medicare pays 80% of the approved amount after you meet the 2026 Part B deductible of **$257**, and you pay the remaining 20% coinsurance. Medicare does **not** cover X-rays, physical therapy modalities, massage, supplements, or acupuncture provided by a chiropractor. As both a Doctor of Chiropractic and a Family Nurse Practitioner, I want to give you a clear picture of what your benefits actually pay for so you do not get a surprise bill.'
+        content: '**Quick answer:** Yes, **Medicare Part B covers chiropractic care** — but only manual manipulation of the spine to correct a documented subluxation. Medicare pays 80% of the approved amount after you meet the 2026 Part B deductible of **$283**, and you pay the remaining 20% coinsurance. Medicare does **not** cover X-rays, physical therapy modalities, massage, supplements, or acupuncture provided by a chiropractor. As both a Doctor of Chiropractic and a Family Nurse Practitioner, I want to give you a clear picture of what your benefits actually pay for so you do not get a surprise bill.'
       },
       {
         type: 'heading',
@@ -2488,7 +2488,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: 'list',
         content: '',
         items: [
-          '**Annual Part B deductible (2026):** $257',
+          '**Annual Part B deductible (2026):** $283',
           '**Coinsurance after deductible:** 20% of the Medicare-approved amount',
           '**Medicare-approved amount per spinal manipulation:** Varies by region, typically $30-50',
           '**Your typical out-of-pocket per visit after deductible:** $6-10',
@@ -2565,7 +2565,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: 'list',
         content: '',
         items: [
-          '**Medicare Part B covers** spinal manipulation for documented subluxation: 80/20 split after $257 deductible (2026)',
+          '**Medicare Part B covers** spinal manipulation for documented subluxation: 80/20 split after $283 deductible (2026)',
           '**Medicare does NOT cover** X-rays, exams, soft tissue work, modalities, massage, or maintenance care from a chiropractor',
           '**Medicare Advantage plans** often offer expanded benefits — verify yours by calling the number on your card',
           '**Cash pay can be cheaper** for many Medicare patients, especially for maintenance care after the covered episode',
@@ -2827,7 +2827,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         type: 'paragraph',
-        content: '**The opioid crisis taught American medicine a hard lesson:** treating pain with daily medication causes more harm than the pain it was supposed to fix. Drug overdose deaths in the United States peaked at over 107,000 in 2023 (CDC). Roughly half involved prescription or illicit opioids. The medical community now knows what most patients have always suspected: long-term pain rarely has a single cause, and it almost never has a single fix.'
+        content: '**The opioid crisis taught American medicine a hard lesson:** treating pain with daily medication causes more harm than the pain it was supposed to fix. Drug overdose deaths in the United States peaked at [over 107,000 in 2023](https://www.cdc.gov/nchs/products/databriefs/db549.htm) (CDC). Roughly half involved prescription or illicit opioids. The medical community now knows what most patients have always suspected: long-term pain rarely has a single cause, and it almost never has a single fix.'
       },
       {
         type: 'paragraph',
@@ -2855,7 +2855,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'For musculoskeletal pain — which accounts for the vast majority of chronic pain — manual therapy is the most efficient first-line intervention. The American College of Physicians, in its 2017 guidelines, specifically recommended **spinal manipulation as a first-line treatment for acute low back pain**, before any medication. The 2024 PMC cohort study of 216,504 back pain patients showed that those whose first provider was a chiropractor had a **1.5% surgery rate**, compared with 42.7% for those whose first provider was a surgeon. (Read [Back Pain Treatment Without Surgery](/blog/back-pain-treatment-without-surgery) for the deep dive on this, including the full cost and recovery comparison.)'
+        content: 'For musculoskeletal pain — which accounts for the vast majority of chronic pain — manual therapy is the most efficient first-line intervention. The [American College of Physicians, in its 2017 guidelines](https://www.acpjournals.org/doi/10.7326/M16-2367), specifically recommended **spinal manipulation as a first-line treatment for acute low back pain**, before any medication. The 2024 PMC cohort study of 216,504 back pain patients showed that those whose first provider was a chiropractor had a **1.5% surgery rate**, compared with 42.7% for those whose first provider was a surgeon. (Read [Back Pain Treatment Without Surgery](/blog/back-pain-treatment-without-surgery) for the deep dive on this, including the full cost and recovery comparison.)'
       },
       {
         type: 'paragraph',
@@ -3013,7 +3013,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'A 2025 University Hospitals study found patients with chronic spine pain who received chiropractic care had **80% lower risk of opioid use disorder** versus comparable patients receiving medication-based pain management. The 2025 PMC meta-analysis found **64% lower odds of receiving opioid prescription** in patients seeing a chiropractor versus a primary care physician for the same conditions. (Full deep-dive: [Chiropractic vs. Opioids](/blog/chiropractic-vs-opioids).)'
+        content: 'A [2025 University Hospitals study](https://news.uhhospitals.org/news-releases/articles/2025/10/new-study-shows-chiropractic-care-associated-with-reduction-in-opioid-use-disorder) found patients with chronic spine pain who received chiropractic care had **80% lower risk of opioid use disorder** versus comparable patients receiving medication-based pain management. The [2025 PMC meta-analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC12705058/) found **64% lower odds of receiving opioid prescription** in patients seeing a chiropractor versus a primary care physician for the same conditions. (Full deep-dive: [Chiropractic vs. Opioids](/blog/chiropractic-vs-opioids).)'
       },
       {
         type: 'paragraph',
@@ -3052,7 +3052,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Rural areas have higher chronic pain rates than urban areas — **31.4% in rural vs. 20.5% in urban populations** (CDC 2024). Alabama has the 4th-highest obesity rate in the country (38.9%, CDC 2024), which correlates with higher musculoskeletal pain. The opioid crisis hit rural Alabama particularly hard. (Full local data: [Why Rural Alabama Has Higher Pain Rates](/blog/rural-alabama-pain-rates).)'
+        content: 'Rural areas have higher chronic pain rates than urban areas — **[31.4% in rural vs. 20.5% in urban populations](https://www.cdc.gov/nchs/products/databriefs/db518.htm)** (CDC 2024). Alabama has the 4th-highest obesity rate in the country ([38.9%, CDC 2024](https://www.cdc.gov/media/releases/2024/p0912-adult-obesity.html)), which correlates with higher musculoskeletal pain. The opioid crisis hit rural Alabama particularly hard. (Full local data: [Why Rural Alabama Has Higher Pain Rates](/blog/rural-alabama-pain-rates).)'
       },
       {
         type: 'paragraph',
