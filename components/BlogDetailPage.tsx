@@ -5,7 +5,7 @@ import { BLOG_POSTS } from '../blogPosts';
 import { BUSINESS_INFO } from '../constants';
 import { ArrowLeft, ArrowRight, CalendarCheck, Phone, Clock, User, Tag } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
-import { StructuredData } from './StructuredData';
+import { StructuredData, faqPageSchema } from './StructuredData';
 import { BlogContentRenderer } from './BlogContentRenderer';
 
 export const BlogDetailPage: React.FC = () => {
@@ -111,6 +111,8 @@ export const BlogDetailPage: React.FC = () => {
                 <title>{post.metaTitle}</title>
                 <meta name="description" content={post.metaDescription} />
                 <link rel="canonical" href={`https://chirounlimitedwellness.com/blog/${slug}`} />
+                {/* Scheduled posts are publicly reachable before their publish date — keep them out of the index until then */}
+                {post.publishDate > today && <meta name="robots" content="noindex, follow" />}
                 <meta property="og:title" content={post.metaTitle} />
                 <meta property="og:description" content={post.metaDescription} />
                 <meta property="og:image" content={post.featuredImage} />
@@ -126,7 +128,7 @@ export const BlogDetailPage: React.FC = () => {
                 <meta name="twitter:description" content={post.metaDescription} />
                 <meta name="twitter:image" content={post.featuredImage} />
             </Helmet>
-            <StructuredData data={schemas} />
+            <StructuredData data={[...schemas, ...faqPageSchema(post.faqs)]} />
 
             {/* Hero Banner */}
             <section className="relative min-h-[50vh] flex items-end bg-brand-primary overflow-hidden">

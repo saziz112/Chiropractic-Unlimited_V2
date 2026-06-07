@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { PATIENTS, BUSINESS_INFO } from '../constants';
 import { ArrowLeft, CheckCircle2, Phone, CalendarCheck, ArrowRight } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
-import { StructuredData } from './StructuredData';
+import { StructuredData, faqPageSchema } from './StructuredData';
 import { QuickAnswer } from './QuickAnswer';
 
 function renderBoldText(text: string) {
@@ -107,7 +107,7 @@ export const PatientDetailPage: React.FC = () => {
                     },
                     "inLanguage": "en-US"
                 }
-            ]} />
+            , ...faqPageSchema(patientGroup.faqs)]} />
 
             {/* Hero Banner */}
             <section className="relative min-h-[60vh] flex items-end bg-brand-primary overflow-hidden">

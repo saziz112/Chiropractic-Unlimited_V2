@@ -5,7 +5,7 @@ import { CONDITIONS, BUSINESS_INFO, OPENING_HOURS_SPECIFICATION } from '../const
 import { ArrowLeft, CheckCircle2, Phone, CalendarCheck, ArrowRight } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
 
-import { StructuredData } from './StructuredData';
+import { StructuredData, faqPageSchema } from './StructuredData';
 import { QuickAnswer } from './QuickAnswer';
 
 function renderBoldText(text: string) {
@@ -143,7 +143,7 @@ export const ConditionDetailPage: React.FC = () => {
                 <meta name="twitter:description" content={condition.metaDescription || condition.description} />
                 <meta name="twitter:image" content={condition.image} />
             </Helmet>
-            <StructuredData data={schemas} />
+            <StructuredData data={[...schemas, ...faqPageSchema(condition.faqs)]} />
 
             {/* Hero Banner */}
             <section className="relative min-h-[60vh] flex items-end bg-brand-primary overflow-hidden">

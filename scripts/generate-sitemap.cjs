@@ -23,8 +23,6 @@ const STATIC_ROUTES = [
     { path: '/patients/athletes', lastmod: '2026-05-04' },
     { path: '/patients/pregnancy', lastmod: '2026-05-04' },
     { path: '/patients/pediatrics', lastmod: '2026-05-04' },
-    { path: '/privacy', lastmod: '2026-04-03' },
-    { path: '/terms', lastmod: '2026-04-03' },
     { path: '/locations/lanett-al', lastmod: '2026-04-07' },
     { path: '/locations/lafayette-al', lastmod: '2026-04-07' },
     { path: '/locations/west-point-ga', lastmod: '2026-04-07' },

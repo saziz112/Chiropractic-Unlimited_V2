@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { SERVICES, BUSINESS_INFO, OPENING_HOURS_SPECIFICATION } from '../constants';
 import { ArrowLeft, CheckCircle2, Phone, CalendarCheck, ArrowRight } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
-import { StructuredData } from './StructuredData';
+import { StructuredData, faqPageSchema } from './StructuredData';
 import { QuickAnswer } from './QuickAnswer';
 
 function renderBoldText(text: string) {
@@ -144,7 +144,7 @@ export const ServiceDetailPage: React.FC = () => {
                         { "@type": "City", "name": "Opelika" }
                     ]
                 }
-            ]} />
+            , ...faqPageSchema(service.faqs)]} />
 
             {/* Hero Banner */}
             <section className="relative min-h-[60vh] flex items-end bg-brand-primary overflow-hidden">

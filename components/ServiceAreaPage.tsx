@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { SERVICE_AREAS, CONDITIONS, BUSINESS_INFO, HOURS, OPENING_HOURS_SPECIFICATION } from '../constants';
 import { ArrowLeft, MapPin, Clock, Phone, CalendarCheck, ArrowRight, Navigation, CheckCircle2 } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
-import { StructuredData } from './StructuredData';
+import { StructuredData, faqPageSchema } from './StructuredData';
 
 function renderBoldText(text: string) {
     const parts = text.split(/\*\*(.*?)\*\*/g);
@@ -107,7 +107,7 @@ export const ServiceAreaPage: React.FC = () => {
                 <meta name="twitter:title" content={area.metaTitle} />
                 <meta name="twitter:description" content={area.metaDescription} />
             </Helmet>
-            <StructuredData data={[breadcrumbSchema, localBusinessSchema]} />
+            <StructuredData data={[breadcrumbSchema, localBusinessSchema, ...faqPageSchema(area.faqs)]} />
 
             {/* Hero Section */}
             <section className="relative min-h-[60vh] flex items-end bg-gradient-to-br from-brand-primary via-brand-primary to-brand-secondary overflow-hidden">

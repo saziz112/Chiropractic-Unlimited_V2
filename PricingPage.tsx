@@ -3,9 +3,36 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { BUSINESS_INFO, OPENING_HOURS_SPECIFICATION } from './constants';
 import { RevealOnScroll } from './components/RevealOnScroll';
-import { StructuredData } from './components/StructuredData';
+import { StructuredData, faqPageSchema } from './components/StructuredData';
 import { QuickAnswer } from './components/QuickAnswer';
 import { CheckCircle2, Phone, CalendarCheck, ArrowRight, DollarSign, Clock, Shield, Heart } from 'lucide-react';
+
+const PRICING_FAQS = [
+    {
+        question: "How much does a chiropractor cost without insurance?",
+        answer: "At Chiropractic Unlimited, your first visit is just $20 — that includes a consultation, comprehensive exam, and report of findings. This is a fraction of the national average of $100-$400 for an initial chiropractic visit. Follow-up visit pricing is discussed during your report of findings based on your personalized care plan."
+    },
+    {
+        question: "Do you accept insurance?",
+        answer: "We are a cash-based practice and do not bill insurance directly. This allows Dr. Bang to spend the time your case requires without insurance-imposed visit limits or treatment restrictions. Many patients find they spend less with us than they would after insurance copays and deductibles at other clinics."
+    },
+    {
+        question: "Can I use my HSA or FSA?",
+        answer: "Yes. Chiropractic care is an eligible expense for both Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA). We provide detailed receipts and documentation for reimbursement."
+    },
+    {
+        question: "Is chiropractic care worth the cost?",
+        answer: "Research consistently shows chiropractic patients have lower overall healthcare costs than those who see other providers first for back pain. A 2020 study found patients who started with a chiropractor had annual healthcare costs averaging $5,093, compared to $9,434 for those who started with an orthopedist. Chiropractic care addresses the root cause of pain rather than managing symptoms with medication."
+    },
+    {
+        question: "Do you offer payment plans?",
+        answer: "We offer affordable care plans for patients who need ongoing treatment. Pricing details are discussed during your report of findings so you know exactly what to expect — no surprises."
+    },
+    {
+        question: "What if I have Medicaid or Medicare?",
+        answer: "We do not bill Medicaid or Medicare directly. As a cash-based practice, our transparent pricing applies equally to all patients. If you have questions about coverage, we're happy to discuss your options during a phone call."
+    },
+];
 
 export const PricingPage: React.FC = () => {
     const schemas = [
@@ -94,7 +121,7 @@ export const PricingPage: React.FC = () => {
                 <meta name="twitter:title" content="Chiropractor Cost Without Insurance | Valley, AL" />
                 <meta name="twitter:description" content="$20 new patient special. Transparent, affordable chiropractic care — no insurance needed." />
             </Helmet>
-            <StructuredData data={schemas} />
+            <StructuredData data={[...schemas, ...faqPageSchema(PRICING_FAQS)]} />
 
             {/* Hero Banner */}
             <section className="relative bg-brand-primary pt-36 pb-20 overflow-hidden">
@@ -281,36 +308,11 @@ export const PricingPage: React.FC = () => {
                     </RevealOnScroll>
 
                     <div className="space-y-4">
-                        {[
-                            {
-                                q: "How much does a chiropractor cost without insurance?",
-                                a: "At Chiropractic Unlimited, your first visit is just $20 — that includes a consultation, comprehensive exam, and report of findings. This is a fraction of the national average of $100-$400 for an initial chiropractic visit. Follow-up visit pricing is discussed during your report of findings based on your personalized care plan."
-                            },
-                            {
-                                q: "Do you accept insurance?",
-                                a: "We are a cash-based practice and do not bill insurance directly. This allows Dr. Bang to spend the time your case requires without insurance-imposed visit limits or treatment restrictions. Many patients find they spend less with us than they would after insurance copays and deductibles at other clinics."
-                            },
-                            {
-                                q: "Can I use my HSA or FSA?",
-                                a: "Yes. Chiropractic care is an eligible expense for both Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA). We provide detailed receipts and documentation for reimbursement."
-                            },
-                            {
-                                q: "Is chiropractic care worth the cost?",
-                                a: "Research consistently shows chiropractic patients have lower overall healthcare costs than those who see other providers first for back pain. A 2020 study found patients who started with a chiropractor had annual healthcare costs averaging $5,093, compared to $9,434 for those who started with an orthopedist. Chiropractic care addresses the root cause of pain rather than managing symptoms with medication."
-                            },
-                            {
-                                q: "Do you offer payment plans?",
-                                a: "We offer affordable care plans for patients who need ongoing treatment. Pricing details are discussed during your report of findings so you know exactly what to expect — no surprises."
-                            },
-                            {
-                                q: "What if I have Medicaid or Medicare?",
-                                a: "We do not bill Medicaid or Medicare directly. As a cash-based practice, our transparent pricing applies equally to all patients. If you have questions about coverage, we're happy to discuss your options during a phone call."
-                            }
-                        ].map((faq, idx) => (
+                        {PRICING_FAQS.map((faq, idx) => (
                             <RevealOnScroll key={idx} delay={idx * 100} animation={idx % 2 === 0 ? 'slide-left' : 'slide-right'}>
                                 <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-brand-primary/5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-                                    <h3 className="font-bold text-brand-primary text-lg mb-3">{faq.q}</h3>
-                                    <p className="text-brand-muted leading-relaxed">{faq.a}</p>
+                                    <h3 className="font-bold text-brand-primary text-lg mb-3">{faq.question}</h3>
+                                    <p className="text-brand-muted leading-relaxed">{faq.answer}</p>
                                 </div>
                             </RevealOnScroll>
                         ))}
