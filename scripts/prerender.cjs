@@ -55,7 +55,6 @@ const ROUTES = [
     '/blog/chiropractic-for-kids',
     '/blog/auto-accident-injuries-i85',
     '/blog/chiropractor-for-headaches',
-    '/blog/chiropractic-vs-surgery-back-pain',
     '/blog/medicare-chiropractic-coverage',
     '/blog/sports-chiropractic',
     '/blog/drug-free-pain-management',

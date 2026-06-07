@@ -3,6 +3,7 @@
   "outputDirectory": "dist",
   "trailingSlash": false,
   "redirects": [
+    { "source": "/blog/chiropractic-vs-surgery-back-pain", "destination": "/blog/back-pain-treatment-without-surgery", "permanent": true },
     { "source": "/contact", "destination": "/#location", "permanent": true },
     { "source": "/contact-us", "destination": "/#location", "permanent": true },
     { "source": "/service-area", "destination": "/locations/lanett-al", "permanent": true },

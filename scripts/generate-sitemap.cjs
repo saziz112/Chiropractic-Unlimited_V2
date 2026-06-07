@@ -176,7 +176,6 @@ Dr. Jason Bang is a graduate of Life University with international mentoring exp
 - [Chiropractic for Kids: What Parents Need to Know](${DOMAIN}/blog/chiropractic-for-kids)
 - [Auto Accident Injuries on I-85: When to See a Chiropractor After a Crash](${DOMAIN}/blog/auto-accident-injuries-i85)
 - [Can a Chiropractor Help with Headaches? What the Research Shows](${DOMAIN}/blog/chiropractor-for-headaches)
-- [Chiropractic vs. Surgery for Back Pain: Cost, Recovery, and Outcomes Compared](${DOMAIN}/blog/chiropractic-vs-surgery-back-pain)
 - [What Medicare Covers for Chiropractic Care in 2025-2026](${DOMAIN}/blog/medicare-chiropractic-coverage)
 - [Sports Chiropractic: How Athletes Recover Faster and Prevent Injuries](${DOMAIN}/blog/sports-chiropractic)
 - [The Complete Guide to Drug-Free Pain Management (Pillar)](${DOMAIN}/blog/drug-free-pain-management)
