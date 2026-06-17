@@ -66,6 +66,7 @@ export const HomePage: React.FC = () => {
         // TODO: add the GBP profile share URL (business.google.com → share profile) once Sam provides it
         "sameAs": [
             SOCIAL_LINKS.instagram,
+            SOCIAL_LINKS.facebook,
         ],
         "hasMap": "https://www.google.com/maps?q=3731+20th+Ave,+Valley,+AL+36854",
         "areaServed": AREA_SERVED,

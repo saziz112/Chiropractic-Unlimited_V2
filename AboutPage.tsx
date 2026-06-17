@@ -19,7 +19,8 @@ export const AboutPage: React.FC = () => {
         "telephone": BUSINESS_INFO.phone,
         "email": BUSINESS_INFO.email,
         "sameAs": [
-            SOCIAL_LINKS.instagram
+            SOCIAL_LINKS.instagram,
+            SOCIAL_LINKS.facebook
         ],
         "alumniOf": [
             {

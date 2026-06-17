@@ -15,7 +15,7 @@ export const BUSINESS_INFO = {
 export const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/chiropracticunlimited/",
   google: "https://www.google.com/search?q=chiropractic+unlimited+valley+al",
-  facebook: "#"
+  facebook: "https://www.facebook.com/p/Chiropractic-Unlimited-100069200531677/"
 };
 
 export const NAV_ITEMS: NavItem[] = [
