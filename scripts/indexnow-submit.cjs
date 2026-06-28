@@ -10,31 +10,19 @@ const DOMAIN = 'https://chirounlimitedwellness.com';
 const HOST = 'chirounlimitedwellness.com';
 const INDEXNOW_KEY = 'e6d6b5c8f9a4423e8b1d7c3a2f0e9d8c';
 const KEY_LOCATION = `${DOMAIN}/${INDEXNOW_KEY}.txt`;
+const SITEMAP = `${DOMAIN}/sitemap.xml`;
 
-const ROUTES = [
-    '/',
-    '/about',
-    '/conditions/low-back-pain',
-    '/conditions/neck-pain',
-    '/conditions/headaches',
-    '/conditions/sciatica',
-    '/conditions/auto-injuries',
-    '/conditions/poor-posture',
-    '/services/holistic-wellness',
-    '/services/spinal-correction',
-    '/services/integrated-care',
-    '/services/performance',
-    '/patients/athletes',
-    '/patients/pregnancy',
-    '/patients/pediatrics',
-    '/pricing',
-    '/privacy',
-    '/terms',
-];
+// Pull the live URL list from the sitemap so blog posts and location pages are
+// always included (the previous hardcoded list missed them).
+const fetchSitemapUrls = () => new Promise((resolve, reject) => {
+    https.get(SITEMAP, (res) => {
+        let xml = '';
+        res.on('data', (c) => { xml += c; });
+        res.on('end', () => resolve([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1])));
+    }).on('error', reject);
+});
 
-const submitToIndexNow = () => {
-    const urls = ROUTES.map(route => `${DOMAIN}${route}`);
-
+const submitToIndexNow = (urls) => {
     const payload = JSON.stringify({
         host: HOST,
         key: INDEXNOW_KEY,
@@ -78,7 +66,14 @@ const submitToIndexNow = () => {
     });
 };
 
-console.log(`📡 Submitting ${ROUTES.length} URLs to IndexNow...`);
-submitToIndexNow().then(() => {
-    console.log('Done.');
-});
+fetchSitemapUrls()
+    .then((urls) => {
+        if (!urls.length) {
+            console.error('⚠️ No URLs found in sitemap — aborting.');
+            return;
+        }
+        console.log(`📡 Submitting ${urls.length} URLs to IndexNow...`);
+        return submitToIndexNow(urls);
+    })
+    .then(() => console.log('Done.'))
+    .catch((err) => console.error(`⚠️ IndexNow failed: ${err.message}`));

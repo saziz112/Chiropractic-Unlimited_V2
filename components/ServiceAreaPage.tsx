@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { SERVICE_AREAS, CONDITIONS, BUSINESS_INFO, HOURS, OPENING_HOURS_SPECIFICATION } from '../constants';
+import { SERVICE_AREAS, CONDITIONS, BUSINESS_INFO, HOURS, OPENING_HOURS_SPECIFICATION, AREA_SERVED } from '../constants';
 import { ArrowLeft, MapPin, Clock, Phone, CalendarCheck, ArrowRight, Navigation, CheckCircle2 } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
 import { StructuredData, faqPageSchema } from './StructuredData';
@@ -79,14 +79,9 @@ export const ServiceAreaPage: React.FC = () => {
             "longitude": -85.1794
         },
         "openingHoursSpecification": OPENING_HOURS_SPECIFICATION,
-        "areaServed": {
-            "@type": "City",
-            "name": area.city,
-            "containedInPlace": {
-                "@type": "State",
-                "name": area.state === "AL" ? "Alabama" : "Georgia"
-            }
-        }
+        // Use the canonical 7-city AREA_SERVED so this page does not emit a
+        // conflicting single-city areaServed under the shared #organization @id.
+        "areaServed": AREA_SERVED
     };
 
     return (

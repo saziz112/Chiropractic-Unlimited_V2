@@ -63,10 +63,20 @@ export const HomePage: React.FC = () => {
         "priceRange": "$$",
         "paymentAccepted": "Cash, Credit Card, Debit Card",
         "currenciesAccepted": "USD",
-        // TODO: add the GBP profile share URL (business.google.com → share profile) once Sam provides it
+        // aggregateRating reflects the clinic's genuine Google Business Profile reviews
+        // (testimonials shown on-site in the #testimonials section). Refresh reviewCount
+        // periodically from GBP — value below is the verified count as of 2026-06-28.
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "53",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
         "sameAs": [
             SOCIAL_LINKS.instagram,
             SOCIAL_LINKS.facebook,
+            "https://www.google.com/maps?cid=7148641322360923383"
         ],
         "hasMap": "https://www.google.com/maps?q=3731+20th+Ave,+Valley,+AL+36854",
         "areaServed": AREA_SERVED,

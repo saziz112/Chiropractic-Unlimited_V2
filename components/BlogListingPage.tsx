@@ -66,9 +66,11 @@ export const BlogListingPage: React.FC = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Chiropractic Unlimited" />
                 <meta property="og:locale" content="en_US" />
+                <meta property="og:image" content="https://chirounlimitedwellness.com/jason-bang.jpg" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Chiropractic Blog | Chiropractic Unlimited" />
                 <meta name="twitter:description" content="Expert chiropractic and wellness articles from Dr. Jason Bang DC FNP in Valley, AL." />
+                <meta name="twitter:image" content="https://chirounlimitedwellness.com/jason-bang.jpg" />
             </Helmet>
             <StructuredData data={[breadcrumbSchema, collectionPageSchema]} />
 
