@@ -76,7 +76,7 @@ export const HomePage: React.FC = () => {
         "sameAs": [
             SOCIAL_LINKS.instagram,
             SOCIAL_LINKS.facebook,
-            "https://www.google.com/maps?cid=7148641322360923383"
+            "https://www.google.com/maps?cid=4340893918201350377"
         ],
         "hasMap": "https://www.google.com/maps?q=3731+20th+Ave,+Valley,+AL+36854",
         "areaServed": AREA_SERVED,
