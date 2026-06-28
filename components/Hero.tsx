@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
                     muted
                     loop
                     playsInline
-                    preload="none"
+                    preload="auto"
                     aria-hidden="true"
                     className="w-full h-full object-cover"
                 />
