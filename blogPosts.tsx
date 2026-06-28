@@ -516,7 +516,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'A 2017 systematic review in the **[Journal of the American Medical Association (JAMA)](https://jamanetwork.com/journals/jama/fullarticle/2616395)** found that spinal manipulation is effective for acute low back pain with minimal risk of adverse events',
           'The **Bone and Joint Decade Task Force** reviewed decades of evidence and concluded that chiropractic manipulation of the cervical spine is safe when performed by a trained professional',
           'A 2007 study in **[Spine](https://pubmed.ncbi.nlm.nih.gov/17906581/)** journal found the risk of a serious adverse event from cervical manipulation to be approximately **1 in 5.85 million adjustments**, making it statistically safer than taking over-the-counter NSAIDs like ibuprofen',
-          'Research published in the **European Spine Journal** shows that spinal manipulation has a lower complication rate than spinal surgery or long-term NSAID use'
+          'Compared with the risks of spinal surgery or long-term NSAID use, the serious-complication rate for spinal manipulation is very low'
         ]
       },
       {
@@ -1527,7 +1527,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         type: 'tldr',
         label: 'Quick Answer',
-        content: 'Yes — **chiropractic care is safe and effective during pregnancy** for most women. Up to 70% of pregnant women experience low back pain, and prenatal chiropractic addresses the structural cause (shifted center of gravity, loosened SI joint, sciatic nerve compression) without medication. The Webster Technique has an 82% success rate at resolving breech presentation, and studies show 25-31% shorter labor times for women receiving regular prenatal adjustments. Dr. Bang at Chiropractic Unlimited in Valley, AL holds both DC and FNP credentials, so he can screen for pregnancy complications before treatment.'
+        content: 'Yes — **chiropractic care is safe and effective during pregnancy** for most women. Up to 70% of pregnant women experience low back pain, and prenatal chiropractic addresses the structural cause (shifted center of gravity, loosened SI joint, sciatic nerve compression) without medication. The Webster Technique is widely used to help with breech presentation, and some women report shorter, more comfortable labors with regular prenatal adjustments — though the research on labor duration itself is older and limited. Dr. Bang at Chiropractic Unlimited in Valley, AL holds both DC and FNP credentials, so he can screen for pregnancy complications before treatment.'
       },
       {
         type: 'paragraph',
@@ -1614,7 +1614,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Research by Dr. Joan Fallon found that first-time mothers who received chiropractic care throughout pregnancy had **25% shorter labor times** on average, while experienced mothers had **31% shorter labor times**. The mechanism is straightforward: when the pelvis is properly aligned, the baby can descend through the birth canal more efficiently, reducing the duration and intensity of labor.'
+        content: 'Early research by Dr. Joan Fallon reported shorter average labor times among women who received chiropractic care during pregnancy. I want to be straight about the sourcing: that work dates to the early 1990s and was not published in a peer-reviewed journal, so the specific figures should be read with caution rather than treated as settled. The proposed mechanism is straightforward, though: when the pelvis is properly aligned, the baby can descend through the birth canal more efficiently, which may reduce the duration and intensity of labor.'
       },
       {
         type: 'subheading',
@@ -1690,7 +1690,7 @@ export const BLOG_POSTS: BlogPost[] = [
           '**It is safe:** The American Pregnancy Association recognizes chiropractic care as safe throughout pregnancy when performed by a trained practitioner',
           '**It works for pain:** 75% of pregnant women who receive chiropractic care report pain relief, without medication',
           '**Webster Technique:** 82% success rate for resolving breech presentation, potentially reducing the need for C-section',
-          '**Shorter labor:** Research shows 25-31% shorter labor times for women receiving prenatal chiropractic care'
+          '**Shorter labor:** some research suggests prenatal chiropractic care may be associated with shorter labor times, though the evidence is older and limited'
         ]
       },
       {
@@ -2604,7 +2604,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'sports-chiropractic',
     title: 'Sports Chiropractic: How Athletes Recover Faster and Prevent Injuries',
-    excerpt: 'Athletes who add chiropractic to their training program show 32% lower injury recurrence rates and faster return-to-play times. Dr. Jason Bang DC FNP explains the science and what a sports-focused care plan looks like.',
+    excerpt: 'Sports chiropractic helps athletes stay mobile, manage musculoskeletal injuries, and recover well between training and competition. Dr. Jason Bang DC FNP explains what a sports-focused care plan looks like — and what the evidence does and does not support.',
     category: 'Life Stages',
     author: 'Dr. Jason Bang',
     authorCredentials: 'DC, FNP',
@@ -2614,11 +2614,11 @@ export const BLOG_POSTS: BlogPost[] = [
     featuredImage: 'https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg?auto=compress&cs=tinysrgb&w=800',
     featuredImageAlt: 'Athlete stretching during pre-game warmup on a track',
     metaTitle: 'Sports Chiropractic: Faster Recovery & Injury Prevention for Athletes',
-    metaDescription: 'Sports chiropractic reduces injury recurrence by 32% and speeds recovery. Dr. Jason Bang DC FNP explains care plans for high school, college, and weekend athletes.',
+    metaDescription: 'Sports chiropractic supports athletic recovery, mobility, and injury management. Dr. Jason Bang DC FNP explains care plans for high school, college, and weekend athletes — and what the research actually shows.',
     sections: [
       {
         type: 'paragraph',
-        content: '**Quick answer:** Sports chiropractic combines spinal and extremity adjustments, soft tissue work, and movement assessment to keep athletes performing and reduce time lost to injury. Research shows chiropractic care reduces injury recurrence by **32%** in athletes (BMC Sports Science 2024) and speeds return-to-play in soft tissue injuries by **20-30%** versus rest alone. With Workout Anytime athletes, AHSAA high schoolers from Valley and Lanett, and Auburn-area collegiate weekend warriors all training in our area, sports-focused chiropractic care is one of the highest-value services we provide.'
+        content: '**Quick answer:** Sports chiropractic combines spinal and extremity adjustments, soft tissue work, and movement assessment to keep athletes mobile and reduce time lost to injury. It is most valuable as part of a broader training and recovery program — supporting joint mobility, soft tissue health, and the movement patterns that prevent overuse injuries. With Workout Anytime athletes, AHSAA high schoolers from Valley and Lanett, and Auburn-area collegiate and weekend athletes all training in our area, sports-focused chiropractic care is one of the highest-value services we provide.'
       },
       {
         type: 'heading',
@@ -2646,39 +2646,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Several rigorous studies have looked at chiropractic care in athletes:'
-      },
-      {
-        type: 'subheading',
-        content: 'Injury Prevention'
+        content: 'I want to represent the evidence honestly, because this is an area where marketing often gets ahead of the science. The strongest support is for chiropractic as **part of a multidisciplinary approach to musculoskeletal injury management and recovery** — not as a standalone performance enhancer. Restoring joint mobility, releasing soft tissue restrictions, and correcting the movement patterns that drive overuse injuries are well-established roles for manual therapy in athletic care.'
       },
       {
         type: 'paragraph',
-        content: 'A 2024 BMC Sports Science study followed 102 collegiate athletes through a season. Athletes who received bi-weekly chiropractic care had a **32% lower rate of musculoskeletal injury recurrence** versus athletes receiving standard athletic training only. The mechanism: better joint mobility and movement quality reduced the compensatory patterns that lead to overuse injury.'
-      },
-      {
-        type: 'subheading',
-        content: 'Hamstring Injury'
-      },
-      {
-        type: 'paragraph',
-        content: 'A 2014 Journal of Chiropractic Medicine RCT of 60 male collegiate runners with chronic hamstring tightness found a single session of lumbar manipulation **immediately improved hamstring flexibility by 6.5 degrees** and increased functional knee flexion strength by 14% compared to a sham group. This matters because hamstring tightness is a leading predictor of hamstring strain in sprint-based sports.'
-      },
-      {
-        type: 'subheading',
-        content: 'Performance Markers'
-      },
-      {
-        type: 'paragraph',
-        content: 'A 2019 systematic review in the Journal of Sports Medicine found that spinal manipulative therapy produced **immediate improvements in vertical jump height (3-4%), sprint times (1-2%), and grip strength (5-8%)** in trained athletes. Effect sizes were small but consistent — and accumulating these small improvements is exactly what athletes are trying to do.'
-      },
-      {
-        type: 'subheading',
-        content: 'Recovery'
-      },
-      {
-        type: 'paragraph',
-        content: 'A 2017 trial of NCAA Division I athletes recovering from soft tissue injury found that chiropractic care plus standard athletic training reduced **time to return-to-play by 4-7 days** compared to athletic training alone. For a wrestler missing a tournament or a sprinter missing a meet, those days matter.'
+        content: 'What the higher-quality evidence does **not** support is using spinal manipulation as a direct performance booster. Controlled studies of strength, jump, and sprint outcomes have been mixed, and some have found no advantage at all — so I will not promise an athlete a competitive edge that the data does not back. In my practice, sports chiropractic is about keeping you healthy, mobile, and recovering well between training blocks and competitions, which is where it consistently earns its place.'
       },
       {
         type: 'heading',
@@ -2774,8 +2746,8 @@ export const BLOG_POSTS: BlogPost[] = [
         type: 'list',
         content: '',
         items: [
-          '**32% reduction in injury recurrence** with bi-weekly chiropractic in trained athletes',
-          '**Faster return-to-play** for soft tissue injuries (4-7 days faster in NCAA athletes)',
+          '**Injury management and recovery** — the best-supported role for sports chiropractic, as part of a broader training and rehab program (not a standalone performance booster)',
+          '**Mobility and movement quality** — restoring joint motion and correcting faulty patterns is where manual therapy consistently helps athletes',
           '**Pre-season screening** identifies risk factors before they become injuries — start 4-6 weeks before season',
           '**Sports chiropractic** includes extremity adjustments, soft tissue work, and movement screening — not just spinal manipulation',
           '**A DC + FNP provider** can handle the full athlete presentation: concussion screening, fracture rule-out, medication awareness, and chiropractic care in one visit'
