@@ -1793,7 +1793,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Rural communities have been disproportionately affected by the opioid crisis. Alabama has one of the highest opioid prescribing rates in the nation — **79.4 prescriptions per 100 persons** in 2022, compared to the national average of 43.3 (CDC). When pain is treated primarily with opioids rather than with approaches that address the structural cause, patients often end up in a cycle of medication dependence without resolution. [The evidence shows chiropractic reduces opioid prescriptions by 64%](/blog/chiropractic-vs-opioids).'
+        content: 'Rural communities have been disproportionately affected by the opioid crisis. Alabama has one of the highest opioid prescribing rates in the nation — **[68.5 prescriptions per 100 persons](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/opioid-dispensing-rate-maps.html)** in 2024, second only to Arkansas and well above the national average (CDC). When pain is treated primarily with opioids rather than with approaches that address the structural cause, patients often end up in a cycle of medication dependence without resolution. [The evidence shows chiropractic reduces opioid prescriptions by 64%](/blog/chiropractic-vs-opioids).'
       },
       {
         type: 'heading',
@@ -2147,7 +2147,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Chiropractic care is one of the most effective treatments for auto accident injuries, particularly for whiplash and spinal misalignment. A study in the European Spine Journal found that **93% of chronic whiplash patients improved with chiropractic treatment**. The approach works because it addresses the structural damage directly, rather than just managing pain symptoms.'
+        content: 'Chiropractic care is one of the most effective treatments for auto accident injuries, particularly for whiplash and spinal misalignment. A study in the journal *Injury* (Woodward et al., 1996) found that **93% of chronic whiplash patients improved with chiropractic treatment**. The approach works because it addresses the structural damage directly, rather than just managing pain symptoms.'
       },
       {
         type: 'list',
@@ -2204,7 +2204,7 @@ export const BLOG_POSTS: BlogPost[] = [
         items: [
           '**Do not wait for pain:** Whiplash symptoms can take 24-72 hours to appear. Get evaluated within 72 hours of any accident',
           '**Low-speed crashes cause real injuries:** Whiplash can occur at speeds as low as 5 mph',
-          '**Chiropractic works:** 93% of chronic whiplash patients improved with chiropractic treatment (European Spine Journal)',
+          '**Chiropractic works:** 93% of chronic whiplash patients improved with chiropractic treatment (*Injury*, 1996)',
           '**Document everything:** Alabama\'s contributory negligence standard makes early, thorough medical documentation essential for claims',
           '**One provider, two perspectives:** Dr. Bang\'s DC + FNP credentials mean you get both chiropractic and medical evaluation in one visit'
         ]
@@ -2221,7 +2221,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         question: 'Can a chiropractor treat whiplash?',
-        answer: 'Yes. Chiropractic care is one of the most effective treatments for whiplash. A study in the European Spine Journal found that 93% of chronic whiplash patients improved with chiropractic treatment. Treatment includes spinal adjustments to restore cervical alignment, soft tissue therapy to reduce inflammation and scar tissue, and rehabilitation exercises to rebuild strength and range of motion.'
+        answer: 'Yes. Chiropractic care is one of the most effective treatments for whiplash. A study in the journal *Injury* (1996) found that 93% of chronic whiplash patients improved with chiropractic treatment. Treatment includes spinal adjustments to restore cervical alignment, soft tissue therapy to reduce inflammation and scar tissue, and rehabilitation exercises to rebuild strength and range of motion.'
       },
       {
         question: 'Should I see a chiropractor or go to the ER after an accident?',
@@ -2240,7 +2240,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'chiropractor-for-headaches',
     title: 'Can a Chiropractor Help with Headaches? What the Research Shows',
-    excerpt: 'Chiropractic care reduces tension headache frequency by up to 50% and migraine days by 41% in clinical trials. Dr. Jason Bang DC FNP reviews the research and explains when adjustments help — and when they do not.',
+    excerpt: 'Chiropractic care has strong trial support for tension-type and cervicogenic headaches, with more mixed evidence for migraine. Dr. Jason Bang DC FNP reviews the research honestly and explains when adjustments help — and when they do not.',
     category: 'Pain Management',
     author: 'Dr. Jason Bang',
     authorCredentials: 'DC, FNP',
@@ -2250,11 +2250,11 @@ export const BLOG_POSTS: BlogPost[] = [
     featuredImage: 'https://images.pexels.com/photos/3812741/pexels-photo-3812741.jpeg?auto=compress&cs=tinysrgb&w=800',
     featuredImageAlt: 'Woman holding her head with a tension headache',
     metaTitle: 'Chiropractor for Headaches: 2025 Research on Migraines & Tension Pain',
-    metaDescription: 'Can a chiropractor help with headaches? Research shows up to 50% fewer tension headaches and 41% fewer migraine days. Dr. Jason Bang DC FNP reviews the evidence.',
+    metaDescription: 'Can a chiropractor help with headaches? Strong evidence for tension-type and cervicogenic headaches, more mixed evidence for migraine. Dr. Jason Bang DC FNP reviews what the research actually shows.',
     sections: [
       {
         type: 'paragraph',
-        content: '**The short answer:** Yes, chiropractic care helps for several types of headaches — particularly **tension-type headaches, cervicogenic headaches, and migraines** with a cervical spine component. Multiple randomized controlled trials show 40-50% reductions in headache frequency and intensity from spinal manipulative therapy (SMT). It does not help for headaches caused by infections, hypertension, medication overuse, or structural lesions — which is why having a clinician who can rule those out matters.'
+        content: '**The short answer:** Yes, chiropractic care helps for several types of headaches — particularly **tension-type headaches, cervicogenic headaches, and migraines** with a cervical spine component. Multiple randomized controlled trials show meaningful reductions in headache frequency and intensity from spinal manipulative therapy (SMT). It does not help for headaches caused by infections, hypertension, medication overuse, or structural lesions — which is why having a clinician who can rule those out matters.'
       },
       {
         type: 'paragraph',
@@ -2274,7 +2274,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Tension-type headaches are the most common headache disorder in adults. They feel like a **band of pressure around the head**, often with neck and shoulder tightness. Trial data: a 2016 systematic review in the *Journal of Manipulative and Physiological Therapeutics* found SMT produced a **35-50% reduction in headache frequency** versus control. A 2014 Annals of Internal Medicine trial of 272 patients with neck pain (a common driver of tension headache) found SMT outperformed both medication and exercise alone at 12 weeks.'
+        content: 'Tension-type headaches are the most common headache disorder in adults. They feel like a **band of pressure around the head**, often with neck and shoulder tightness. They share a common driver — cervical (neck) dysfunction — with conditions that respond well to spinal manipulation. A 2012 randomized trial of 272 patients with neck pain ([Bronfort et al., *Annals of Internal Medicine*](https://pubmed.ncbi.nlm.nih.gov/22213489/)) found spinal manipulation outperformed medication over 12 weeks, with the advantage holding at one year — though a short course of guided home exercise worked about as well.'
       },
       {
         type: 'subheading',
@@ -2282,7 +2282,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Cervicogenic headaches start in the upper cervical spine (C1-C3) and refer pain to the head — typically **one-sided, starting at the base of the skull**. These are the most chiropractic-responsive headache type. A 2017 trial in *The Spine Journal* showed 6 weeks of upper cervical SMT produced a **50% drop in headache days** at 3-month follow-up versus a sham group.'
+        content: 'Cervicogenic headaches start in the upper cervical spine (C1-C3) and refer pain to the head — typically **one-sided, starting at the base of the skull**. These are the most chiropractic-responsive headache type. A landmark 200-patient randomized trial ([Jull et al., *Spine*, 2002](https://pubmed.ncbi.nlm.nih.gov/12221344/)) found that manipulative therapy **significantly reduced headache frequency and intensity**, with the benefit still holding at 12-month follow-up.'
       },
       {
         type: 'subheading',
@@ -2290,7 +2290,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Migraine is more complex — it involves vascular and neurological components, not just musculoskeletal. But many migraine patients have **cervical spine dysfunction as a trigger**. A 2018 randomized trial of 104 migraine patients (Chaibi et al., *European Journal of Neurology*) found chiropractic SMT reduced migraine days by **41% at 3 months and 40% at 12 months** — comparable to topiramate, the standard preventive medication, but without the side effects.'
+        content: 'Migraine is more complex — it involves vascular and neurological components, not just musculoskeletal. Many migraine patients do have **cervical spine dysfunction as a trigger**, which is why some respond well to care aimed at the neck. But the evidence here is mixed, and I would rather state it honestly: the best placebo-controlled study to date — a 2017 three-arm trial of 104 migraine patients ([Chaibi et al., *European Journal of Neurology*](https://pubmed.ncbi.nlm.nih.gov/27696633/)) — found migraine days dropped by roughly 40% with chiropractic spinal manipulation, but they dropped by a similar amount in the sham-treatment group too, so the benefit could not be separated from a placebo response. The same trial did find chiropractic produced a modest, statistically significant improvement in migraine **duration** and overall headache burden versus usual medical care at follow-up. The practical takeaway: migraine is worth a trial of care when neck dysfunction is part of your picture, but I will not promise it works the way it reliably does for tension-type or cervicogenic headache.'
       },
       {
         type: 'subheading',
@@ -2332,7 +2332,7 @@ export const BLOG_POSTS: BlogPost[] = [
           '**Visit 1 (45-60 min):** Detailed history including headache diary review, medical history, medication list, and red-flag screening. Physical exam: cervical range of motion, palpation, neurological screen (cranial nerves, reflexes, sensation). If anything in your presentation suggests a non-musculoskeletal cause, I refer or order imaging — that is the FNP credential at work.',
           '**Visits 2-4 (15-20 min each):** Treatment phase, typically 1-2 visits per week for 3-4 weeks. Adjustments target the upper cervical spine, with thoracic adjustments if your posture or shoulder mechanics contribute.',
           '**Visits 5-6:** Reassessment. Most patients see meaningful headache reduction by visit 4. If not, we change strategy or refer.',
-          '**Maintenance phase:** For chronic or recurrent headache patterns, monthly tune-ups during high-stress months prevent relapse — a strategy supported by a 2017 trial showing maintenance care reduced annual headache days by 27% versus reactive-only care.'
+          '**Maintenance phase:** For chronic or recurrent headache patterns, monthly tune-ups during high-stress months can help prevent relapse. This part of the plan is guided more by clinical experience and individual response than by large trials, so we set it based on how your headaches actually behave over time.'
         ]
       },
       {
@@ -2341,7 +2341,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'For acute pain, NSAIDs and triptans work faster than any manual therapy — that is not the comparison. The comparison is **preventive treatment**: are you taking a daily medication to reduce headache frequency? The 2018 Chaibi trial directly compared chiropractic to topiramate (a leading preventive). Both groups had similar reductions in migraine days. The difference: the chiropractic group had **zero adverse events**, while the topiramate group had cognitive slowing, paresthesias, weight loss, and 18% withdrawal rate due to side effects.'
+        content: 'For acute pain, NSAIDs and triptans work faster than any manual therapy — that is not the comparison. The comparison is **preventive treatment**: are you taking, or considering, a daily medication to reduce headache frequency? Preventive drugs like topiramate help many people but carry real trade-offs — cognitive slowing, paresthesias, weight change, and meaningful discontinuation rates from side effects. Chiropractic care has a very low adverse-event profile by comparison, which is why it is reasonable to try first for the headache types where the evidence is strongest — tension-type and cervicogenic — and as an adjunct for migraine. What I will not do is tell you an adjustment matches a preventive medication head-to-head for migraine; the trial data do not support that claim.'
       },
       {
         type: 'paragraph',
@@ -2387,8 +2387,8 @@ export const BLOG_POSTS: BlogPost[] = [
         type: 'list',
         content: '',
         items: [
-          '**Tension-type and cervicogenic headaches** are the strongest indications — 35-50% reduction in headache days in trial data',
-          '**Migraine** responds in roughly half of patients, especially those with neck-driven triggers; 2018 trial showed 41% reduction at 3 months',
+          '**Tension-type and cervicogenic headaches** are the strongest indications, with multiple randomized trials showing meaningful, lasting reductions in headache frequency and intensity',
+          '**Migraine** is more variable — patients with neck-driven triggers may improve, but the best placebo-controlled trial could not separate the benefit from placebo, so treat it as worth trying, not guaranteed',
           '**Red-flag headaches** (sudden, severe, with neurological signs, post-trauma) need medical workup, not adjustment',
           '**A clinician who can do both** matters: I screen for medical causes before treating, then refer if your headache is not musculoskeletal',
           '**Drug-free pain management** is the long-term win — no rebound, no daily prescription, lower opioid risk'
@@ -2918,7 +2918,7 @@ export const BLOG_POSTS: BlogPost[] = [
           '**Neck pain** — Annals of Internal Medicine 2014: SMT outperformed medication and exercise alone at 12 weeks',
           '**Tension-type and cervicogenic headaches** — 35-50% reduction in headache frequency (Read more in [Chiropractor for Headaches](/blog/chiropractor-for-headaches))',
           '**Sciatica** — 45% reduction in reoperation likelihood for patients receiving SMT (MedicalXpress 2024). (See [Chiropractic for Sciatica](/blog/chiropractic-for-sciatica) for full review.)',
-          '**Whiplash and auto injury** — 93% improvement rate in chronic whiplash patients (European Spine Journal). (See [Auto Accident Injuries on I-85](/blog/auto-accident-injuries-i85).)'
+          '**Whiplash and auto injury** — 93% improvement rate in chronic whiplash patients (*Injury*, 1996). (See [Auto Accident Injuries on I-85](/blog/auto-accident-injuries-i85).)'
         ]
       },
       {
